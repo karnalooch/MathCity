@@ -41,7 +41,7 @@ Domyślnie Roblox Studio blokuje zapis danych w chmurze podczas testów na kompu
 ### 🔗 Jak podłączyć ID Gamepassa do skryptu:
 1. W adresie przeglądarki podczas edycji Gamepassa skopiujcie ciąg cyfr, np.:
    `https://create.roblox.com/dashboard/creations/experiences/.../passes/`**`123456789`**`/details`
-2. W Roblox Studio otwórzcie skrypt: [`src/server/AdminServer.luau`](file:///d:/gem/Matma%20roblox/src/server/AdminServer.luau)
+2. W Roblox Studio otwórzcie skrypt: [`src/server/AdminServer.luau`](../src/server/AdminServer.luau)
 3. Zmieńcie linijkę 12:
    ```lua
    local ADMIN_GAMEPASS_ID = 123456789 -- Wpiszcie Wasze skopiowane ID

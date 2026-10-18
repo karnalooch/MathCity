@@ -4,7 +4,7 @@
 
 Zestaw zadań przygotowany specjalnie pod program 3. klasy szkoły podstawowej (tabliczka mnożenia w zakresie do 100 oraz zasady kolejności działań).
 
-Możecie skopiować te wartości bezpośrednio do zmiennych konfiguracyjnych w pliku [`src/server/MathDoorScript.luau`](file:///d:/gem/Matma%20roblox/src/server/MathDoorScript.luau) dla kolejnych pięter wieży!
+Możecie skopiować te wartości bezpośrednio do zmiennych konfiguracyjnych w pliku [`src/server/MathDoorScript.luau`](../src/server/MathDoorScript.luau) dla kolejnych pięter wieży!
 
 ---
 
