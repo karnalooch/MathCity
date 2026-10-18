@@ -186,9 +186,9 @@ Dla wybranego Vxx skopiuj niższą kartę do promptu. Przeczytaj linki do prawdz
 - **PLAYER_ACTIVITY / MATH:** dopiero po potwierdzonym pinie można projektować realny widok.
 - **ART:** kolorowy styl S1/S2/S3 z [ART_BIBLE](ART_BIBLE.md), matowy PBR, bez kopiowania cudzych postaci/UI. Zachowaj negatywy globalne.
 - **NEGATIVE / AUTOMATIC FAIL:** GEO_LOCATION_OPEN, nie wolno produkować wiernego kadru.
-- **IMAGE_STATUS:** PROMPT_READY_IMAGE_NOT_GENERATED; **TOOL:** NOT_USED; **OWNER_APPROVAL:** PENDING. Zmień status tylko z realnym plikiem, dowodem i kontrolą.
-- **PROMPT_RULE:** „Przedstaw [Górka Grześ], POI N07, zachowaj trzy cechy wymienione w tej karcie; kamera BLOCKED-CAMERA: tylko abstrakcyjny moodboard bez twierdzeń geograficznych; pora winter, sezon unknown. Wprowadź wyłącznie wyszczególnione elementy fantasy, proporcje Roblox, czytelność 8–11 lat, brak chronionych znaków i przypadkowych obiektów. Wyraźnie odróżnij fantazję od realnego Siedlca.”
-- **OUTPUT_NAME:** V13_S3_winter_v01.png (wygeneruj nazwę bez spacji; nie twórz pustego pliku).
+- **IMAGE_STATUS:** BLOCKED_GEOLOCATION (nie wolno robić wiernego obrazu realnej lokalizacji); obraz koncepcyjny tylko z osobnym oznaczeniem FANTASY; **TOOL:** NOT_USED; **OWNER_APPROVAL:** PENDING. Zmień status tylko z realnym plikiem, dowodem i kontrolą.
+- **PROMPT_RULE:** STOP: nie twórz „wiernego zdjęcia Górki Grześ” ani rzekomo prawdziwego układu dróg. Dozwolony tylko moodboard fikcyjnej pagórkowatej strefy zabaw, wyraźnie oznaczony FANTASY, po osobnym zleceniu.
+- **OUTPUT_NAME:** NOT_CREATED (blokada N07, nie generuj pliku wynikowego).
 
 ### V-14 — Stadion piłkarski ARMS
 

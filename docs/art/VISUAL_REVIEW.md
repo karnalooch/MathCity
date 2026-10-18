@@ -19,7 +19,7 @@
 | BG-11 | UI czytelne na telefonie i bezpiecznym obszarze | NOT_TESTED | [specyfikacja UI](UI_VISUAL_GUIDE.md), brak urządzeniowego testu |
 | BG-12 | Co najmniej 10 obrazów głównych, jakość i prawa | BLOCKED | 0 nowych obrazów, generator nieużyty |
 | BG-13 | Prawa do realnych zdjęć / assetów sprawdzone | BLOCKED | referencje LINK_ONLY / RIGHTS_UNKNOWN |
-| BG-14 | `MathCity.rbxl`, `src` i `assets` nienaruszone | NOT_TESTED | potwierdzić w diff PR: żadnych zmian poza docs |
+| BG-14 | `MathCity.rbxl`, `src` i `assets` nienaruszone | PASS dla bieżącej gałęzi | porównanie base `ac942dd85f599b095af7d0922e88288175402a08` do HEAD Stage B: zmiany tylko `docs/`; sprawdzić ponownie przed merge |
 | BG-15 | Akceptacja właściciela | BLOCKED | właściciel nie zaakceptował S1–S3 i 7 stref |
 
 **Główne kryterium decyzji:** sam komplet dokumentacji to `DOCUMENTED`, nie `STAGE_B_PASS`.
