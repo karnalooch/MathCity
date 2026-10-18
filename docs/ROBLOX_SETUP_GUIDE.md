@@ -10,7 +10,7 @@ Domyślnie Roblox Studio blokuje zapis danych w chmurze podczas testów na kompu
 
 1. Otwórzcie Waszą grę w **Roblox Studio**.
 2. W górnym menu kliknijcie **Home** ➡️ **Game Settings** (Ustawienia gry).
-   *(Jeśli gra nie była jeszcze zapisana w chmurze, kliknijcie "Save to Roblox" i nadajcie jej nazwę, np. `Math Tower & City`)*.
+   *(Jeśli gra nie była jeszcze zapisana w chmurze, kliknijcie "Save to Roblox" i nadajcie jej nazwę, np. `Math City`)*.
 3. W oknie ustawień przejdźcie do zakładki **Security** (Bezpieczeństwo).
 4. Włączcie opcję:
    * ✅ **Enable Studio Access to API Services** (Zezwalaj Studio na dostęp do usług API).
@@ -23,7 +23,7 @@ Domyślnie Roblox Studio blokuje zapis danych w chmurze podczas testów na kompu
 1. Otwórzcie przeglądarkę internetową i wejdźcie na stronę:
    👉 **[create.roblox.com/dashboard/creations](https://create.roblox.com/dashboard/creations)**
 2. Zalogujcie się na swoje konto Roblox.
-3. Kliknijcie na Waszą grę (*Math Tower & City*).
+3. Kliknijcie na Waszą grę (*Math City*).
 4. W menu po lewej stronie wybierzcie: **Associated Items** (Powiązane przedmioty) ➡️ zakładka **Passes** (Przepustki).
 5. Kliknijcie przycisk **Create a Pass** (Stwórz przepustkę).
 6. Ustawienia przepustki:

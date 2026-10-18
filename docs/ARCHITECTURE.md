@@ -1,6 +1,8 @@
-# 🏗️ Architektura Techniczna Gry
+# 🏗️ Math City — architektura techniczna
 
 Dokument opisuje architekturę systemu gry, podział na stronę klienta i serwera oraz przepływ danych w silniku Roblox (Luau).
+
+Magazyn `MathTowerData_v1` zachowuje starszy identyfikator dla zgodności z istniejącymi zapisami Math City.
 
 ---
 

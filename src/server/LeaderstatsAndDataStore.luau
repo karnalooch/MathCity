@@ -15,6 +15,7 @@ if localPreview then
     end}
     warn("TRYB LOKALNY: postęp nie jest zachowywany po zatrzymaniu Play.")
 else
+    -- Starszy identyfikator pozostaje, aby zmiana nazwy gry nie odcięła zapisów.
     store = DataStoreService:GetDataStore("MathTowerData_v1")
 end
 local AUTOSAVE_SECONDS = 60

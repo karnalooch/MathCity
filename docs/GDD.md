@@ -1,7 +1,7 @@
-# 🎮 Game Design Document (GDD) — Math Tower & City
+# 🎮 Game Design Document (GDD) — Math City
 
 ## 1. Informacje Ogólne
-* **Tytuł gry:** *Math Tower & City*
+* **Tytuł gry:** *Math City*
 * **Platforma:** Roblox (PC, Mac, Mobile, Tablet, Konsola)
 * **Gatunek:** Edukacyjne Obby / Tower / Otwarty Świat (Roleplay & Tycoon)
 * **Grupa docelowa:** Dzieci ze szkoły podstawowej (klasa 3) oraz fani gier typu obby i Brookhaven.

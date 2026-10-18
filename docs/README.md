@@ -1,6 +1,6 @@
-# 📚 Dokumentacja Projektu: Math Tower & City
+# 📚 Dokumentacja Projektu: Math City
 
-Witaj w oficjalnej dokumentacji gry **Math Tower & City** tworzonej w Roblox Studio!
+Witaj w oficjalnej dokumentacji gry **Math City** tworzonej w Roblox Studio!
 Gra łączy wspinaczkę po **Wieży Matematycznej** (zadaniach z tabliczki mnożenia i kolejności działań dla 3. klasy) z **Otwartym Światem (Miastem)**, w którym za zarobione pieniądze kupuje się domy, samochody i jedzenie.
 
 ---
@@ -24,8 +24,8 @@ Gra łączy wspinaczkę po **Wieży Matematycznej** (zadaniach z tabliczki mnoż
 ```text
 d:\gem\Matma roblox\
 ├── assets\                     # Grafiki koncepcyjne i tekstury
-│   ├── math_tower_and_city_concept_1792348115756.jpg
-│   └── math_tower_interior_doors_1792348133617.jpg
+│   ├── math_city_concept.jpg
+│   └── math_city_doors.jpg
 ├── docs\                       # Główna dokumentacja projektowa i techniczna
 │   ├── README.md
 │   ├── GDD.md
@@ -45,5 +45,5 @@ d:\gem\Matma roblox\
 │   └── client\                 # Skrypty klienckie (StarterPlayerScripts / StarterGui)
 │       └── AdminPanelGui.luau
 ├── PORADNIK_ROBLOX_STUDIO.md   # Skrócony przewodnik startowy
-└── Roblox.rbxl                 # Plik zapisu gry Roblox Studio
+└── Roblox.rbxl                 # Mapa Math City; docelowa nazwa po zapisie w Studio: Math City.rbxl
 ```

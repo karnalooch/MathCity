@@ -31,7 +31,9 @@ task.spawn(function()
         check(stats.Stage.Value == 1, "initial stage")
         local coinStart = stats.Coins.Value
         local gemStart = stats.Gems.Value
-        local map = workspace.MathAdventure
+        -- Obsługuje również zapisaną mapę przed ręczną zmianą nazwy w Studio.
+        local map = workspace:FindFirstChild("MathCity") or workspace:FindFirstChild("MathAdventure")
+        assert(map, "Math City map missing")
         local gem = map.Gem1L
         moveNear(gem.Position + Vector3.new(0, 0, 3))
         local _, h = root()

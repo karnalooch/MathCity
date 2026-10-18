@@ -1,5 +1,5 @@
 assert(not game:GetService("RunService"):IsRunning(), "Zatrzymaj Play przed importem")
-assert(not workspace:FindFirstChild("MathAdventure"), "Mapa jest już dodana; nie importuj jej ponownie")
+assert(not workspace:FindFirstChild("MathCity") and not workspace:FindFirstChild("MathAdventure"), "Mapa jest już dodana; nie importuj jej ponownie")
 local SSS = game:GetService("ServerScriptService")
 local starter = game:GetService("StarterPlayer").StarterPlayerScripts
 local function addScript(parent, name, class, source)
@@ -9,7 +9,7 @@ local function addScript(parent, name, class, source)
     return value
 end
 local map = Instance.new("Model")
-map.Name, map.Parent = "MathAdventure", workspace
+map.Name, map.Parent = "MathCity", workspace
 local function part(parent, name, size, position, color)
     local value = Instance.new("Part")
     value.Name, value.Size, value.Position = name, size, position
@@ -89,12 +89,12 @@ local finish = part(map, "FinishSign", Vector3.new(32, 6, 1), Vector3.new(0, 10,
 finish.CFrame *= CFrame.Angles(0, math.pi, 0)
 label(finish, "META!\n3 pytania · 150 monet", Color3.fromRGB(255, 214, 90))
 local intro = part(map, "Instructions", Vector3.new(16, 6, 1), Vector3.new(-13, 7, 17), Color3.fromRGB(17, 24, 42))
-label(intro, "MATMA QUEST\nWybierz drzwi z wynikiem\nBłąd = powrót do checkpointu", cyan)
+label(intro, "MATH CITY\nWybierz drzwi z wynikiem\nBłąd = powrót do checkpointu", cyan)
 addScript(SSS, "LeaderstatsAndDataStore", "Script", sources.LeaderstatsAndDataStore)
 addScript(SSS, "AdminServer", "Script", sources.AdminServer)
 addScript(starter, "AdminPanelGui", "LocalScript", sources.AdminPanelGui)
 local lighting = game:GetService("Lighting")
 lighting.ClockTime, lighting.Brightness, lighting.Ambient = 14, 2, Color3.fromRGB(135, 145, 175)
 workspace.CurrentCamera.CFrame = CFrame.lookAt(Vector3.new(40, 42, 40), Vector3.new(0, 5, -30))
-game:GetService("ChangeHistoryService"):SetWaypoint("Dodano Matma Quest")
+game:GetService("ChangeHistoryService"):SetWaypoint("Dodano Math City")
 print("MATMA_IMPORT_OK: 3 etapy, 9 drzwi, 4 checkpointy, 6 kryształów i panel administratora")
