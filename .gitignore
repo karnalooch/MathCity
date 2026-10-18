@@ -1,0 +1,29 @@
+# Downloaded installers and tools
+/tools/*.exe
+/tools/*.zip
+
+# Generated Studio import bundle (rebuild with python tools/build_studio.py)
+/tools/ImportGame.command.luau
+
+# Local backups and Studio recovery files
+/Roblox.before-integration.*.rbxl
+*.rbxl.lock
+*.rbxlx.lock
+*.autosave
+*.rbxl.autosave
+*.rbxlx.autosave
+
+# Python caches
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
