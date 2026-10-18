@@ -51,3 +51,18 @@ Na tym etapie nie tworzymy assetów produkcyjnych. Art Bible: [ART_BIBLE.md](ART
 | V-17 | „Zielone Siedlce” | [oficjalny szlak](https://turystyka.siedlce.pl/31-siedlce-zielone-siedlce) | logiczna zielona oś Muchawka–Sekuła–Błonia | miejska trasa realna 13,1km ≠ długość trasy gry |
 
 Celem konceptu nie jest zmyślanie ani uznawanie grafiki AI za fotografię Siedlec. Autentyczna sylwetka + autorska stylizacja są oceniane osobno.
+
+## Zalew Muchawka: szczegółowe wymagania kadrowania (2026-10-19)
+
+**Pełna karta** [MUCHAWKA_FEATURE.md](../world/atlas/MUCHAWKA_FEATURE.md) z checklistą `MU-F01…MU-F10`. **Zadanie artystyczne dla wykonawcy:** trzy porównywalne koncepcje Zalewu: autentyczna sylwetka realnego kąpieliska, fantastyczna przestrzeń wodna z wyspami, wariant sportowo-rowerowy. Nie przedstawiać wysp jako prawdziwej geografii.
+
+| ID | Kadr | Wymagana zawartość | Co oznaczyć jako fikcję |
+| --- | --- | --- | --- |
+| V-18 | Panorama całej strefy Zalewu | duża tafla wody, brzeg, plaża, grobla w osobnym planie | baśniowe wyspy, nietypowe mosty |
+| V-19 | Plażowy Hub (perspektywa dziecka) | pomost, rodzinna strefa rekreacyjna, rowery, znaki minigier | sklepy i interaktywni NPC |
+| V-20 | Wirtualny Cross i Triathlon | trzy czytelne aktywności w bezpiecznej przestrzeni fantasy | dystanse, trasy, pływanie i sportowy tor gry |
+| V-21 | Wyspy Ułamków | 3/4, 1/2 na czytelnych obiektach w wodzie, bez ściany tekstu | wyspy i skarby w całości fikcyjne |
+| V-22 | Ekoobserwator | tablica z widokiem na przyrodę, bez wejścia w chronione miejsce | ilość i typ rysunkowych zwierząt |
+| V-23 | Muchawka nocą | zachód i nocna panorama, ciepłe pastelowe światła na promenadzie | świecące fantasy platformy |
+
+**Weryfikacja:** autor/agent musi podać źródło realnych elementów, listę celowo wymyślonych elementów oraz narzędzie generowania. Nie tworzyć złudzenia, że render UE / AI jest zdjęciem Siedlec lub dowodem wydajności Roblox. Status: `CONCEPT_BRIEFS_CREATED`, żaden finalny render nie został przygotowany przez ten commit.

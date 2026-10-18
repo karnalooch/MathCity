@@ -25,7 +25,7 @@
 | C17 | Ławeczka Aleksandry Ogińskiej | [link](https://turystyka.siedlce.pl/334-siedlce-laweczka-aleksandry-oginskiej) | front / sylwetka, detal charakterystyczny, perspektywa gracza, skala i otoczenie | do audytu / link-only |
 | T01 | Dworzec PKP Siedlce | [link](https://turystyka.siedlce.pl/102-siedlce-dworzec-pkp) | front / sylwetka, detal charakterystyczny, perspektywa gracza, skala i otoczenie | do audytu / link-only |
 | T02 | Zabytkowe domy kolejowe | [link](https://turystyka.siedlce.pl/31-siedlce-zielone-siedlce) | front / sylwetka, detal charakterystyczny, perspektywa gracza, skala i otoczenie | do audytu / link-only |
-| N01 | Zalew Muchawka i kąpielisko | [link](https://turystyka.siedlce.pl/267-siedlce-kapielisko-nad-zalewem-muchawka) | panorama, wejście na ścieżkę, rośliny/woda, punkty widokowe; tylko z dozwolonych szlaków | do audytu / link-only |
+| N01 | **Zalew Muchawka (flagowy)** | [kąpielisko](https://turystyka.siedlce.pl/267-siedlce-kapielisko-nad-zalewem-muchawka) / [GIS](https://sk.gis.gov.pl/index.php/kapielisko/326) | **MU-F01–F10:** szeroka panorama wody, kąpielisko i piasek, pomost, promenada/rowery, plaża z placami zabaw, zachód słońca; szczegóły [MUCHAWKA_FEATURE.md](MUCHAWKA_FEATURE.md) | prawa fotograficzne OPEN; link-only |
 | N02 | Grobla Zalewu Muchawka | [link](https://turystyka.siedlce.pl/264-siedlce-zalew-muchawka-grobla) | panorama, wejście na ścieżkę, rośliny/woda, punkty widokowe; tylko z dozwolonych szlaków | do audytu / link-only |
 | N03 | Użytek ekologiczny Dolina Muchawki | [link](https://turystyka.siedlce.pl/274-siedlce-uzytek-ekologiczny-dolina-muchawki) | panorama, wejście na ścieżkę, rośliny/woda, punkty widokowe; tylko z dozwolonych szlaków | do audytu / link-only |
 | N04 | Las Sekulski / uroczysko Sekuła | [link](https://turystyka.siedlce.pl/276-siedlce-las-sekulski) | panorama, wejście na ścieżkę, rośliny/woda, punkty widokowe; tylko z dozwolonych szlaków | do audytu / link-only |
@@ -65,3 +65,7 @@
 4. **N04 strefy pamięci:** sporządzić wyłącznie informacyjną mapę stref wyłączonych z zabawy; bez potrzebnych fotografii grobów jako dekoracji.
 5. **C14 Poczta, C06 Kościół, T02 domy kolejowe:** dokładne współczesne zdjęcia i położenie obiektów.
 6. **Wszystkie A:** potwierdzić prawo do zdjęcia przed włączeniem do repo lub assetów MathCity.
+
+## Zalew Muchawka — osobny zestaw 10 wymaganych referencji
+
+**Nie sprowadzać Zalewu do pojedynczej fotografii plaży.** Szczegółowa checklista `MU-F01…MU-F10` wraz z powiązanymi źródłami i statusem praw znajduje się w [MUCHAWKA_FEATURE.md](MUCHAWKA_FEATURE.md#7-referencje-wymagane-zdjęcia-i-licencje-w-repo-tylko-linki). Priorytet A oznacza obowiązkową sylwetkę tafli i brzegu; NIE pozwala kopiować zdjęć. Oficjalne konteksty: [GIS](https://sk.gis.gov.pl/index.php/kapielisko/326), [Urząd Miasta — Triathlon Siedlecki 2026](https://siedlce.pl/wydarzenia/2026/06-2026/triathlon-siedlecki-2026), [ARMS — cross rowerów górskich 2025](https://www.arm.siedlce.pl/pl/aktualnosci/xxx). Zdjęcia dzieci/plażowiczów do wykorzystania wymagają dodatkowej analizy praw i prywatności.

@@ -10,7 +10,7 @@ Zebrać rozpoznawalne miejsca Siedlec i okolic, nie kopiując miasta 1:1. Udokum
 
 - **41** rekordów miejsc i atrakcji powiązanych z miejskimi i regionalnymi źródłami, w tym **10 priorytetu A**, **23 B**, **8 C**.
 - **41** kart operacyjnych (architektura/transport 19, przyroda 12, sport 10).
-- **32** opisane przykłady minigier z krokami, przykładowymi wynikami i wymaganym feedbackiem.
+- **40** opisanych przykładów minigier z krokami, przykładowymi wynikami i wymaganym feedbackiem.
 - **41** wpisów shot list z URL do stron/fotogalerii. **Zero** cudzych zdjęć pobranych do repo.
 - **7** proponowanych stref/dzielnic (w tym nowa strefa leśna Sekuła, wyodrębniona z sześciu wcześniej szkicowanych). **Niezatwierdzone** jako układ świata.
 - **Brak** potwierdzenia dokładnej Górki Grześ, przebiegu pętli narciarskich, licencji fotografii i adresu konkretnego wejścia do parku wodnego.
@@ -23,6 +23,7 @@ Zebrać rozpoznawalne miejsca Siedlec i okolic, nie kopiując miasta 1:1. Udokum
 | --- | --- |
 | Jakie miejsca zbadano? | [Pełny katalog 41 ID](atlas/LANDMARK_CATALOG.md) |
 | Jak zbudować Ratusz, Pałac, Dworzec (kiedy ruszy produkcja)? | [19 kart miasta](atlas/CITY_CARDS.md) |
+| **ZALEW MUCHAWKA: osobny hub, 10 referencji, 12 minigier** | **[Pełna specyfikacja N01](atlas/MUCHAWKA_FEATURE.md)** |
 | Jak potraktować Las Sekuła, biegówki, Grześ, Muchawkę? | [12 kart natury](atlas/NATURE_CARDS.md) |
 | Stadion / basen / narciarstwo / skate / parkour? | [10 kart sportu](atlas/SPORT_CARDS.md) |
 | Które strony mają fotografie i jakich kadrów brakuje? | [Rejestr 41 shot listów](atlas/PHOTO_REFERENCES.md) |
@@ -30,6 +31,10 @@ Zebrać rozpoznawalne miejsca Siedlec i okolic, nie kopiując miasta 1:1. Udokum
 | Które fakty i konflikty rozstrzygnięto? | [Evidence i bibliografia Stage A](atlas/SOURCE_EVIDENCE.md) |
 | Gdzie absolutnie nie projektować wyścigów? | [Strefy szacunku i ochrony](atlas/CONSERVATION_AND_RESPECT.md) |
 | Jak pokazać zasięg 7 stref na konceptach? | [Masterplan](DISTRICTS_MASTERPLAN.md) i [schemat 7 stref](../art/MATHCITY_WORLD_SCHEMATIC.svg) |
+
+## Zalew Muchawka — ATRAKCJA FLAGOWA N01
+
+**Wymóg właściciela:** Muchawka ma być wyeksponowana równie wyraźnie jak ratusz i Sekuła. Prawdziwy akwen, piaszczysta plaża, pomost, spacery, rowery i infrastruktura sportowa są podstawą dla sześciu **fikcyjnych** podstref MathCity. Podstawowe źródła: [kąpielisko](https://turystyka.siedlce.pl/267-siedlce-kapielisko-nad-zalewem-muchawka), [GIS](https://sk.gis.gov.pl/index.php/kapielisko/326) i [triathlon 2026](https://siedlce.pl/wydarzenia/2026/06-2026/triathlon-siedlecki-2026). **Karta wykonawcza dla agenta:** [MUCHAWKA_FEATURE.md](atlas/MUCHAWKA_FEATURE.md). Minigry: `M24–M27` i `M33–M40`, łącznie 12 powiązanych pomysłów, z G2–G4 jako propozycjami. **N01 (Zalew) ≠ S02 (Park Wodny)**; Dolina Muchawki N03 to obszar przyrodniczy. Zdjęcia i mapa stref nadal OPEN.
 
 ## Najważniejsze miejscówki właściciela
 

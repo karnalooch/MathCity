@@ -10,7 +10,9 @@ Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity
 
 ## Etap A: atlas Siedlec, Sekuły i sportu (research 18.10.2026)
 
-**WYKONANO RESEARCH DESK, ETAP A NIE JEST JESZCZE PASS.** Zebrano **41 kandydatów miejsc**, 41 kart wykonawczych, 32 propozycje minigier i linki do fotoreferencji. Do zatwierdzenia pozostają zdjęcia/licencje, dokładny pin Górki Grześ, przebieg tras Sekuły i masterplan. Wszystko ma stabilne identyfikatory, a w dokumentach fakty są oddzielone od fikcyjnych mechanik.
+**WYKONANO RESEARCH DESK, ETAP A NIE JEST JESZCZE PASS.** Zebrano **41 kandydatów miejsc**, 41 kart wykonawczych, 40 propozycji minigier i linki do fotoreferencji. Do zatwierdzenia pozostają zdjęcia/licencje, dokładny pin Górki Grześ, przebieg tras Sekuły i masterplan. Wszystko ma stabilne identyfikatory, a w dokumentach fakty są oddzielone od fikcyjnych mechanik.
+
+**Nowe rozszerzenie 2026-10-19:** szczegółowe wymagania dla Zalewu Muchawka oraz matematyki klas 2–4 dodano w [katalogu Muchawki](world/atlas/MUCHAWKA_FEATURE.md) i [CURRICULUM_2_4.md](education/CURRICULUM_2_4.md). `N01` to Zalew Muchawka; `S02` to zupełnie odrębny Park Wodny. Repozytorium gry pozostaje nietknięte.
 
 **Główne wejście:** [world/STAGE_A_README.md](world/STAGE_A_README.md). Szczegółowe instrukcje dla słabszego LLM: [world/atlas/WEAK_LLM_RUNBOOK.md](world/atlas/WEAK_LLM_RUNBOOK.md). Proponowany masterplan został rozszerzony z 6 do **7 stref** (osobno Sekuła), ale **nie** jest zatwierdzony.
 
@@ -20,6 +22,7 @@ Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity
 | --- | --- |
 | **Aktualny GDD** | [GDD.md](GDD.md) |
 | Wizja i kryteria sukcesu | [vision/PROJECT_CHARTER.md](vision/PROJECT_CHARTER.md) |
+| **ZALEW MUCHAWKA: flagowa atrakcja i 12 minigier** | [world/atlas/MUCHAWKA_FEATURE.md](world/atlas/MUCHAWKA_FEATURE.md) |
 | **Etap A: punkt wejścia (41 miejsc + karty)** | [world/STAGE_A_README.md](world/STAGE_A_README.md) |
 | Karty sekcji A dla słabszego LLM | [world/atlas/WEAK_LLM_RUNBOOK.md](world/atlas/WEAK_LLM_RUNBOOK.md) |
 | Fotografie i prawa (link-only) | [world/atlas/PHOTO_REFERENCES.md](world/atlas/PHOTO_REFERENCES.md) |

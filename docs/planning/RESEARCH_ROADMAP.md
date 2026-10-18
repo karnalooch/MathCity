@@ -4,7 +4,11 @@
 
 ## Aktualizacja stanu Etapu A — 2026-10-18
 
-**Desk research zakończony, Stage A PARTIAL (NIE PASS).** Dokumentacja: [world/STAGE_A_README.md](../world/STAGE_A_README.md). Katalog liczy 41 punktów (10×A, 23×B, 8×C), 41 kart opisowych i 32 wstępne minigry. Wśród priorytetów: Las Sekulski, biegówki na Sekule, Górka Grześ (wymaga potwierdzenia miejsca), stadion piłkarski oraz Park Wodny. Do bramki pozostają licencjonowane zdjęcia dla A, mapy tras i stref pamięci, potwierdzona lokalizacja Grześ oraz aprobata właściciela co do 7-strefowej koncepcji. Zatwierdzenie **NIE** następuje automatycznie po commicie dokumentacji.
+**Desk research zakończony, Stage A PARTIAL (NIE PASS).** Dokumentacja: [world/STAGE_A_README.md](../world/STAGE_A_README.md). Katalog liczy 41 punktów (10×A, 23×B, 8×C), 41 kart opisowych i 40 wstępnych minigier. Wśród priorytetów: Las Sekulski, biegówki na Sekule, Górka Grześ (wymaga potwierdzenia miejsca), stadion piłkarski oraz Park Wodny. Do bramki pozostają licencjonowane zdjęcia dla A, mapy tras i stref pamięci, potwierdzona lokalizacja Grześ oraz aprobata właściciela co do 7-strefowej koncepcji. Zatwierdzenie **NIE** następuje automatycznie po commicie dokumentacji.
+
+### Zalew Muchawka: specjalny pakiet researchowy (2026-10-19)
+
+**Dostarczono w docs**: [pełny brief N01](../world/atlas/MUCHAWKA_FEATURE.md), uzupełnienie [CURRICULUM_2_4](../education/CURRICULUM_2_4.md) oraz osiem nowych pomysłów `M33…M40`. Obecnie **40** kandydatów minigier łącznie. Muchawka pozostaje **priorytetem A**, a nie plażą dekoracyjną. Gate otwarte: 10 referencji z prawami, czytelny obrys miejsc, odpowiednio wersjonowana podstawa, odbiór przez mieszkańca, wybór rzeczywistych atrakcji do budowy. Nie uznawać Etapu A za PASS.
 
 ## Etap A: Atlas Siedlec
 

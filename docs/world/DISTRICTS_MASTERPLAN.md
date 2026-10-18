@@ -15,12 +15,16 @@ Pierwszy koncepcyjny układ zawierał Jackowo, Ogrody, Kolejowo, Muchawkę, Neon
 | **1 Jackowo** | główne miasto, start | C01 C05 C12 C13 C14 C15 | handel, Zegar Jacka, kurier | ratusz widoczny z osi miasta |
 | **2 Ogrody Aleksandrii** | spokojny pałac i ogród | C02 C03 C04 C08 C17 | geometria, symetria, eksploracja | nie niszczyć sylwetek zabytków |
 | **3 Kolejowo** | transport | T01 T02 | rozkład, kolej, wycieczki | dworzec obecny, nie przedwojenny |
-| **4 Muchawkowe Wyspy** | woda + rowery | N01 N02 N03 | łódki fantasy, ułamki, kurier | chroniona Dolina jako edukacja, bez wyścigu |
+| **4 Muchawkowe Wyspy — FLAGOWA** | **Zalew Muchawka: kąpielisko, plaża, pomost, rowery, grobla i sport** | N01 N02 N03 N12 | 6 fikcyjnych podstref `MW-01…06`; wirtualny triathlon, wyspy ułamków, rowery, zakupy, ekoobserwacja | **N01 ≠ S02 Park Wodny**; chroniona Dolina jako edukacja, bez wyścigu |
 | **5 Neonowe Błonia i Arena Wodna** | dwa kampusy sportu | S01 S02 S03 S04 S05 S06 S07 S08 S10 | piłka, basen, parkour, łyżwy, kręgle | **S01 ≠ S03**; bliskość w grze nie jest geograficznym faktem |
 | **6 Aleja Kultury** | instytucje i architektura | C06 C07 C09 C10 C11 C16 | sztuka, rytm, muzeum, ciekawostki | obiekty sakralne spokojne, z szacunkiem |
 | **7 Sekuła: Leśna Ekspedycja** | las, zima i biologia | N04 N05 N06 N07* N12 | narty **biegowe**, stacje nauki, rower, fantasy górka | miejsca pamięci RESTRICTED; **N07 lokalizacja niepotwierdzona** |
 
 **Obszary poza strefą główną:** N08 Stawy Siedleckie (obserwacja), N09 rezerwat Gołobórz, N10 Gryczna Górka, N11 Stok Lacki (region). Nie sugerujemy, że wszystkie leżą w samych Siedlcach.
+
+## Rozwinięcie strefy 4 — Zalew Muchawka
+
+**Pełna specyfikacja:** [MUCHAWKA_FEATURE.md](atlas/MUCHAWKA_FEATURE.md). **Wyraźnie obowiązkowy hub**, nie tło do teleportu. Widzimy taflę wody z daleka, wchodzimy na plażę i promenadę, poruszamy się rowerem, odwiedzamy fikcyjne wyspy (świadomie nie 1:1), poznajemy prawdziwe kąpielisko oraz odkrywamy matematyczne aktywności M24–M27 i M33–M40. Realną groblę N02 i użytek Doliny N03 zaznaczamy odrębnie. Do zrobienia: legalne referencje i potwierdzony layout; nie ma zgody na budowę gry.
 
 ## Główne połączenia do planu
 

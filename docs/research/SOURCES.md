@@ -73,3 +73,19 @@ Wykaz **41 źródeł dla 41 rekordów miejsc**, połączony z galerami zdjęć/r
 - [Grześ w opisach tras okolice Rakowca](https://www.komoot.com/pl-pl/guide/2631843/szlaki-piesze-w-siedlcach) — to **nie** potwierdza, że to Górka Grześ znana użytkownikowi. W rejestrze `N07` pozostaje status OPEN.
 
 Fotografie z linków nie zostały pobrane ani licencjonowane. Stage A częściowy do ukończenia przy źródłach terenowych.
+
+## Uzupełnienie Etapu A: Zalew Muchawka — 2026-10-19
+
+Odrębny zestaw źródeł w [MUCHAWKA_FEATURE.md](../world/atlas/MUCHAWKA_FEATURE.md), wszystkie z rozróżnieniem **zastanego faktu**, **hipotezy rozgrywki** i **praw do materiałów zdjęciowych**.
+
+| Źródło | Potwierdzony element | Ważne ograniczenie |
+| --- | --- | --- |
+| [Portal turystyczny — kąpielisko](https://turystyka.siedlce.pl/267-siedlce-kapielisko-nad-zalewem-muchawka) | Zalew, plaża, ścieżki rowerowe, dwa place zabaw, miejsca rekreacyjne | Lokalizacja i opis nie oznaczają praw do pobrania zdjęć |
+| [GIS — karta kąpieliska](https://sk.gis.gov.pl/index.php/kapielisko/326) | ul. Plażowa, pomost, infrastruktura; **54 m linii kąpieliska**; sezon 2026 27.06–31.08 | 54 m to **nie obwód całego zalewu**; daty historyczne, nie dane na dziś |
+| [Urząd Miasta — Triathlon Siedlecki 2026](https://siedlce.pl/wydarzenia/2026/06-2026/triathlon-siedlecki-2026) | sportowa funkcja zalewu i miasta w wydarzeniu czerwcowym | impreza nie jest wydarzeniem całorocznym |
+| [ARMS — XXXI Cross rowerowy 2025](https://www.arm.siedlce.pl/pl/aktualnosci/xxx) | tereny zielone przy Stanicy, kategorie dzieci 8, 9–10, 11–12 | stan archiwalny, nie aktualny grafik wydarzeń |
+| [ARMS — Cross rowerowy 2023](https://arm.siedlce.pl/pl/aktualnosci/cross-rowerowy-dla-dzieci) | Cicha Stanica, boiska do siatkówki i koszykówki, ul. Mazowiecka w planie imprezy | potwierdzić aktualny stan infrastruktury |
+| [Portal — grobla](https://turystyka.siedlce.pl/264-siedlce-zalew-muchawka-grobla) | odrębny landmark `N02` | bez pomiaru dokładnej długości |
+| [Portal — Dolina Muchawki](https://turystyka.siedlce.pl/274-siedlce-uzytek-ekologiczny-dolina-muchawki) | obszar przyrodniczy `N03` | szanować ochronę, nie projektować wyścigów w siedlisku |
+
+**Wszystkie fotografie:** link-only, licencje do sprawdzenia. **Wszystkie minigry:** koncept, nie wdrożenie i nie oficjalny program MEN.

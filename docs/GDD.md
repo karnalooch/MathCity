@@ -32,14 +32,16 @@ Proponowane dzielnice:
 1. **Jackowo – Serce Miasta** (ratusz, plac startowy i sklepy).
 2. **Ogrody Aleksandrii** (park, pałac, geometria i labirynty).
 3. **Kolejowo – Stacja Czasu** (dworzec, rozkłady i podróże).
-4. **Muchawkowe Wyspy** (zalew, mosty, łodzie i ułamki).
+4. **Muchawkowe Wyspy** (**Zalew Muchawka jako flagowa atrakcja**: kąpielisko, plaża, pomost, promenady rowerowe, realna grobla i odrębny chroniony teren Doliny; fantastyczne wyspy oraz matematykę ułamków, czasu, odległości, rowerów i sportu). [Pełna karta N01](world/atlas/MUCHAWKA_FEATURE.md).
 5. **Neonowe Błonia** (sport, obwody, pola, pomiary).
 6. **Aleja Kultury** (muzyka, sekwencje, sztuka, muzea).
 7. **Sekuła: Leśna Ekspedycja** (Las Sekulski, trasy narciarstwa biegowego N05, ścieżka N06, hipoteza Górka Grześ N07). *Nowa propozycja z Etapu A, nie zatwierdzona; miejsca pamięci bez aktywności sportowych.*
 
 Dzielnice i ich nazwy są fikcyjne. Budynki mają być rozpoznawalne, ale drogi, odległości i funkcje są podporządkowane grywalności. Szczegóły: [atlas](world/SIEDLCE_LANDMARK_ATLAS.md), [masterplan](world/DISTRICTS_MASTERPLAN.md).
 
-**Aktualizacja Etapu A:** pełne źródła 41 miejsc, 41 kart, w tym stadion/basen/Sekuła/Grześ, i 32 przykłady minigier: [world/STAGE_A_README.md](world/STAGE_A_README.md). To materiały badawcze, **nie nowa wersja gry**.
+**Aktualizacja 2026-10-19:** Zalew Muchawka jest osobnym pełnym hubem rekreacji i matematyki, z 6 podstrefami fantasy `MW-01…MW-06`, 12 pomysłami minigier `M24–M27` i `M33–M40` oraz 10 fotoreferencjami do pozyskania. Nie mylić z krytym Parkiem Wodnym Siedlce `S02`; [specyfikacja](world/atlas/MUCHAWKA_FEATURE.md) i [edukacja](education/CURRICULUM_2_4.md). Zalew musi pełnić funkcję głównej atrakcji i znaczącego obszaru rozgrywki, nie tylko dekoracji. Jest to wymóg koncepcyjny, a nie istniejąca scena.
+
+**Aktualizacja Etapu A:** pełne źródła 41 miejsc, 41 kart, w tym stadion/basen/Sekuła/Grześ, i 40 przykładów minigier: [world/STAGE_A_README.md](world/STAGE_A_README.md). To materiały badawcze, **nie nowa wersja gry**.
 
 ## 5. Mechaniki do walidacji
 

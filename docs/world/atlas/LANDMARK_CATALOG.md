@@ -35,7 +35,7 @@
 | C17 | Ławeczka Aleksandry Ogińskiej | C | centrum | Ogrody Aleksandrii | zweryfikowane | [źródło](https://turystyka.siedlce.pl/334-siedlce-laweczka-aleksandry-oginskiej) | Spokojny punkt poznawczy |
 | T01 | Dworzec PKP Siedlce | A | centrum | Kolejowo | zweryfikowane | [źródło](https://turystyka.siedlce.pl/102-siedlce-dworzec-pkp) | Wersja istniejąca, nie przedwojenna |
 | T02 | Zabytkowe domy kolejowe | C | centrum | Kolejowo | zweryfikowane-pośrednio | [źródło](https://turystyka.siedlce.pl/31-siedlce-zielone-siedlce) | Zidentyfikować konkretne budynki i zdjęcia |
-| N01 | Zalew Muchawka i kąpielisko | A | centrum | Muchawkowe Wyspy | zweryfikowane | [źródło](https://turystyka.siedlce.pl/267-siedlce-kapielisko-nad-zalewem-muchawka) | Woda, promenada, plaża i fikcyjne wyspy |
+| N01 | **Zalew Muchawka, kąpielisko, promenady, plaża i sport** | **A – FLAGOWY** | centrum | Muchawkowe Wyspy | zweryfikowane (fakty), plan fantasy | [portal turystyczny](https://turystyka.siedlce.pl/267-siedlce-kapielisko-nad-zalewem-muchawka) / [GIS](https://sk.gis.gov.pl/index.php/kapielisko/326) | [Pełna karta Muchawki: podstrefy, zdjęcia, 12 minigier](MUCHAWKA_FEATURE.md) |
 | N02 | Grobla Zalewu Muchawka | B | centrum | Muchawkowe Wyspy | zweryfikowane | [źródło](https://turystyka.siedlce.pl/264-siedlce-zalew-muchawka-grobla) | Trasowanie, długość i panorama |
 | N03 | Użytek ekologiczny Dolina Muchawki | B | centrum | Muchawkowe Wyspy | zweryfikowane | [źródło](https://turystyka.siedlce.pl/274-siedlce-uzytek-ekologiczny-dolina-muchawki) | Tylko obserwacja i edukacja na obrzeżach |
 | N04 | Las Sekulski / uroczysko Sekuła | A | centrum | Sekuła: Leśna Ekspedycja | zweryfikowane | [źródło](https://turystyka.siedlce.pl/276-siedlce-las-sekulski) | Las całoroczny; wydzielić strefy pamięci |
@@ -60,6 +60,8 @@
 
 ## Uwaga o kluczowych rozbieżnościach
 
+0. **N01 ≠ S02**: Zalew Muchawka jest **zewnętrznym akwenem rekreacyjnym** z plażą; Park Wodny Siedlce jest **innym kompleksem basenowym**. Realny GIS opisuje 54 m linii brzegowej wyznaczonego kąpieliska, **nie całego Zalewu**. `MW-04` „Fantasy Wyspy Ułamków” są celowo wymyślone, a nie potwierdzone na mapie miasta.
+
 1. **N05 ≠ N06**: trasy nart biegowych i ścieżka dydaktyczna Sekuła mogą przecinać się przestrzennie, ale źródła nie podają tej samej długości. **2,1 km odnosi się do ścieżki N06**, nie do wszystkich tras narciarskich. Przy Domanickiej 71 używano też nazwy Gołobórz w wydarzeniach rowerowych; przebieg i relacje z trasami potwierdzić w terenie.
 2. **N07 ≠ N10**: lokalna „Górka Grześ” wymieniona przez użytkownika nie może być utożsamiona z oficjalnie opisaną Gryczną Górką pod Stokiem Lackim. Górkę Grześ zlokalizować na podstawie zdjęcia/pinu mieszkańca; **nie podawać wymyślonych współrzędnych**.
 3. **S01 ≠ S03**: stadion piłkarski przy Jana Pawła II 6 i lekkoatletyczny przy Prusa 6 to różne obiekty.
@@ -70,6 +72,7 @@
 
 ## Czytanie dalej
 
+- **[FLAGOWY ZALEW MUCHAWKA: pełny feature brief](MUCHAWKA_FEATURE.md)**
 - [Pełne karty centrum](CITY_CARDS.md)
 - [Karty sportu: stadion, basen, hale](SPORT_CARDS.md)
 - [Karty przyrody: Sekuła, Grześ, Muchawka](NATURE_CARDS.md)

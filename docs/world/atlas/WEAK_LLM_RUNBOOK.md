@@ -53,13 +53,14 @@ Projekt MathCity w repo `karnalooch/MathCity` ma być ogromnym, otwartym miastem
 
 **Krok 10: Akceptacja**. Karta przechodzi `FACT_RESEARCHED` tylko po źródle; przechodzi `PHOTO_READY` po zdjęciach i prawach; przechodzi `DESIGN_READY` dopiero po zatwierdzeniu. Odróżniaj te poziomy w każdym raporcie.
 
-## 4. Pięć obowiązkowych, niepomijalnych kart
+## 4. Sześć obowiązkowych, niepomijalnych kart
 
-1. **N05 trasy narciarskie Sekuła**: sport to **biegówki**, miasto podaje Domanicka 71. **Nie** automatycznie wyciąg narciarski i skoki. **Nie** przypisywać narciarskim torom 2,1 km ścieżki N06. Przyda się realny ślad trasy lub odpowiednie zdjęcia zimowe.
-2. **N07 Górka Grześ**: nazwa i pomysł użytkownika. Punkt Grześ w trasach pod Rakowcem nie jest wystarczającą identyfikacją. **Bez potwierdzenia pinu przez mieszkańca nie geokodować**, nie wymyślać wysokości ani nachylenia. Gry saneczkowe / geometrii dopiero jako fantasy propozycja.
-3. **S01 Stadion ARMS**: boisko **105×68 m**, **2901 miejsc**. Stadion futbolowy na Jana Pawła II 6. Nie myl z S03.
-4. **S02 Park Wodny**: **8 torów, 25×21 m, zjeżdżalnie 48/78 m**, część rekreacyjna i kręgielnia. Oddzielny numer adresowy wejścia do ustalenia. Gry cyfrowe nie stanowią instrukcji rzeczywistego pływania.
-5. **S03 stadion lekkoatletyczny**: oddzielny kompleks przy **Prusa 6**, z bieżnią. Są tam również S04 skateplaza, S05 Parkour Park i S06 lód/rolki.
+1. **N01 ZALEW MUCHAWKA**: Otwórz [pełną kartę N01](MUCHAWKA_FEATURE.md). Zalew to główna rekreacyjna strefa MathCity (plaża, pomost, rowery, grobla, fantasy wyspy, triathlon fantasy) oraz **12 powiązanych minigier M24–M27, M33–M40**. Nie myl z krytym Parkiem Wodnym `S02`; nie zamieniaj 54 m brzegu **kąpieliska** na obwód całego akwenu; nie zmieniaj chronionej Doliny Muchawki `N03` w tor wyścigowy. **Każda liczba gry jest FIKCYJNA** poza faktami jawnie opisanymi źródłem.
+2. **N05 trasy narciarskie Sekuła**: sport to **biegówki**, miasto podaje Domanicka 71. **Nie** automatycznie wyciąg narciarski i skoki. **Nie** przypisywać narciarskim torom 2,1 km ścieżki N06. Przyda się realny ślad trasy lub odpowiednie zdjęcia zimowe.
+3. **N07 Górka Grześ**: nazwa i pomysł użytkownika. Punkt Grześ w trasach pod Rakowcem nie jest wystarczającą identyfikacją. **Bez potwierdzenia pinu przez mieszkańca nie geokodować**, nie wymyślać wysokości ani nachylenia. Gry saneczkowe / geometrii dopiero jako fantasy propozycja.
+4. **S01 Stadion ARMS**: boisko **105×68 m**, **2901 miejsc**. Stadion futbolowy na Jana Pawła II 6. Nie myl z S03.
+5. **S02 Park Wodny**: **8 torów, 25×21 m, zjeżdżalnie 48/78 m**, część rekreacyjna i kręgielnia. Oddzielny numer adresowy wejścia do ustalenia. Gry cyfrowe nie stanowią instrukcji rzeczywistego pływania.
+6. **S03 stadion lekkoatletyczny**: oddzielny kompleks przy **Prusa 6**, z bieżnią. Są tam również S04 skateplaza, S05 Parkour Park i S06 lód/rolki.
 
 ## 5. Krótkie gotowe przykłady do kodowania karty
 
@@ -76,6 +77,8 @@ Projekt MathCity w repo `karnalooch/MathCity` ma być ogromnym, otwartym miastem
 - „Jest pozwolenie na zdjęcia z miejskiego portalu” (samo opublikowanie zdjęcia nie daje praw).
 
 ## 6. Prompty pomocnicze do późniejszego delegowania
+
+**PROMPT-MUCHAWKA:** „Zanim odpowiesz o zalewie otwórz `docs/world/atlas/MUCHAWKA_FEATURE.md` i `docs/education/CURRICULUM_2_4.md`. Wykorzystaj ID N01/N02/N03/N12 oraz M24–M27/M33–M40. Rozdziel realne fakty od wymyślonych wysp, podaj konkretne zadania z wynikiem, oznacz brak legalnych fotografii. Nie ruszaj gry.”
 
 **PROMPT-FACTS:** „Pracuj wyłącznie na dokumentacji `docs/world/atlas/`. Dla ID [POI] sprawdź oficjalny URL, podaj wszystkie fakty z dowodem, oddziel hipotezy, wypisz brakujące zdjęcia. Nie generuj kodu, modeli ani plików poza docs.”
 
@@ -112,7 +115,7 @@ STAGE_A_STATUS: OPEN_PHOTOS
 | A1 Fakty | Konkretne źródła dla priorytetu A, żaden fałszywy adres | **CZĘŚCIOWO, konflikty odnotowane** |
 | A2 Fotografie | Min. trzy kadry własne lub legalne na każdy A; jawne autorstwo | **OPEN** |
 | A3 Masterplan | Logika połączeń Siedlec, transport i oddzielne strefy ochrony | **SZKIC, NIEZATWIERDZONY** |
-| A4 Mechanika | Każdy A ma przynajmniej 1 minigrę koncepcyjną | **SZKIC 32 minigier** |
+| A4 Mechanika | Każdy A ma przynajmniej 1 minigrę koncepcyjną | **SZKIC 40 minigier** |
 | A5 Weryfikacja mieszkańca | Użytkownik potwierdza przede wszystkim Górkę Grześ i widoki ikon | **OPEN** |
 | A6 Akceptacja prawna | Audyt zdjęć i symboli miasta przed użyciem assetów | **OPEN** |
 

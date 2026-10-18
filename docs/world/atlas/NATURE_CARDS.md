@@ -8,7 +8,9 @@
 
 Agent musi 1) odczytać źródło i nie dodawać faktów spoza niego; 2) oddzielić realną cechę miejsca od propozycji fantastycznej; 3) przyjąć instrukcje NIGDY jako twarde ograniczenia; 4) zapisać listę braków; 5) **nie** budować gry ani assetów przed osobną zgodą. Każdy przykład liczbowy w minigrze to **liczba gry**, chyba że karta wyraźnie podaje rzeczywistą wartość ze źródła.
 
-## N01 — Zalew Muchawka: plaża i strefa wypoczynku
+## N01 — Zalew Muchawka: FLAGOWA strefa plaży, wody, rowerów i matematyki
+
+**Pełna, autorytatywna karta miejsca:** [MUCHAWKA_FEATURE.md](MUCHAWKA_FEATURE.md). Koniecznie przeczytaj przed artystycznym konceptem, modelem czy minigrą. Karta zawiera **8 nowych scenariuszy M33–M40**, a także M24–M27, oficjalne źródła (GIS, miasto i ARMS), 10 planowanych ujęć fotograficznych, model 6 podstref fantasy oraz zasady bezpieczeństwa i ochrony przyrody. **N01 ≠ S02 Park Wodny**. Etap badania zdjęć/licencji pozostaje OPEN.
 
 - **Priorytet:** A; **status:** karta badawcza, wizualizacja do wykonania, brak licencji na fotografie.
 - **URL faktograficzny i galeria referencyjna:** https://turystyka.siedlce.pl/267-siedlce-kapielisko-nad-zalewem-muchawka
@@ -24,6 +26,8 @@ Agent musi 1) odczytać źródło i nie dodawać faktów spoza niego; 2) oddziel
 
 ## N02 — Grobla zalewu
 
+**Rozdział pomocniczy do flagowej Muchawki:** [MUCHAWKA_FEATURE.md](MUCHAWKA_FEATURE.md), podstrefa `MW-05`. Grobla to **realny osobny punkt N02**, nie wymyślony most do wysp.
+
 - **Priorytet:** B; **status:** karta badawcza, wizualizacja do wykonania, brak licencji na fotografie.
 - **URL faktograficzny i galeria referencyjna:** https://turystyka.siedlce.pl/264-siedlce-zalew-muchawka-grobla
 - **FAKT O MIEJSCU:** Rozpoznawalna grobla i widok na zbiornik.
@@ -37,6 +41,8 @@ Agent musi 1) odczytać źródło i nie dodawać faktów spoza niego; 2) oddziel
 - **Definition of Done (RESEARCH):** istnieje minimum 1 potwierdzone źródło nazwy/funkcji, opisany charakterystyczny widok, 3 zdjęcia własne lub licencjonowane *lub* odnotowany brak fotografii jako BLOCKER, plan atrakcji oddzielony od faktów i gotowy wpis do atlasu. **Stan teraz: otwarte zdjęcia/licencje, brak PASS.**
 
 ## N03 — Dolina Muchawki — użytek ekologiczny
+
+**Rozdział pomocniczy do flagowej Muchawki:** [MUCHAWKA_FEATURE.md](MUCHAWKA_FEATURE.md), podstrefa `MW-06`. Obserwatorium musi pozostać w **fikcyjnej strefie zewnętrznej**, bez wyścigów przez chronione siedliska.
 
 - **Priorytet:** B; **status:** karta badawcza, wizualizacja do wykonania, brak licencji na fotografie.
 - **URL faktograficzny i galeria referencyjna:** https://turystyka.siedlce.pl/274-siedlce-uzytek-ekologiczny-dolina-muchawki

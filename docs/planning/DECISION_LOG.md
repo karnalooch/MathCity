@@ -18,6 +18,7 @@
 | D-010 | Las Sekuła oraz lokalna „Górka Grześ” to obowiązkowe punkty badawcze Etapu A, z mechanicznym potencjałem | Dodać do atlasu, nie zgadywać położenia Grześ |
 | D-011 | Na Sekule są trasy narciarskie, mają wejść do researchu i mechanik | Traktować jako **narciarstwo biegowe** zgodnie z oficjalnym źródłem, nie zjazdowe |
 | D-012 | Stadion i basen są równie ważnymi ośrodkami aktywności dla MathCity | Osobne szczegółowe karty sportu, matematyka powiązana z parametrami obiektów |
+| D-013 | **Zalew Muchawka ma być wyraźnie dodany i traktowany jako atrakcyjna pełna dzielnica/hub MathCity**, z matematyką klas 2–4 | W dokumentacji `N01` otrzymuje [pełną kartę](../world/atlas/MUCHAWKA_FEATURE.md), 6 fikcyjnych podstref i zestaw 12 propozycji minigier. Sam zakres mechanik wymaga osobnego zatwierdzenia; nie zmieniać `MathCity.rbxl` |
 
 ## PROPOZYCJE (nie zatwierdzono)
 
@@ -34,6 +35,7 @@
 | P-009 | Monetyzacja panelu admina z prototypu nie jest strategią v2 | Przegląd prawny/UX |
 | P-010 | Adaptacyjne podpowiedzi i paszport odkrywcy | Projekt i badania z dziećmi |
 | P-011 | Zmiana roboczego masterplanu z 6 na **7** stref: osobny obszar **Sekuła: Leśna Ekspedycja** | Zatwierdzenie właściciela po zdjęciach i walidacji mapy |
+| P-012 | Muchawka jako sześć **fikcyjnych** podstref `MW-01…MW-06`, z minigrami `M33…M40` i programem G2–G4 | Weryfikacja referencji, licencji, dydaktyki i testy; **propozycja**, nie zatwierdzony feature set |
 
 ## Protokół
 

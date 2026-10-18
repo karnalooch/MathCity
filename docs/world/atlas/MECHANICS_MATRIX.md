@@ -51,6 +51,15 @@
 | M31 | Amfiteatr: grupa na widowni | C16 | Kultura | G2/G3 | 15 osób |
 | M32 | Stawy: diagram obserwacji | N08 | Zielone Obrzeża | G3/G4 | 12 |
 
+| M33 | Muchawka: Plażowy Sklep | N01 | Muchawka MW-01 | G2/G3 | 8 |
+| M34 | Muchawka: Pomost Równych Desek | N01 | Muchawka MW-02 | G2/G3 | 4 |
+| M35 | Muchawka: Rowerowa Pętla | N12 | Muchawka MW-03 | G3 | 600 m |
+| M36 | Muchawka: Zegar Startu | N01 | Muchawka MW-01 | G3/G4 | 10:00 |
+| M37 | Muchawka: Mini Triathlon MathCity | N01 | Muchawka MW-01/MW-03 | G3/G4 | 700 m |
+| M38 | Muchawka: Wyspy Skarbów | N01 | Muchawka MW-04 | G3/G4 | 9 |
+| M39 | Muchawka: Plażowe Boisko Figur | N01 | Muchawka MW-01 | G4 / DOPIERO PO AUDYCIE MEN | 20 m i 24 m² |
+| M40 | Muchawka: Ekoobserwator | N03 | Muchawka MW-06 | G2/G3 | 13 |
+
 ## Karty operacyjne: konkretny przebieg i wynik
 
 ### M01. Zegar Jacka → C01
@@ -415,3 +424,151 @@
 - Przy miejscach pamięci/obszarach chronionych mechanika jest odsunięta albo zastąpiona spokojną tablicą.
 
 Zobacz [karty lokalizacji](LANDMARK_CATALOG.md), [skutki dydaktyczne](../../education/CURRICULUM_2_4.md), [ochrona](CONSERVATION_AND_RESPECT.md).
+
+## Pakiet rozszerzony: Zalew Muchawka — M33–M40
+
+**Data:** 2026-10-19. **Autorytatywny brief miejsca:** [MUCHAWKA_FEATURE.md](MUCHAWKA_FEATURE.md). Ten pakiet jest wymaganym uzupełnieniem Etapu A. `N01` (zalew) nie jest `S02` (kryty Park Wodny), a `N03` to teren przyrodniczy, w którym zabawa ogranicza się do zewnętrznej tablicy.
+
+### M33. Muchawka: Plażowy Sklep → N01
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N01`, `MW-01`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G2/G3.
+- **Cel dla dziecka (jedno zdanie):** „Masz 20 muszelek. Kup dwa produkty za 7 i 5. Ile zostanie?”
+- **Fikcyjne dane zadania:** `20−7−5`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **8**.
+- **Interakcja z otoczeniem:** Przesuwanie żetonów z sakiewki na dwa stoiska.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Zaznacz 7 i 5 muszelek jako wydane.
+- **Wskazówka poziomu 2:** Zsumuj zakupy: 7+5=12, następnie 20−12=8.
+- **Test poprawności:** 20−7−5=8, nie 12 ani 15.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
+
+### M34. Muchawka: Pomost Równych Desek → N01
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N01`, `MW-02`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G2/G3.
+- **Cel dla dziecka (jedno zdanie):** „Z 12 wirtualnych desek utwórz 3 równe grupy. Ile w każdej?”
+- **Fikcyjne dane zadania:** `12÷3`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **4**.
+- **Interakcja z otoczeniem:** Drag&drop desek do trzech wyraźnych pól; żadna rzeczywista budowa tratwy.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Każda grupa powinna dostać tyle samo.
+- **Wskazówka poziomu 2:** Rozdaj po jednej desce każdej z 3 grup, cztery rundy.
+- **Test poprawności:** 3×4=12, nie 3×3=9.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
+
+### M35. Muchawka: Rowerowa Pętla → N12
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N12`, `MW-03`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G3.
+- **Cel dla dziecka (jedno zdanie):** „Trasa gry ma odcinki 200, 150 i 250 metrów. Ile razem?”
+- **Fikcyjne dane zadania:** `200+150+250`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **600 m**.
+- **Interakcja z otoczeniem:** Przejechanie trzech fikcyjnych znaczników na prostej, zamkniętej pętli.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Połącz 200 i 250.
+- **Wskazówka poziomu 2:** 450+150=600.
+- **Test poprawności:** 200+150+250=600, nie 550.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
+
+### M36. Muchawka: Zegar Startu → N01
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N01`, `MW-01`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G3/G4.
+- **Cel dla dziecka (jedno zdanie):** „Jest 09:35. Wirtualny wyścig zacznie się za 25 minut. O której?”
+- **Fikcyjne dane zadania:** `09:35+00:25`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **10:00**.
+- **Interakcja z otoczeniem:** Przesuń wskazówkę zegara; nie korzystaj z realnych harmonogramów ratowników.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Wskazówka minutowa potrzebuje 25 minut, aby dojść do 60.
+- **Wskazówka poziomu 2:** 09:35→09:60, czyli 10:00.
+- **Test poprawności:** 09:35+25min=10:00, nie 09:60.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
+
+### M37. Muchawka: Mini Triathlon MathCity → N01
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N01`, `MW-01/MW-03`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G3/G4.
+- **Cel dla dziecka (jedno zdanie):** „Wirtualny triathlon liczy 100 m + 400 m + 200 m. Ile razem?”
+- **Fikcyjne dane zadania:** `100+400+200`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **700 m**.
+- **Interakcja z otoczeniem:** Wirtualny, lekki trzyetapowy tor: animacja pływania, rower, bieg; brak porad o pływaniu w realnym zalewie.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Dodaj dwie krótsze części: 100+200=300.
+- **Wskazówka poziomu 2:** 300+400=700 m.
+- **Test poprawności:** 100+400+200=700, nie 600.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
+
+### M38. Muchawka: Wyspy Skarbów → N01
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N01`, `MW-04`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G3/G4.
+- **Cel dla dziecka (jedno zdanie):** „Na fikcyjnej wyspie jest 12 żetonów. Weź trzy czwarte. Ile?”
+- **Fikcyjne dane zadania:** `3/4×12`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **9**.
+- **Interakcja z otoczeniem:** Kolorowe wirtualne wyspy, żetony ułożone w siatce 4×3; fantastyczne elementy nie są miejscem realnym.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Rozdziel 12 na 4 równe kupki po 3.
+- **Wskazówka poziomu 2:** Trzy kupki po 3 dają 9.
+- **Test poprawności:** 3/4×12=9, nie 8.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
+
+### M39. Muchawka: Plażowe Boisko Figur → N01
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N01`, `MW-01`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G4 / DOPIERO PO AUDYCIE MEN.
+- **Cel dla dziecka (jedno zdanie):** „Fikcyjne boisko prostokątne ma 6 m na 4 m. Jaki obwód i pole?”
+- **Fikcyjne dane zadania:** `2×(6+4); 6×4`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **20 m i 24 m²**.
+- **Interakcja z otoczeniem:** Dziecko idzie dookoła obrysu, następnie zapełnia siatkę kwadratami; weryfikować zgodność z klasą 4.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Obwód to cztery boki: 6+4+6+4.
+- **Wskazówka poziomu 2:** Pole to sześć rzędów po cztery kwadratowe pola; 24 m².
+- **Test poprawności:** obwód=20, pole=24; jednostki nie są zamienne.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
+
+### M40. Muchawka: Ekoobserwator → N03
+
+- **Status:** `DESIGN_PROPOSED`, `CURRICULUM_PENDING`, `CODE_NOT_STARTED`. Nie implementować na tym etapie.
+- **POI i podstrefa:** `N03`, `MW-06`, [karta Muchawki](MUCHAWKA_FEATURE.md).
+- **Klasa (propozycja, nie weryfikacja MEN):** G2/G3.
+- **Cel dla dziecka (jedno zdanie):** „Na spokojnej tablicy są 4, 6 i 3 rysunki ptaków. Ile wszystkich?”
+- **Fikcyjne dane zadania:** `4+6+3`. To liczby zadania, nie pomiary zalewu, prawdziwego boiska ani trasy sportowej.
+- **Wynik i wyjaśnienie:** **13**.
+- **Interakcja z otoczeniem:** Wirtualna tablica przy wejściu na ścieżkę, bez wchodzenia do realnego użytku ekologicznego ani łapania zwierząt.
+- **Przepływ (stan po stanie):** `IDLE` → `OFFER` → `ACTIVE` → `ANSWER_CHECK` → `SUCCESS` lub `HINT` → `ACTIVE` → `EXIT`. Gracz może wybrać `EXIT` w każdej chwili, bez utraty postępu w mieście.
+- **Wskazówka poziomu 1:** Zaznacz dwie pierwsze grupy: 4+6=10.
+- **Wskazówka poziomu 2:** Do dziesięciu dodaj trzy: 13.
+- **Test poprawności:** 4+6+3=13, nie 14.
+- **Minimalne negatywne testy:** nie akceptuj błędnej odpowiedzi; nie dawaj podwójnej nagrody po powtórnym kliknięciu; nie resetuj checkpointu przy błędzie; nie zawieszaj dwóch graczy; nie wyświetlaj fałszywych danych rzeczywistego obiektu; nie wymagaj klawiatury na ekranie dotykowym.
+- **Nagroda proponowana:** jeden niehandlowalny znaczek odkrywcy, bez losowego zakupu i bez przewagi edukacyjnej.
+- **Zależności do zamknięcia:** zgoda na właściwy poziom szkolny, UI dotykowe, opis brył/zdjęć z prawami, testy Roblox PC/mobile. Brak tych elementów = **OPEN**, nie PASS.
+
