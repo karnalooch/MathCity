@@ -45,5 +45,5 @@ d:\gem\Matma roblox\
 │   └── client\                 # Skrypty klienckie (StarterPlayerScripts / StarterGui)
 │       └── AdminPanelGui.luau
 ├── PORADNIK_ROBLOX_STUDIO.md   # Skrócony przewodnik startowy
-└── Roblox.rbxl                 # Mapa Math City; docelowa nazwa po zapisie w Studio: Math City.rbxl
+└── MathCity.rbxl               # Aktualny projekt Math City w Roblox Studio
 ```

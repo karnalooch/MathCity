@@ -1,13 +1,13 @@
 # 🛠️ Math City — poradnik Roblox Studio
 
-**Gotowy projekt Math City:** otwórzcie `Roblox.rbxl` (po ręcznej zmianie nazwy: `Math City.rbxl`) i naciśnijcie Play. Mapa zawiera 3 etapy, 9 drzwi, 4 checkpointy, 6 kryształów i panel administratora. Poniższe kroki ręczne są potrzebne tylko przy przenoszeniu gry do innej mapy.
+**Gotowy projekt Math City:** otwórzcie `MathCity.rbxl` i naciśnijcie Play. Mapa zawiera 3 etapy, 9 drzwi, 4 checkpointy, 6 kryształów i panel administratora. Poniższe kroki ręczne są potrzebne tylko przy przenoszeniu gry do innej mapy.
 
 ## Zmiana nazwy istniejącej mapy w Studio
 
 1. W Explorerze zaznaczcie `Workspace > MathAdventure` i zmieńcie właściwość **Name** na `MathCity`.
 2. W `Workspace > MathCity > Instructions > SurfaceGui > TextLabel` zmieńcie pierwszą linię właściwości **Text** z `MATMA QUEST` na `MATH CITY`.
 3. W `StarterPlayer > StarterPlayerScripts > AdminPanelGui` wklejcie aktualny kod z `src/client/AdminPanelGui.luau`. Nagłówek panelu ma już w kodzie nazwę `MATH CITY · ADMIN`. Pliki w `src` nie synchronizują się automatycznie z zapisanym `.rbxl`.
-4. Zapiszcie mapę przez **Plik > Zapisz do pliku jako…** pod nazwą `Math City.rbxl`.
+4. Zapiszcie mapę przez **Plik > Zapisz do pliku jako…** pod nazwą `MathCity.rbxl`.
 
 Generator jest przeznaczony do pustej mapy — nie uruchamiajcie ponownie importu na istniejącym projekcie tylko po to, by zmienić nazwę.
 
