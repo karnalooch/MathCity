@@ -80,3 +80,17 @@ Opis kadrów: [CONCEPT_SHOTS.md](CONCEPT_SHOTS.md). Schemat masterplanu: [MATHCI
 - **Górka Grześ:** nie projektować finalnego profilu terenu przed potwierdzeniem miejsca; ewentualna bajkowa strefa saneczkowa musi być wyraźnie fikcyjna.
 
 Źródła i kadry: [world/atlas/PHOTO_REFERENCES](../world/atlas/PHOTO_REFERENCES.md), [CONCEPT_SHOTS](CONCEPT_SHOTS.md).
+
+
+## Etap B — aktualizacja techniczna 2026-10-19 (DOCUMENTED / NOT APPROVED)
+
+Ten plik jest ogólną paletą i zasadami artystycznymi. **Szczegółowym wykonawczym wejściem** są:
+- [Stage B README](STAGE_B_README.md), [instrukcja dla słabszego LLM](STAGE_B_WEAK_LLM_RUNBOOK.md) i [mikro-zadania](TASK_PACKETS.md).
+- [3 porównywalne style S1–S3](STYLE_VARIANTS.md) dla stałych kadrów ratusza C01 i zalewu N01.
+- [7 proponowanych dzielnic](DISTRICT_LOOKDEV.md), [postaci i pojazdy](CHARACTER_AND_VEHICLES.md), [światło L1–L3](LIGHTING_LOOKDEV.md).
+- [Katalog 23 szczegółowych kadrów](SHOT_CARDS_V01_V23.md), [pełne prompty](CONCEPT_PROMPT_LIBRARY.md), [UI mobile](UI_VISUAL_GUIDE.md) i [modułowe assety](MODULAR_ASSET_GUIDE.md).
+- [Zweryfikowane źródła Roblox i Siedlce](SOURCE_REGISTER.md) oraz [QA](VISUAL_REVIEW.md).
+
+**Krytyczne korekty względem starszych tutoriali:** Roblox `LightingStyle` (Soft/Realistic), a nie poleganie na `Lighting.Technology`; PBR/SurfaceAppearance wymaga sprawdzenia map OpenGL i pojedynczego zestawu UV; 20k trójkątów to limit pojedynczej siatki, a mobilne UI musi szanować bezpieczne obszary i strefy kciuków. Wszystkie liczby wydajności i parametry materiałów to przyszłe wyniki testów, nie obietnice.
+
+**Nie ma jeszcze plików z finalnymi wizualizacjami ani akceptacji wariantu S1/S2/S3.** Render AI/UE nie jest screenshotem Roblox. Etap A pozostaje PARTIAL.

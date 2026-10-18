@@ -66,3 +66,12 @@ Celem konceptu nie jest zmyślanie ani uznawanie grafiki AI za fotografię Siedl
 | V-23 | Muchawka nocą | zachód i nocna panorama, ciepłe pastelowe światła na promenadzie | świecące fantasy platformy |
 
 **Weryfikacja:** autor/agent musi podać źródło realnych elementów, listę celowo wymyślonych elementów oraz narzędzie generowania. Nie tworzyć złudzenia, że render UE / AI jest zdjęciem Siedlec lub dowodem wydajności Roblox. Status: `CONCEPT_BRIEFS_CREATED`, żaden finalny render nie został przygotowany przez ten commit.
+
+
+## Etap B: pełne karty, workflow renderów i status (2026-10-19)
+
+**Nowe nadrzędne instrukcje do realizacji ujęć:** [SHOT_CARDS_V01_V23.md](SHOT_CARDS_V01_V23.md) opisuje komplet **23** kart, a [CONCEPT_PROMPT_LIBRARY.md](CONCEPT_PROMPT_LIBRARY.md) zawiera gotowe, kontrolowane prompty do porównań C01 i N01 dla S1/S2/S3, lighting L1/L2/L3 oraz UI. [SOURCE_REGISTER.md](SOURCE_REGISTER.md) przechowuje referencje źródłowe L01–L14 i R01–R17. [Wykonawczy runbook dla słabszego LLM](STAGE_B_WEAK_LLM_RUNBOOK.md) określa limity kontekstu i testy.
+
+**Kolejność:** (1) sześć porównawczych obrazów V02/V05 × S1/S2/S3 lub samych promptów, gdy brak generatora, (2) podstawowy V01–V10, (3) ujęcia Sekuły i sportu V11,V12,V14,V15 oraz Muchawki V18,V19,V23, (4) pozostałe V17,V20–V22, (5) V13 pozostaje BLOCKED_GEOLOCATION do potwierdzenia Górki Grześ. Identyczne porównanie = ta sama kamera i pora, nie tylko podobny pomysł.
+
+**Stan 2026-10-19:** 23 karty opisowe, 6 gotowych promptów porównawczych, **0 nowych plików obrazów**, **0 screenshotów Roblox**, status `PROMPT_READY_IMAGE_NOT_GENERATED` dla wizualizacji. Nie oznaczać renderów jako ukończonych na podstawie samej dokumentacji. [Manifest planowanych konceptów](concepts/README.md) i [B8 Review](VISUAL_REVIEW.md).

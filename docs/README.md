@@ -16,6 +16,10 @@ Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity
 
 **Główne wejście:** [world/STAGE_A_README.md](world/STAGE_A_README.md). Szczegółowe instrukcje dla słabszego LLM: [world/atlas/WEAK_LLM_RUNBOOK.md](world/atlas/WEAK_LLM_RUNBOOK.md). Proponowany masterplan został rozszerzony z 6 do **7 stref** (osobno Sekuła), ale **nie** jest zatwierdzony.
 
+## Etap B — deep research i instrukcje dla lekkich LLM (2026-10-19)
+
+**Dokumentacja artystyczna zaktualizowana, wizualizacje jeszcze nie wygenerowane.** B jest w stanie `STAGE_B_DOCUMENTATION_READY / STAGE_B_VISUALS_NOT_DONE`; nie PASS i bez zatwierdzonego stylu przez właściciela. Zastosowano aktualne źródła Roblox 2026 (LightingStyle, PBR/UV, mobile safe areas), porównanie 3 stylów na Jacku i Muchawce, 7-strefowy lookdev oraz dokładne karty V01–V23. **Start dla słabego modelu:** [instrukcja Etapu B](art/STAGE_B_WEAK_LLM_RUNBOOK.md) → [mikro-zadania](art/TASK_PACKETS.md). [Indeks Etapu B](art/STAGE_B_README.md).
+
 ## Nawigacja
 
 | Obszar | Dokument |
@@ -32,6 +36,10 @@ Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity
 | Popularne mechaniki Roblox (research) | [gameplay/ROBLOX_MARKET_RESEARCH_2026.md](gameplay/ROBLOX_MARKET_RESEARCH_2026.md) |
 | Główna pętla i minigry | [gameplay/CORE_LOOP_AND_MINIGAMES.md](gameplay/CORE_LOOP_AND_MINIGAMES.md) |
 | Matematyka klas 2–4 | [education/CURRICULUM_2_4.md](education/CURRICULUM_2_4.md) |
+| **Etap B / status i wejście** | **[art/STAGE_B_README.md](art/STAGE_B_README.md)** |
+| **Etap B / runbook dla słabszych LLM** | **[art/STAGE_B_WEAK_LLM_RUNBOOK.md](art/STAGE_B_WEAK_LLM_RUNBOOK.md)** |
+| Etap B / prompty i 23 karty | [art/CONCEPT_PROMPT_LIBRARY.md](art/CONCEPT_PROMPT_LIBRARY.md), [art/SHOT_CARDS_V01_V23.md](art/SHOT_CARDS_V01_V23.md) |
+| Etap B / źródła Roblox + Siedlce | [art/SOURCE_REGISTER.md](art/SOURCE_REGISTER.md) |
 | Art bible i paleta | [art/ART_BIBLE.md](art/ART_BIBLE.md) |
 | Briefy wizualizacji i kadrów | [art/CONCEPT_SHOTS.md](art/CONCEPT_SHOTS.md) |
 | Schemat koncepcyjny mapy | [art/MATHCITY_WORLD_SCHEMATIC.svg](art/MATHCITY_WORLD_SCHEMATIC.svg) |
