@@ -58,3 +58,18 @@ Sam ranking graczy nie dowodzi wartości mechaniki. Nie wykonano jeszcze manualn
 | P4 | [Fab Standard License](https://www.fab.com/eula) | Użycie w różnych narzędziach, zakaz dystrybucji surowych assetów |
 
 Zasada cytowania: przy każdej konkretnej tezie w dokumentach wskazujemy tabelę z tym źródłem lub bezpośrednią stronę. Fakty, hipotezy i propozycje autora muszą być oddzielone.
+
+## Etap A: rozszerzony atlas lokalizacji
+
+Wykaz **41 źródeł dla 41 rekordów miejsc**, połączony z galerami zdjęć/referencji, konfliktami i tożsamością, jest w [world/atlas/SOURCE_EVIDENCE.md](../world/atlas/SOURCE_EVIDENCE.md) oraz [world/atlas/LANDMARK_CATALOG.md](../world/atlas/LANDMARK_CATALOG.md). Priorytetowe źródła zostały zweryfikowane 18.10.2026:
+
+- [Miasto — trasy narciarstwa biegowego Sekuła](https://siedlce.pl/aktualnosci/2025/aktualnosci-01-2025/trasy-narciarstwa-biegowego-w-siedlcach/show), Domanicka 71, narciarstwo biegowe.
+- [Nadleśnictwo Siedlce — ścieżka Sekuła](https://siedlce.warszawa.lasy.gov.pl/oferta-edukacyjna/-/asset_publisher/kCS6/content/obiekty-edukacyjne), ścieżka edukacyjna 2,1 km; **nie** przypisywać tej długości całej sieci narciarskiej.
+- [ARMS — stadion główny](https://arm.siedlce.pl/pl/stadion-glowny), boisko 105×68m, 2901 miejsc.
+- [ARMS — hala basenowa](https://arm.siedlce.pl/pl/hala-basenowa), 8 torów, basen 25×21m, zjeżdżalnie 48/78m.
+- [ARMS — Ośrodek Sportu Prusa 6](https://arm.siedlce.pl/pl/obiekty-osrodek-sportu), stadion lekkoatletyczny, skateplaza, parkour, lodowisko/rolkowisko.
+- [PTTK — miejsca pamięci Sekuły](https://pttksiedlce.pl/siedlecki-klub-turystyki-pieszej-i-nordic-walking-wloczy-kije-17-05-2026r-sekula/), ograniczenie rozgrywki.
+- [Zielone Siedlce — 13,1 km](https://turystyka.siedlce.pl/31-siedlce-zielone-siedlce), oś rowerowa łącząca Muchawkę, Sekułę, Błonia.
+- [Grześ w opisach tras okolice Rakowca](https://www.komoot.com/pl-pl/guide/2631843/szlaki-piesze-w-siedlcach) — to **nie** potwierdza, że to Górka Grześ znana użytkownikowi. W rejestrze `N07` pozostaje status OPEN.
+
+Fotografie z linków nie zostały pobrane ani licencjonowane. Stage A częściowy do ukończenia przy źródłach terenowych.

@@ -1,60 +1,53 @@
-# MathCity — dzielnice i masterplan otwartego miasta
+# MathCity — masterplan po Etapie A (kandydaci 7 stref)
 
-**Status:** PROPOZYCJA, 2026-10-18. Nazwy dzielnic i lokalizacje są fikcyjne. Nie odnoszą się do granic administracyjnych Siedlec.
+**Status:** PROPOZYCJA / 2026-10-18. Nie zatwierdzono liczby dzielnic. Układ miasta jest **fikcyjny i nie 1:1**; karty referencyjne realnych miejsc zawierają fakty i oddzielne numery ID.
 
-![Schemat świata — układ artystyczny, nie mapa geograficzna](../art/MATHCITY_WORLD_SCHEMATIC.svg)
+![Schemat powiązań siedmiu proponowanych stref, nie prawdziwa mapa Siedlec](../art/MATHCITY_WORLD_SCHEMATIC.svg)
 
-## Docelowe doświadczenie
+## Dlaczego 7 stref zamiast początkowych 6?
 
-Duży, spójny świat z dalekimi sylwetkami ważnych obiektów, z miękkimi granicami między dzielnicami. Zawsze wiadomo, gdzie leży centrum; ratusz ma być wizualnym kompasem. Gracz może jechać przez miasto bez teleportacji co 30 sekund, a areny wymagające odrębnych budżetów ewentualnie trafią do osobnych Roblox Places.
+Pierwszy koncepcyjny układ zawierał Jackowo, Ogrody, Kolejowo, Muchawkę, Neonowe Błonia i Aleję Kultury. Etap A wykazał ważne potencjały Sekuły (narciarstwo biegowe, ścieżka edukacyjna, ogromny las) i Górki Grześ zgłoszone przez właściciela. Dlatego **proponujemy wyodrębnić Sekułę jako siódmą dużą strefę**, zamiast wciskać leśne tory w bezimienne obrzeże. To NIE jest zatwierdzone poszerzenie zakresu, a rekomendacja do zatwierdzenia po Etapie A.
 
-## Koncepcja sześciu dzielnic
+## Proponowane strefy
 
-| # | Nazwa (robocza) | Tożsamość miejsca | Kolor / klimat | Charakter ruchu | Matematyka |
-| --- | --- | --- | --- | --- | --- |
-| 1 | **Jackowo: Serce Miasta** | Ratusz, kamienice, rynek | brzoskwinia, turkus, krem | pieszo, pojazdy miejskie | liczenie, pieniądze, sklep, Zegar Jacka |
-| 2 | **Ogrody Aleksandrii** | Pałac, park, fontanny | mięta, róż, złoto | spacer, parkour | figury, symetria, układanki |
-| 3 | **Kolejowo: Stacja Czasu** | Dworzec, stacja, fantastyczne estakady | błękit, fiolet | pociąg, autobusy | czas, bilety, dodawanie |
-| 4 | **Muchawkowe Wyspy** | Zalew, plaża, mosty | morski turkus, żółty | rower, łodzie | dzielenie, ułamki, pomiary |
-| 5 | **Neonowe Błonia** | Stadion, skatepark, tereny sportowe | koral, granat | wyścigi, skoki | pomiary, obwód, pole |
-| 6 | **Aleja Kultury** | Teatr, muzea, zabytki | fiolet, złoto | pieszo, wycieczki | rytmy, wzory, kodowanie sekwencji |
+| Strefa | Funkcja | Anchor IDs | Rozgrywka | Reguła |
+| --- | --- | --- | --- | --- |
+| **1 Jackowo** | główne miasto, start | C01 C05 C12 C13 C14 C15 | handel, Zegar Jacka, kurier | ratusz widoczny z osi miasta |
+| **2 Ogrody Aleksandrii** | spokojny pałac i ogród | C02 C03 C04 C08 C17 | geometria, symetria, eksploracja | nie niszczyć sylwetek zabytków |
+| **3 Kolejowo** | transport | T01 T02 | rozkład, kolej, wycieczki | dworzec obecny, nie przedwojenny |
+| **4 Muchawkowe Wyspy** | woda + rowery | N01 N02 N03 | łódki fantasy, ułamki, kurier | chroniona Dolina jako edukacja, bez wyścigu |
+| **5 Neonowe Błonia i Arena Wodna** | dwa kampusy sportu | S01 S02 S03 S04 S05 S06 S07 S08 S10 | piłka, basen, parkour, łyżwy, kręgle | **S01 ≠ S03**; bliskość w grze nie jest geograficznym faktem |
+| **6 Aleja Kultury** | instytucje i architektura | C06 C07 C09 C10 C11 C16 | sztuka, rytm, muzeum, ciekawostki | obiekty sakralne spokojne, z szacunkiem |
+| **7 Sekuła: Leśna Ekspedycja** | las, zima i biologia | N04 N05 N06 N07* N12 | narty **biegowe**, stacje nauki, rower, fantasy górka | miejsca pamięci RESTRICTED; **N07 lokalizacja niepotwierdzona** |
 
-Punkty historyczne są rozpoznawalne, ale fikcyjne elementy (wyspy, portale, estakady) mają być jasno odróżnione od geografii realnej.
+**Obszary poza strefą główną:** N08 Stawy Siedleckie (obserwacja), N09 rezerwat Gołobórz, N10 Gryczna Górka, N11 Stok Lacki (region). Nie sugerujemy, że wszystkie leżą w samych Siedlcach.
 
-## Makroukład (hipoteza)
+## Główne połączenia do planu
 
-- **Centrum:** Jackowo jako miejski hub, punkt startowy i miejsce odpoczynku.
-- **Północ / północny zachód (artystycznie):** Ogrody i Aleja Kultury.
-- **Wschód:** Kolejowo z szybkim transportem do centrum.
-- **Południe:** Neonowe Błonia i przestrzeń wyścigów.
-- **Zachód:** Muchawkowe Wyspy, promenady i spokojniejsza dzielnica wody.
-- **Pierścień:** szerokie drogi i trasy rowerowe, krótki objazd do każdej atrakcji.
-- **Oś widokowa:** sylwetka ratusza w zasięgu orientacyjnym w centrum, pałac widoczny zza parku, stadion jako duży punkt kierunkowy.
+1. **Jackowo ↔ Ogrody ↔ Aleja Kultury:** miejska trasa piesza, wyraźne punkty historyczne.
+2. **Jackowo ↔ Kolejowo ↔ Sport:** fantastyczny autobus/pociąg; transport i centrum atrakcji.
+3. **Jackowo ↔ Muchawka ↔ Sekuła:** oś zielona zainspirowana realną trasą „Zielone Siedlce” 13,1 km, ale dystanse i drogi w grze zmienione.
+4. **Sport ↔ Muchawka:** szybkie powiązanie rowerowe/fantasy.
+5. **Sekuła ↔ Kolejowo:** opcjonalna specjalna linia transportu dla dzieci bez blokowania drogi.
 
-Schemat jest propozycją layoutu; po badaniach terenowych może zostać skorygowany. Nie należy mówić, że tak wygląda prawdziwy układ Siedlec.
+Najważniejszy jest brak pustych kilkukilometrowych przebiegów. Pośrednie aktywności i landmarki należy rozmieścić w bezpiecznych odstępach, dopiero po testach przejazdu.
 
-## Hierarchia i rytm odkryć
+## Strefy specjalne
 
-- Co kilkadziesiąt sekund marszu: mały punkt interakcji.
-- Co kilka minut: jedno większe miejsce lub aktywność.
-- Między dzielnicami: charakterystyczne bramy krajobrazowe, zmiana roślinności i palety.
-- Centralne landmarki: rozpoznawalne przy zredukowanym LOD i bardzo małej liczbie materiałów.
-- Przy każdym ważnym zabytku: krótka, opcjonalna prawdziwa ciekawostka z linkiem do źródła.
+- **Sekuła memorial exclusion:** RZECZYWISTE groby i cmentarze nie są torem sportowym, nie odtwarzać niepewnej topologii. W grze spokojne, odrębne upamiętnienie albo brak odwzorowania.
+- **Chroniona Dolina Muchawki / Stawy / Gołobórz:** wyłącznie tablice poznawcze i widoki z dozwolonych stron, brak karuzeli monet.
+- **Krzyż papieski Błonia:** odrębny spokojny landmark, a sport na innej fikcyjnej przestrzeni.
+- **Górka Grześ:** od początku pozostawić slot N07 w koncepcji, ale nie przypisywać fizycznych współrzędnych przed potwierdzeniem.
 
-To reguły koncepcyjne do walidacji użytkowej, nie wymagania techniczne.
+## Przed wejściem do blockoutu
 
-## Skala do benchmarku, nie decyzja
+1. Lokalny mieszkaniec zatwierdza punkty priorytetu A i lokalizację N07.
+2. Powstają 3 różne warianty sieci dróg i transportu do testu.
+3. Każdy kandydat A dostaje panoramę i 2 dodatkowe legalne referencje.
+4. Wybieramy skalę na podstawie pomiarów, a nie samego zasięgu mapy.
+5. Sprawdzamy scenę zimową i letnią Sekuły, stadionów i basenu na mobile.
+6. Dopiero wtedy blokujemy mapę produkcyjną. Teraz pozostajemy w fazie dokumentacyjnej.
 
-Dwa kandydaty do prób: **8192 × 8192 studów** (ok. 2,29 × 2,29 km) i **16384 × 16384 studów** (ok. 4,59 × 4,59 km). Przelicznik orientacyjny 1 stud = 0,28 m wg Roblox Creator Hub. Rozmiar wynikać będzie z testów streamingu, telefonów i szybkości przemieszczania, nie z ambicji liczbowej.
+### Powiązania
 
-## Kolejność projektowania
-
-1. Atlas punktów i referencje zdjęciowe.
-2. Trzy warianty topologii miasta w 2D.
-3. Wybór makroukładu i skali dzielnic.
-4. Blockout całej planowanej mapy (bez detalu).
-5. Test sieci dróg i czasu przejazdu.
-6. Dopiero potem reprezentatywny, pionowy wycinek jakości wizualnej do zatwierdzenia.
-7. Produkcja sektorami, ale plan dla **całego świata** od początku.
-
-**Nie wykonano jeszcze blockoutu, importu ani benchów.** Zob. [budżety](../tech/LARGE_WORLD.md), [roadmapę](../planning/RESEARCH_ROADMAP.md).
+[Etap A](STAGE_A_README.md), [Atlas 41](atlas/LANDMARK_CATALOG.md), [karty sportu](atlas/SPORT_CARDS.md), [karty przyrody](atlas/NATURE_CARDS.md), [ochrona](atlas/CONSERVATION_AND_RESPECT.md).

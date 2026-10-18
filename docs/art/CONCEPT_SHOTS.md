@@ -8,7 +8,7 @@ W rozmowie koncepcyjnej powstał panoramiczny **render poglądowy** przedstawiaj
 
 | ID | Kadr | Wymagane elementy | Test rozpoznawalności / odrzucenia |
 | --- | --- | --- | --- |
-| V-01 | Panorama całego MathCity (z lotu ptaka) | sześć sektorów, ratusz, park, zalew, stadion, dworzec | nie może wyglądać jak anonimowe Miami |
+| V-01 | Panorama całego MathCity (z lotu ptaka) | siedem proponowanych stref w tym Sekuła; ratusz, park, zalew, stadion, basen, dworzec | nie może wyglądać jak anonimowe Miami |
 | V-02 | Plac Ratusza Jacek (dzień) | sylwetka ratusza, fontanna, barwne fasady, gracze | Jacek musi być rozpoznawalny |
 | V-03 | Plac Jacka (zachód/noc) | pastelowe niebo i stonowane neony | brak nadmiernego Bloom |
 | V-04 | Ogrody Aleksandrii | Pałac Ogińskich, ogród, aleje, geometryczne zagadki | pałac i park nie mogą być wyłącznie dekoracją |
@@ -35,3 +35,19 @@ Autorskie, stylizowane 3D przedstawienie Siedlec jako ogromnego przyjaznego mias
 - Akceptacja stylistyki przed modelowaniem.
 
 Na tym etapie nie tworzymy assetów produkcyjnych. Art Bible: [ART_BIBLE.md](ART_BIBLE.md).
+
+## Etap A: rozszerzenie obowiązkowych ujęć referencyjnych
+
+*Powiązanie z [41 kartami](../world/atlas/LANDMARK_CATALOG.md). Wszystkie kadry poniżej to propozycje przygotowania; bez kopiowania zdjęć i bez produkcyjnego importu.*
+
+| ID kadru | Miejsce | Referencja | Co ma być widoczne | Granica |
+| --- | --- | --- | --- | --- |
+| V-11 | Sekuła zimą | [miasto — biegówki](https://siedlce.pl/aktualnosci/2025/aktualnosci-01-2025/trasy-narciarstwa-biegowego-w-siedlcach/show) | realna atmosfera nart BIEGOWYCH, las, spokojny slalom na fikcyjnej pętli | bez sankcji sportowych w strefach pamięci |
+| V-12 | Sekuła latem | [Nadleśnictwo](https://siedlce.warszawa.lasy.gov.pl/oferta-edukacyjna/-/asset_publisher/kCS6/content/obiekty-edukacyjne) | droga i osiem edukacyjnych stacji, las, rowery poza strefami wykluczonymi | nie kopiować tablic bez praw |
+| V-13 | Górka Grześ | [tożsamość OPEN](../world/atlas/NATURE_CARDS.md) | ujęcie dopiero po potwierdzeniu dokładnego miejsca | NIE geolokalizować na zgadywanym grzbiecie |
+| V-14 | Stadion piłkarski ARMS | [operator](https://arm.siedlce.pl/pl/stadion-glowny) | trybuna, murawa, plac sportowy | nie pomylić z Prusa 6 |
+| V-15 | Park Wodny | [operator](https://arm.siedlce.pl/pl/hala-basenowa) | zewnętrzny obiekt i wnętrze 8 torów, zjeżdżalnie 48/78m | zdjęcia wnętrza tylko z prawami i bez ujawniania dzieci |
+| V-16 | Stadion lekkoatletyczny | [Prusa 6](https://arm.siedlce.pl/pl/stadion-lekkoatletyczny) | bieżnia, skateplaza, parkour | odrębny obiekt od S01 |
+| V-17 | „Zielone Siedlce” | [oficjalny szlak](https://turystyka.siedlce.pl/31-siedlce-zielone-siedlce) | logiczna zielona oś Muchawka–Sekuła–Błonia | miejska trasa realna 13,1km ≠ długość trasy gry |
+
+Celem konceptu nie jest zmyślanie ani uznawanie grafiki AI za fotografię Siedlec. Autentyczna sylwetka + autorska stylizacja są oceniane osobno.

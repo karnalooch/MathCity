@@ -35,8 +35,11 @@ Proponowane dzielnice:
 4. **Muchawkowe Wyspy** (zalew, mosty, łodzie i ułamki).
 5. **Neonowe Błonia** (sport, obwody, pola, pomiary).
 6. **Aleja Kultury** (muzyka, sekwencje, sztuka, muzea).
+7. **Sekuła: Leśna Ekspedycja** (Las Sekulski, trasy narciarstwa biegowego N05, ścieżka N06, hipoteza Górka Grześ N07). *Nowa propozycja z Etapu A, nie zatwierdzona; miejsca pamięci bez aktywności sportowych.*
 
 Dzielnice i ich nazwy są fikcyjne. Budynki mają być rozpoznawalne, ale drogi, odległości i funkcje są podporządkowane grywalności. Szczegóły: [atlas](world/SIEDLCE_LANDMARK_ATLAS.md), [masterplan](world/DISTRICTS_MASTERPLAN.md).
+
+**Aktualizacja Etapu A:** pełne źródła 41 miejsc, 41 kart, w tym stadion/basen/Sekuła/Grześ, i 32 przykłady minigier: [world/STAGE_A_README.md](world/STAGE_A_README.md). To materiały badawcze, **nie nowa wersja gry**.
 
 ## 5. Mechaniki do walidacji
 
@@ -71,7 +74,7 @@ Przyjazna informacja zwrotna, dostępność UI, możliwość wyłączenia nadmia
 
 ## 10. Definition of success na etap badań
 
-- Jest atlas najważniejszych miejsc i plan rozmieszczenia sześciu kandydatów dzielnic.
+- Jest atlas najważniejszych miejsc i plan rozmieszczenia siedmiu **proponowanych** stref (wcześniej 6; teraz osobna Sekuła).
 - Są warianty stylu: dzień, zmierzch, noc; zatwierdzony styl czytelny dla dzieci.
 - Jest macierz mechanik z testów ręcznych minimum 12–15 gier Roblox.
 - Jest mapa treści klas 2–4 zweryfikowana dydaktycznie.

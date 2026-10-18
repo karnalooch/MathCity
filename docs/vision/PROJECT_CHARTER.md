@@ -17,7 +17,7 @@ Stworzyć grę, w której dzieci mają ochotę przebywać dla zabawy, poznają p
 
 ## Cele strategiczne (PROPOZYCJA)
 
-- Sześć wizualnie zróżnicowanych dzielnic spiętych komunikacją.
+- Siedem proponowanych stref (wcześniej sześć), w tym Las Sekuła jako osobna strefa. Ostateczna liczba wymaga zatwierdzenia.
 - Siedlce eksponowane bardziej przez sylwetki i historie budynków niż przez geodezyjną dokładność.
 - Możliwość wejścia do gry i zabawy bez konieczności rozwiązania pierwszego zadania.
 - Zestaw modułowych, reużywalnych minigier pozwalający szybko rozszerzyć poziom nauczania.
@@ -45,3 +45,7 @@ Stworzyć grę, w której dzieci mają ochotę przebywać dla zabawy, poznają p
 - Deklarowanie „największej mapy Roblox” bez pomiarów.
 
 Zależności i decyzje: [GDD](../GDD.md), [open questions](../research/RISKS_AND_OPEN_QUESTIONS.md), [decision log](../planning/DECISION_LOG.md).
+
+## Kontekst z Etapu A (18.10.2026)
+
+Użytkownik wskazał Las Sekuła, trasy narciarskie, lokalną Górkę Grześ, stadion i basen jako istotne miejsca z własnymi mechanikami. Ułożono 41 kart miejsc i 32 pomysły minigier. [Etap A](../world/STAGE_A_README.md) szczegółowo rozdziela fakty od fikcyjnych aktywności i zastrzega nieustaloną lokalizację Górki Grześ. Etap A jest nadal PARTIAL.

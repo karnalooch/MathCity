@@ -8,12 +8,22 @@ Nowa wizja: duży, otwarty świat **Siedlec inspirowanych miastem rzeczywistym, 
 
 Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity.rbxl** pozostaje źródłem istniejącej mapy. Planowanie nowego świata **nie oznacza, że opisane funkcje są już zaimplementowane**.
 
+## Etap A: atlas Siedlec, Sekuły i sportu (research 18.10.2026)
+
+**WYKONANO RESEARCH DESK, ETAP A NIE JEST JESZCZE PASS.** Zebrano **41 kandydatów miejsc**, 41 kart wykonawczych, 32 propozycje minigier i linki do fotoreferencji. Do zatwierdzenia pozostają zdjęcia/licencje, dokładny pin Górki Grześ, przebieg tras Sekuły i masterplan. Wszystko ma stabilne identyfikatory, a w dokumentach fakty są oddzielone od fikcyjnych mechanik.
+
+**Główne wejście:** [world/STAGE_A_README.md](world/STAGE_A_README.md). Szczegółowe instrukcje dla słabszego LLM: [world/atlas/WEAK_LLM_RUNBOOK.md](world/atlas/WEAK_LLM_RUNBOOK.md). Proponowany masterplan został rozszerzony z 6 do **7 stref** (osobno Sekuła), ale **nie** jest zatwierdzony.
+
 ## Nawigacja
 
 | Obszar | Dokument |
 | --- | --- |
 | **Aktualny GDD** | [GDD.md](GDD.md) |
 | Wizja i kryteria sukcesu | [vision/PROJECT_CHARTER.md](vision/PROJECT_CHARTER.md) |
+| **Etap A: punkt wejścia (41 miejsc + karty)** | [world/STAGE_A_README.md](world/STAGE_A_README.md) |
+| Karty sekcji A dla słabszego LLM | [world/atlas/WEAK_LLM_RUNBOOK.md](world/atlas/WEAK_LLM_RUNBOOK.md) |
+| Fotografie i prawa (link-only) | [world/atlas/PHOTO_REFERENCES.md](world/atlas/PHOTO_REFERENCES.md) |
+| Minigry powiązane z realnymi miejscami | [world/atlas/MECHANICS_MATRIX.md](world/atlas/MECHANICS_MATRIX.md) |
 | Punkty charakterystyczne Siedlec | [world/SIEDLCE_LANDMARK_ATLAS.md](world/SIEDLCE_LANDMARK_ATLAS.md) |
 | Dzielnice i masterplan | [world/DISTRICTS_MASTERPLAN.md](world/DISTRICTS_MASTERPLAN.md) |
 | Popularne mechaniki Roblox (research) | [gameplay/ROBLOX_MARKET_RESEARCH_2026.md](gameplay/ROBLOX_MARKET_RESEARCH_2026.md) |

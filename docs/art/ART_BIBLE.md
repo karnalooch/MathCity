@@ -71,3 +71,12 @@ Dla **tego samego ujęcia** przygotować:
 Inspiracji z Vice City i Odyssey używamy wyłącznie do opisu parametrów artystycznych (kolor, rytm, czytelność, energia). Nie kopiujemy żadnych chronionych elementów graficznych. Zob. [prawa](../legal/RIGHTS_AND_COMPLIANCE.md).
 
 Opis kadrów: [CONCEPT_SHOTS.md](CONCEPT_SHOTS.md). Schemat masterplanu: [MATHCITY_WORLD_SCHEMATIC.svg](MATHCITY_WORLD_SCHEMATIC.svg).
+
+## Etap A — palety biotopów i sportu (PROPOZYCJA)
+
+- **Sekuła lato:** zielone korony, naturalne brązy i mięta, czytelne żółte znaczniki przygód poza rzeczywistymi strefami pamięci.
+- **Sekuła zima:** czyste biele, miękkie cienie błękitne, turkusowe strzałki, realistyczna czytelność leśnych tras narciarstwa biegowego i uproszczony parkour wyłącznie fantasy.
+- **Stadion i basen:** jasna architektura ARMS, turkus i brzoskwinia; wewnątrz basenu czytelne 8 torów i ślizgi bez agresywnego bloom, który zakłóca czytanie cyfr.
+- **Górka Grześ:** nie projektować finalnego profilu terenu przed potwierdzeniem miejsca; ewentualna bajkowa strefa saneczkowa musi być wyraźnie fikcyjna.
+
+Źródła i kadry: [world/atlas/PHOTO_REFERENCES](../world/atlas/PHOTO_REFERENCES.md), [CONCEPT_SHOTS](CONCEPT_SHOTS.md).

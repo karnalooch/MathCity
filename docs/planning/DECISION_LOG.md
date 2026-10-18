@@ -15,12 +15,15 @@
 | D-007 | Inspiracja atmosferą Vice City oraz kolorową przygodowością Odyssey | Autorski, stylizowany kierunek wizualny |
 | D-008 | Na razie research, wizualizacje i planowanie; można założyć katalogi, bez produkcyjnych assetów | Tylko dokumentacja, nie przebudowa gry |
 | D-009 | Wszystko trafia do odpowiednich dokumentów w docs | Nawigowalna struktura i źródła na GitHub |
+| D-010 | Las Sekuła oraz lokalna „Górka Grześ” to obowiązkowe punkty badawcze Etapu A, z mechanicznym potencjałem | Dodać do atlasu, nie zgadywać położenia Grześ |
+| D-011 | Na Sekule są trasy narciarskie, mają wejść do researchu i mechanik | Traktować jako **narciarstwo biegowe** zgodnie z oficjalnym źródłem, nie zjazdowe |
+| D-012 | Stadion i basen są równie ważnymi ośrodkami aktywności dla MathCity | Osobne szczegółowe karty sportu, matematyka powiązana z parametrami obiektów |
 
 ## PROPOZYCJE (nie zatwierdzono)
 
 | ID | Wariant / pomysł | Czym go zatwierdzić |
 | --- | --- | --- |
-| P-001 | 6 dzielnic: Jackowo, Ogrody Aleksandrii, Kolejowo, Muchawkowe Wyspy, Neonowe Błonia, Aleja Kultury | 3 makro-layouty i feedback |
+| P-001 | Historyczna propozycja (zastąpiona w researchu 7-strefowym, nie zatwierdzona): 6 dzielnic: Jackowo, Ogrody Aleksandrii, Kolejowo, Muchawkowe Wyspy, Neonowe Błonia, Aleja Kultury | 3 makro-layouty i feedback |
 | P-002 | Wątek „tajemnicy kuli Jacka” | Konspekt historii i odbiór dzieci |
 | P-003 | 8 wybranych minigier miejskich | Dydaktyka, ocena nauczyciela i zabawa |
 | P-004 | Wolna eksploracja → zadania → odkrycia/kosmetyka → eksploracja | Playtest |
@@ -30,6 +33,7 @@
 | P-008 | W matematyce błędy nie powodują śmierci postaci | Konsultacja pedagogiczna |
 | P-009 | Monetyzacja panelu admina z prototypu nie jest strategią v2 | Przegląd prawny/UX |
 | P-010 | Adaptacyjne podpowiedzi i paszport odkrywcy | Projekt i badania z dziećmi |
+| P-011 | Zmiana roboczego masterplanu z 6 na **7** stref: osobny obszar **Sekuła: Leśna Ekspedycja** | Zatwierdzenie właściciela po zdjęciach i walidacji mapy |
 
 ## Protokół
 

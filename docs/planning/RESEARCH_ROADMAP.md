@@ -2,6 +2,10 @@
 
 **Stan na 2026-10-18.** To plan researchu, **nie** zgoda na wdrażanie świata do Roblox. Obecny MathCity.rbxl pozostaje bez zmian.
 
+## Aktualizacja stanu Etapu A — 2026-10-18
+
+**Desk research zakończony, Stage A PARTIAL (NIE PASS).** Dokumentacja: [world/STAGE_A_README.md](../world/STAGE_A_README.md). Katalog liczy 41 punktów (10×A, 23×B, 8×C), 41 kart opisowych i 32 wstępne minigry. Wśród priorytetów: Las Sekulski, biegówki na Sekule, Górka Grześ (wymaga potwierdzenia miejsca), stadion piłkarski oraz Park Wodny. Do bramki pozostają licencjonowane zdjęcia dla A, mapy tras i stref pamięci, potwierdzona lokalizacja Grześ oraz aprobata właściciela co do 7-strefowej koncepcji. Zatwierdzenie **NIE** następuje automatycznie po commicie dokumentacji.
+
 ## Etap A: Atlas Siedlec
 
 **Zadania:** wybrać 15–20 reprezentacyjnych punktów ze źródeł oficjalnych, zebrać własne/licencjonowane zdjęcia, nadać priorytety A/B/C, opracować karty landmarków. **Deliverables:** atlas, mapa logiczna, 3 kompletne karty ratusz/pałac/zalew. **Gate:** zatwierdzone miejsca i brak niesprawdzonych praw do materiałów.
