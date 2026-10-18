@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 780" role="img" aria-label="Koncepcyjny, niegeograficzny schemat sześciu dzielnic MathCity">
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f6a7af"/><stop offset=".50" stop-color="#ffdab9"/><stop offset="1" stop-color="#9de3dd"/></linearGradient>
+ <linearGradient id="lake" x2="0" y2="1"><stop stop-color="#5edacd"/><stop offset="1" stop-color="#6684e6"/></linearGradient>
+ <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#5a426d" flood-opacity=".22"/></filter>
+ <style>.title{font: bold 42px sans-serif;fill:#24334b}.subtitle{font: 21px sans-serif;fill:#35475f}.label{font:bold 24px sans-serif;fill:#2b3650}.hint{font:17px sans-serif;fill:#34455c}.num{font: bold 32px sans-serif;fill:white}</style>
+</defs>
+<rect width="1240" height="780" fill="url(#bg)"/>
+<g opacity=".25" stroke="white" stroke-width="3" fill="none"><path d="M0 105 Q300 0 630 120 T1240 95"/><path d="M0 710 Q320 630 740 718 T1240 660"/></g>
+<text x="64" y="68" class="title">MATHCITY · SIEDLCE UNLIMITED</text>
+<text x="64" y="104" class="subtitle">Schemat konceptu · 6 dzielnic · NIE jest mapą geograficzną</text>
+<!-- Stylizowane drogi pierścieniowe -->
+<g fill="none" stroke-linecap="round">
+ <path d="M340 290 Q510 140 768 252 Q970 350 852 571 Q675 711 412 589 Q247 479 340 290" stroke="#756d8c" stroke-width="58"/>
+ <path d="M340 290 Q510 140 768 252 Q970 350 852 571 Q675 711 412 589 Q247 479 340 290" stroke="#f6e8cb" stroke-width="44" stroke-dasharray="17 17"/>
+ <path d="M605 378 L279 220 M605 378 L906 212 M605 378 L981 460 M605 378 L734 640 M605 378 L232 540" stroke="#faf1e2" stroke-width="23"/>
+</g>
+<!-- Strefy -->
+<g filter="url(#sh)">
+ <ellipse cx="603" cy="382" rx="158" ry="117" fill="#ffd48a" stroke="#fff8e8" stroke-width="7"/>
+ <ellipse cx="278" cy="223" rx="194" ry="115" fill="#b7ecaf" stroke="#fff8e8" stroke-width="7"/>
+ <ellipse cx="923" cy="204" rx="191" ry="111" fill="#c5ddff" stroke="#fff8e8" stroke-width="7"/>
+ <ellipse cx="232" cy="552" rx="190" ry="115" fill="url(#lake)" stroke="#fff8e8" stroke-width="7"/>
+ <ellipse cx="980" cy="488" rx="181" ry="122" fill="#ffadbc" stroke="#fff8e8" stroke-width="7"/>
+ <ellipse cx="721" cy="650" rx="204" ry="103" fill="#cab1ec" stroke="#fff8e8" stroke-width="7"/>
+</g>
+<!-- Symbole -->
+<g text-anchor="middle">
+ <text x="603" y="340" font-size="63">🏛</text><text x="603" y="389" class="label">JACKOWO</text><text x="603" y="417" class="hint">Ratusz Jacek · centrum</text>
+ <text x="278" y="206" font-size="55">🌳</text><text x="278" y="251" class="label">OGRODY ALEKSANDRII</text><text x="278" y="275" class="hint">Pałac · park</text>
+ <text x="923" y="187" font-size="58">🚆</text><text x="923" y="229" class="label">KOLEJOWO</text><text x="923" y="254" class="hint">Stacja Czasu</text>
+ <text x="232" y="540" font-size="58">⛵</text><text x="232" y="584" class="label">MUCHAWKOWE WYSPY</text><text x="232" y="608" class="hint">Zalew · mosty</text>
+ <text x="980" y="469" font-size="60">🏟</text><text x="980" y="516" class="label">NEONOWE BŁONIA</text><text x="980" y="543" class="hint">Stadion · sport</text>
+ <text x="721" y="633" font-size="57">🎭</text><text x="721" y="677" class="label">ALEJA KULTURY</text><text x="721" y="703" class="hint">Teatr · muzea</text>
+</g>
+<rect x="62" y="712" width="433" height="44" rx="16" fill="#fff8ed" opacity=".87"/>
+<text x="82" y="741" class="hint">Koncepcja do badań, nie gotowy level Roblox</text>
+</svg>

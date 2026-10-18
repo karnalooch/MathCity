@@ -1,3 +1,5 @@
+> **Stan istniejącego prototypu v1.** Ten dokument opisuje obecny kod klient/serwer i nie oznacza, że nowy świat Siedlec jest zaimplementowany. Docelowy pipeline i wymagania skali: [tech/CONTENT_PIPELINE.md](tech/CONTENT_PIPELINE.md), [tech/LARGE_WORLD.md](tech/LARGE_WORLD.md); aktualna wizja w [GDD.md](GDD.md).
+
 # 🏗️ Math City — architektura techniczna
 
 Dokument opisuje architekturę systemu gry, podział na stronę klienta i serwera oraz przepływ danych w silniku Roblox (Luau).

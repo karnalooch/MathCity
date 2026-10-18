@@ -1,73 +1,80 @@
-# 🎮 Game Design Document (GDD) — Math City
+# MathCity — Game Design Document v2 (research / concept)
 
-## 1. Informacje Ogólne
-* **Tytuł gry:** *Math City*
-* **Platforma:** Roblox (PC, Mac, Mobile, Tablet, Konsola)
-* **Gatunek:** Edukacyjne Obby / Tower / Otwarty Świat (Roleplay & Tycoon)
-* **Grupa docelowa:** Dzieci ze szkoły podstawowej (klasa 3) oraz fani gier typu obby i Brookhaven.
-* **Główny cel:** Nauka tabliczki mnożenia i kolejności działań poprzez angażującą rozgrywkę z nagrodami w postaci aut, domów i supermocy.
+**Data:** 2026-10-18. **Status:** koncepcja, nie specyfikacja wdrożona.
 
----
+Historyczny opis istniejącej Wieży Matematycznej: [legacy/GDD_TOWER_V1.md](legacy/GDD_TOWER_V1.md). Nie usuwamy jej ani nie zmieniamy pliku MathCity.rbxl na etapie researchu.
 
-## 2. Główna Pętla Rozgrywki (Core Game Loop)
+## 1. Wysoka koncepcja
 
-```mermaid
-flowchart TD
-    A["Wejście do Wieży (Math Tower)"] --> B["Rozwiązanie zadania (Wybór 1 z 3 drzwi)"]
-    B -->|Złe drzwi| C["Śmierć i odrodzenie na checkpoincie danego piętra"]
-    C --> B
-    B -->|Dobre drzwi| D["Otwarcie przejścia + Nagroda w Monetach ($) + Awans na kolejne piętro"]
-    D --> E["Wspinaczka na wyższe piętra lub Powrót do Miasta"]
-    E --> F["Miasto: Zbieranie Kryształów (Gems) na mapie"]
-    F --> G["Wydawanie pieniędzy w sklepach: Auta, Domy, Jedzenie"]
-    G --> A
-```
+**MathCity: Siedlce Unlimited** (tytuł roboczy): kolorowe, wielkie, otwarte miasto zbudowane na rozpoznawalnych atrakcjach Siedlec. Swoboda przemieszczania się i zabawy jak w miejskich grach społecznościowych, projekt poziomów i czytelność 3D jak w przygodowej platformówce. Matematyka klas 2–4 jest naturalną częścią zadań, usług miejskich, eksploracji i kooperacji.
 
----
+**USTALONE:** świat osadzony w Siedlcach, ale nie 1:1; mocna promocja miasta; eksponowanie ważnych miejsc; matematyka zgodna z polską podstawą programową dla klas 2–4; research popularnych mechanik Roblox bez kopiowania; użycie UE, Blendera i Material Forge z zaplecza YACS do przygotowania treści; wygodne sprawdzanie w Roblox Studio; estetyczne inspiracje: klimat Vice City i energia Super Mario Odyssey.
 
-## 3. Szczegółowe Mechaniki Gry
+**NIEUSTALONE:** liczba dzielnic, docelowe wymiary mapy, ekonomia, model monetyzacji, pełna fabuła, kamienie milowe, wersja pierwszej publicznej gry.
 
-### A. Wieża Matematyczna (Math Tower)
-1. **Piętra Wieży:**
-   * Każde piętro to osobna platforma z 3 drzwiami (`Door1`, `Door2`, `Door3`) oraz tablicą nad nimi (`Sign`).
-   * Gracz widzi działanie (np. $8 \times 6 = ?$) i trzy warianty odpowiedzi (np. $42$, $48$, $54$).
-2. **Zachowanie Drzwi:**
-   * **Poprawne drzwi:** Po dotknięciu stają się przezroczyste i tracą kolizję (`CanCollide = false`), odtwarza się radosny dźwięk, a gracz otrzymuje monety i odblokowuje kolejny checkpoint.
-   * **Błędne drzwi:** Po dotknięciu natychmiast resetują zdrowie gracza do zera (`Humanoid.Health = 0`).
-3. **Respawny (Checkpointy):**
-   * Gracz nigdy nie cofa się na start gry. Odradza się na checkpoincie odpowiadającym jego wartości `Stage` w tabeli wyników.
+## 2. Gracz, platforma, sesja
 
-### B. Miasto (Hub)
-1. **Zbieranie Kryształów (Gems):**
-   * Błękitne, świecące kryształy lewitują i obracają się w różnych zakamarkach miasta (dachy budynków, park, fontanny).
-   * Zebranie daje graczowi kryształ do statystyk i uruchamia 15-sekundowy czas odnowienia (respawn).
-2. **Sklep Motoryzacyjny:**
-   * Kupowanie samochodów za monety ($) zarobione w wieży.
-   * Auta pozwalają na szybsze przemieszczanie się po mieście i dojazd do wieży.
-3. **Osiedle Domów:**
-   * Możliwość odblokowania własnej działki z domem.
-4. **Sklep Spożywczy:**
-   * Jedzenie (np. pizza, jabłko, napój energetyczny) po zjedzeniu daje tymczasowy efekt (np. +50% do prędkości biegu na 60 sekund).
+- Odbiorca projektowy: dzieci uczące się w klasach 2–4, z uwzględnieniem wymagań wiekowych platformy i potrzeb opiekunów.
+- Roblox PC i urządzenia mobilne jako priorytety testów; inne platformy do decyzji po testach.
+- Proponowana sesja: 5–15 minut, z możliwością dłuższej eksploracji.
+- Dwa tryby zaangażowania: swobodna zabawa w mieście oraz wyprawy i minigry matematyczne.
+- Brak kar za błędne odpowiedzi; wskazówki i próby ponowne. Mechanika śmierci za złe drzwi z prototypu wymaga przebudowy przed użyciem w nowym trybie edukacyjnym.
 
----
+## 3. Core loop (PROPOZYCJA)
 
-## 4. Ekonomia i Waluty
+**Odkrywaj → Weź udział w aktywności → Rozwiąż problem → Zdobądź nagrodę i wiedzę → Personalizuj / odblokuj → Odkrywaj dalej.**
 
-| Waluta | Ikona | Skąd zdobyć? | Na co można wydać? |
-| :--- | :---: | :--- | :--- |
-| **Monety ($)** | 🪙 | Nagroda za poprawne przejście piętra w wieży | Samochody, domy, jedzenie, akcesoria |
-| **Kryształy** | 💎 | Zbieranie po zakątkach miasta (parki, dachy) | Rzadkie zwierzaki (pety), unikalne szlaki (trails), skórki |
+Exploracja i roleplay muszą działać także pomiędzy zadaniami. Nie wolno wymuszać nieustannych quizów.
 
----
+## 4. Świat
 
-## 5. Monetyzacja & Admin Panel
+Proponowane dzielnice:
+1. **Jackowo – Serce Miasta** (ratusz, plac startowy i sklepy).
+2. **Ogrody Aleksandrii** (park, pałac, geometria i labirynty).
+3. **Kolejowo – Stacja Czasu** (dworzec, rozkłady i podróże).
+4. **Muchawkowe Wyspy** (zalew, mosty, łodzie i ułamki).
+5. **Neonowe Błonia** (sport, obwody, pola, pomiary).
+6. **Aleja Kultury** (muzyka, sekwencje, sztuka, muzea).
 
-### Gamepass: **👑 Admin Panel (500 Robux)**
-* Dostępny do kupienia za 500 Robux dla innych graczy.
-* **Darmowy dla Was** (właściciela gry i współtwórców).
-* **Zawiera supermoce:**
-  * 🪽 **Fly (Latanie):** Dowolny lot w 3D sterowany klawiszami (WASD + Spacja/Shift).
-  * 👻 **Noclip (Przenikanie przez ściany):** Przechodzenie przez każdą ścianę i zamknięte drzwi.
-  * ⚡ **Super Speed:** Zwiększenie prędkości biegu do 60 (standard to 16).
-  * 🛡️ **God Mode:** Całkowita odporność na śmierć od błędnych drzwi.
-  * 💰 **Test Cash:** Błyskawiczne dodawanie waluty do testów.
+Dzielnice i ich nazwy są fikcyjne. Budynki mają być rozpoznawalne, ale drogi, odległości i funkcje są podporządkowane grywalności. Szczegóły: [atlas](world/SIEDLCE_LANDMARK_ATLAS.md), [masterplan](world/DISTRICTS_MASTERPLAN.md).
+
+## 5. Mechaniki do walidacji
+
+- Ułatwiające eksplorację: pieszo, hulajnogi/rowery, pojazdy, publiczny transport fikcyjny.
+- Społeczne: bezpieczne wspólne wyzwania, wycieczki, spotkania i roleplay.
+- Odkrywanie: ukryte kolekcje, punkty widokowe, paszport odkrywcy.
+- Przygodowe: obby, parkour, interaktywne obiekty, logiczne łamigłówki.
+- Długoterminowe: kosmetyka postaci i pojazdów, nieszkodliwe towarzyszące stworki.
+- Minigry: co najmniej 8 kandydatów opisanych w [CORE_LOOP_AND_MINIGAMES.md](gameplay/CORE_LOOP_AND_MINIGAMES.md).
+
+Bez kopiowania rozpoznawalnych elementów cudzych gier i bez pay-to-win w edukacji.
+
+## 6. Edukacja
+
+Treści matematyczne mają etykiety: obszar umiejętności, przewidywana klasa, wersja podstawy, trudność, rodzaj pomocy. Z uwagi na reformę MEN 2026 zakres trzeba wersjonować i konsultować z nauczycielem. Patrz [education/CURRICULUM_2_4.md](education/CURRICULUM_2_4.md).
+
+Zadania preferują manipulowanie obiektami 3D, pomiary, zakupy, planowanie i współpracę. Pisemny quiz jest opcją, nie jedyną formą nauki. Poprawność wyniku i sugestie potwierdza serwer.
+
+## 7. Art direction
+
+Pastelowe kamienice, turkus, brzoskwinia, różowe zachody słońca, czytelne bryły i miękka stylizacja. Siedlce muszą pozostać czytelne; nie tworzymy kopii Miami ani gry Nintendo. Zob. [art/ART_BIBLE.md](art/ART_BIBLE.md).
+
+## 8. Zasada budowania wielkiego świata
+
+Roblox jest **platformą wykonawczą**. UE służy do wizualizacji i planowania, Blender do modelowania oraz optymalizacji, Material Forge do przygotowania kolorów/PBR. Świat importujemy modułowo, testujemy streaming, LOD, pamięć i wydajność mobilną. Zob. [tech/LARGE_WORLD.md](tech/LARGE_WORLD.md).
+
+Nie wybieramy maksymalnego rozmiaru mapy na podstawie samej liczby studów. Kandydaci 8192 i 16384 studów na bok to **hipotezy do benchmarku**, nie obietnice.
+
+## 9. Ochrona dzieci i publikacja
+
+Przyjazna informacja zwrotna, dostępność UI, możliwość wyłączenia nadmiarowych efektów, ochrona danych, weryfikacja wieku i zasad współpracy/publikacji Roblox. Historia płatnego panelu administratora z v1 **nie oznacza, że tę monetyzację akceptujemy dla nowej gry**. Zob. [legal/RIGHTS_AND_COMPLIANCE.md](legal/RIGHTS_AND_COMPLIANCE.md).
+
+## 10. Definition of success na etap badań
+
+- Jest atlas najważniejszych miejsc i plan rozmieszczenia sześciu kandydatów dzielnic.
+- Są warianty stylu: dzień, zmierzch, noc; zatwierdzony styl czytelny dla dzieci.
+- Jest macierz mechanik z testów ręcznych minimum 12–15 gier Roblox.
+- Jest mapa treści klas 2–4 zweryfikowana dydaktycznie.
+- Jest lokalny test jednego assetu: Material Forge / Blender → Roblox, z pomiarami.
+- Jest benchmark skali dużego świata.
+- **Zero zmian gameplayu i mapy**, dopóki etap researchu nie przejdzie bramek w [planning/RESEARCH_ROADMAP.md](planning/RESEARCH_ROADMAP.md).

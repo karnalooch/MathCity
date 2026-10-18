@@ -1,3 +1,5 @@
+> **Archiwalny bank przykładów dla Wieży v1:** 20 pięter przygotowanych dla klasy 3. Nie jest to zatwierdzony spis wymagań klas 2–4. Obecny kierunek, wersjonowanie podstaw MEN oraz dydaktyka minigier: [education/CURRICULUM_2_4.md](education/CURRICULUM_2_4.md).
+
 # 📐 Baza Pytań Matematycznych dla 3. Klasy
 
 Zestaw zadań przygotowany specjalnie pod program 3. klasy szkoły podstawowej (tabliczka mnożenia w zakresie do 100 oraz zasady kolejności działań).

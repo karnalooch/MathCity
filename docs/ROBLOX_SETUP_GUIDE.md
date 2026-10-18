@@ -1,3 +1,5 @@
+> **Instrukcja istniejącego prototypu.** Opis Gamepass za 500 Robux jest historycznym rozwiązaniem v1, a nie zatwierdzonym planem monetyzacji gry dla dzieci. Przed nową publikacją sprawdź [legal/RIGHTS_AND_COMPLIANCE.md](legal/RIGHTS_AND_COMPLIANCE.md) oraz [tech/PLAYTESTING.md](tech/PLAYTESTING.md).
+
 # 🚀 Przewodnik Konfiguracji Roblox Studio & Gamepass 500 Robux
 
 Ten poradnik wyjaśnia, jak poprawnie skonfigurować grę, włączyć zapis danych w chmurze oraz stworzyć i podłączyć **Gamepass za 500 Robux**!
