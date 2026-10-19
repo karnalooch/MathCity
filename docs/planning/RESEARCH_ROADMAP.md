@@ -16,6 +16,10 @@
 
 ## Etap B: Art bible i wizualizacje
 
+**Aktualizacja 2026-10-19:** wykonano również **17 graficznych referencji SVG** i przypisano je do V01–V23 w [galerii](../art/VISUAL_REFERENCE_ATLAS.md). Stan wizualny: `SVG_GUIDES_READY / FINAL_RENDERS_NOT_DONE`; nie zatwierdzono jeszcze stylu. Przygotowano dokumentację researchową, scenariusze 3 stylów S1–S3, lookdev 7 proponowanych stref (Sekuła osobno), 23 karty ujęć, promptery, UI i procedury dla słabszych modeli. Stan `STAGE_B_DOCUMENTATION_READY / STAGE_B_VISUALS_NOT_DONE / REVIEW_REQUIRED`, bez końcowego PASS. Realne obrazy porównawcze i zatwierdzenie ownera nadal OPEN. [Indeks B](../art/STAGE_B_README.md), [runbook](../art/STAGE_B_WEAK_LLM_RUNBOOK.md), [B8 QA](../art/VISUAL_REVIEW.md).
+
+
+
 **Zadania:** trzy warianty stylistyczne, te same kadry porównawcze, dzień/zachód/noc, model postaci i pojazdów, czytelność z poziomu dziecka. **Deliverables:** 10 ujęć z art briefs, porównanie, paleta i reguły modułowego modelowania. **Gate:** Siedlce są rozpoznawalne i wizualizacje wyglądają jak spójna gra, nie jak kopia GTA/Mario.
 
 ## Etap C: Mechaniki Roblox

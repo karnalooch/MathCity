@@ -89,3 +89,8 @@ Odrębny zestaw źródeł w [MUCHAWKA_FEATURE.md](../world/atlas/MUCHAWKA_FEATUR
 | [Portal — Dolina Muchawki](https://turystyka.siedlce.pl/274-siedlce-uzytek-ekologiczny-dolina-muchawki) | obszar przyrodniczy `N03` | szanować ochronę, nie projektować wyścigów w siedlisku |
 
 **Wszystkie fotografie:** link-only, licencje do sprawdzenia. **Wszystkie minigry:** koncept, nie wdrożenie i nie oficjalny program MEN.
+
+
+## Aktualizacja Etapu B — wizualizacje, Siedlce, technologia (2026-10-19)
+
+Dodatkowy zweryfikowany rejestr **L01–L14** (instytucje Siedlec), **R01–R17** (dokumentacja Roblox LightingStyle, SurfaceAppearance, UV, streaming, safe areas, accessibility, device simulation) oraz **P01–P03** (Unreal glTF, Fab, Rojo) wraz z interpretacją i blokadami praw znajduje się w [docs/art/SOURCE_REGISTER.md](../art/SOURCE_REGISTER.md). Obowiązuje zasada: link do zdjęcia = referencja, **nie** automatyczna licencja na kopiowanie. Każdy fakt o realnym miejscu wymaga konkretnego źródła; wszystkie fikcyjne części MathCity trzeba oznaczać jako FANTASY.
