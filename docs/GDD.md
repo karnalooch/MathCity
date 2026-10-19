@@ -1,85 +1,55 @@
-# MathCity — Game Design Document v2 (research / concept)
+# MathCity: Game Design Document v3 po decyzjach właściciela
 
-**Data:** 2026-10-18. **Status:** koncepcja, nie specyfikacja wdrożona.
+2026-10-19. **APPROVED_DESIGN dla Q01–Q33; SPEC_READY dla kontraktów; nowa implementacja NOT_STARTED.** Poprzedni GDD v2 pozostaje w [historii pliku](https://github.com/karnalooch/MathCity/blob/030c8637010525ec0533daffe44c2e3f963bc1da/docs/GDD.md), a działająca Wieża v1 w [legacy](legacy/GDD_TOWER_V1.md). Nie zmieniono mapy.
 
-Historyczny opis istniejącej Wieży Matematycznej: [legacy/GDD_TOWER_V1.md](legacy/GDD_TOWER_V1.md). Nie usuwamy jej ani nie zmieniamy pliku MathCity.rbxl na etapie researchu.
+## 1. Cel i granice świata
 
-## 1. Wysoka koncepcja
+Duże, kolorowe, autorskie Siedlce w Roblox. Rozpoznawalne zabytki, parki, sport, Sekuła i flagowy Zalew Muchawka, ale nie odtworzenie geografii1:1. Swobodna eksploracja i lokalne przygody matematyczne klas2–4. Jedna wspólna mapa z indywidualnym zakresem zadań, nie dzielnice zamknięte według klasy.
 
-**MathCity: Siedlce Unlimited** (tytuł roboczy): kolorowe, wielkie, otwarte miasto zbudowane na rozpoznawalnych atrakcjach Siedlec. Swoboda przemieszczania się i zabawy jak w miejskich grach społecznościowych, projekt poziomów i czytelność 3D jak w przygodowej platformówce. Matematyka klas 2–4 jest naturalną częścią zadań, usług miejskich, eksploracji i kooperacji.
+Robocze7 stref: Jackowo, Ogrody Aleksandrii, Kolejowo, Muchawkowe Wyspy, Neonowe Błonia, Aleja Kultury, Sekuła: Leśna Ekspedycja. Nazwy i układ pozostają propozycją artystyczną. [Atlas41 miejsc](world/STAGE_A_README.md), [Muchawka](world/atlas/MUCHAWKA_FEATURE.md), [masterplan](world/DISTRICTS_MASTERPLAN.md). `N01` ≠ `S02`; narciarstwo Sekuły biegowe; lokalizacja Górki Grześ nadal otwarta. Wielkość8192/16384 studów jest hipotezą techniczną, nie wybraną granicą mapy.
 
-**USTALONE:** świat osadzony w Siedlcach, ale nie 1:1; mocna promocja miasta; eksponowanie ważnych miejsc; matematyka zgodna z polską podstawą programową dla klas 2–4; research popularnych mechanik Roblox bez kopiowania; użycie UE, Blendera i Material Forge z zaplecza YACS do przygotowania treści; wygodne sprawdzanie w Roblox Studio; estetyczne inspiracje: klimat Vice City i energia Super Mario Odyssey.
+## 2. Pętla gry i postęp
 
-**NIEUSTALONE:** liczba dzielnic, docelowe wymiary mapy, ekonomia, model monetyzacji, pełna fabuła, kamienie milowe, wersja pierwszej publicznej gry.
+Odkryj miejsce → wybierz lokalną przygodę → wykonaj zadania w świecie → zobacz rezultat → zdobądź osobistą pamiątkę/wybór kosmetyczny → wróć do zwiedzania albo innej historii. Wspólne czasowe wydarzenia ożywiają miasto, a osobisty postęp pozwala każdemu przeżyć historię niezależnie od innych.
 
-## 2. Gracz, platforma, sesja
+EXP daje poziomy, rangi i kosmetykę. Misje odblokowują dokonania i etapy, nie wymagany poziom EXP. Współpraca premiowana u aktywnych uczestników, początkujący otrzymują ograniczony bonus doganiania zależny od poziomu przygody. Nowe zadania i realna pomoc są ważniejsze niż powtarzanie opanowanego ćwiczenia. [Reguły nagród](gameplay/specs/PROGRESSION_AND_REWARDS.md). Wartości formuł w specyfikacji to TEST_DEFAULTS, nie zatwierdzony balans.
 
-- Odbiorca projektowy: dzieci uczące się w klasach 2–4, z uwzględnieniem wymagań wiekowych platformy i potrzeb opiekunów.
-- Roblox PC i urządzenia mobilne jako priorytety testów; inne platformy do decyzji po testach.
-- Proponowana sesja: 5–15 minut, z możliwością dłuższej eksploracji.
-- Dwa tryby zaangażowania: swobodna zabawa w mieście oraz wyprawy i minigry matematyczne.
-- Brak kar za błędne odpowiedzi; wskazówki i próby ponowne. Mechanika śmierci za złe drzwi z prototypu wymaga przebudowy przed użyciem w nowym trybie edukacyjnym.
+## 3. Edukacja
 
-## 3. Core loop (PROPOZYCJA)
+Wybór klasy na start i późniejsza adaptacja osobno dla skill. Matematyka bez presji czasu. Pierwsze przykłady ręczne, następne z kontrolowanych szablonów; brak generatywnego chatbota w runtime. Liczby stałe podczas próby. Zadania zamknięte i nieliczne otwarte z kilkoma równoważnymi rozwiązaniami. Silne podpowiedzi UI, interaktywne wspólne rozwiązywanie, bez kar za błąd. Głos po polsku później.
 
-**Odkrywaj → Weź udział w aktywności → Rozwiąż problem → Zdobądź nagrodę i wiedzę → Personalizuj / odblokuj → Odkrywaj dalej.**
+Pomoc obsługowa ≠ matematyczna. Guided kończy przygodę i daje podstawową nagrodę, ale nie niezależne mastery. Prywatna mapa umiejętności ma etykiety Poznaję/Ćwiczę/Rozwiązuję samodzielnie i nie jest publicznym rankingiem. [Etap D](education/STAGE_D_README.md), [model](education/stage_d/TASK_MODEL_AND_ADAPTATION.md), [UI](ux/LEARNING_UI_CONTRACT.md).
 
-Exploracja i roleplay muszą działać także pomiędzy zadaniami. Nie wolno wymuszać nieustannych quizów.
+Źródła wymagają wersjonowania: [konkretne punkty i roczniki](education/stage_d/CURRICULUM_SOURCES.md). Etap IV–VI nie oznacza automatycznie klasy4. Audyt wszystkich M01–M40 jest dokumentacyjny; osiem pilotów to rekomendowany początek, nie komplet całej podstawy.
 
-## 4. Świat
+## 4. Własne miejsce i eksploracja
 
-Proponowane dzielnice:
-1. **Jackowo – Serce Miasta** (ratusz, plac startowy i sklepy).
-2. **Ogrody Aleksandrii** (park, pałac, geometria i labirynty).
-3. **Kolejowo – Stacja Czasu** (dworzec, rozkłady i podróże).
-4. **Muchawkowe Wyspy** (**Zalew Muchawka jako flagowa atrakcja**: kąpielisko, plaża, pomost, promenady rowerowe, realna grobla i odrębny chroniony teren Doliny; fantastyczne wyspy oraz matematykę ułamków, czasu, odległości, rowerów i sportu). [Pełna karta N01](world/atlas/MUCHAWKA_FEATURE.md).
-5. **Neonowe Błonia** (sport, obwody, pola, pomiary).
-6. **Aleja Kultury** (muzyka, sekwencje, sztuka, muzea).
-7. **Sekuła: Leśna Ekspedycja** (Las Sekulski, trasy narciarstwa biegowego N05, ścieżka N06, hipoteza Górka Grześ N07). *Nowa propozycja z Etapu A, nie zatwierdzona; miejsca pamięci bez aktywności sportowych.*
+Pokój/mieszkanie i podstawowy transport dostępne od startu, niezależnie od tutorialu. Proste dekorowanie, goście bez prawa do niszczenia lub zabierania. Zwykłe wyposażenie za monety gry; wyjątkowe rzeczy za jawne przygody. Paszport pomaga znaleźć zadanie i nagrodę, śledzi jeden cel; sekrety pozostają do odkrywania. Darmowa szybka podróż między poznanymi punktami, bez matematycznego gate i opłat. Nie zalicza tras dostawy/wyścigu.
 
-Dzielnice i ich nazwy są fikcyjne. Budynki mają być rozpoznawalne, ale drogi, odległości i funkcje są podporządkowane grywalności. Szczegóły: [atlas](world/SIEDLCE_LANDMARK_ATLAS.md), [masterplan](world/DISTRICTS_MASTERPLAN.md).
+Krótkie skip/resume wprowadzenie w centrum i późniejsze kontekstowe instrukcje. Główna fabuła odłożona; lokalne serie zadań mają własne zakończenia. [Kontrakt miasta i pokoju](gameplay/specs/EXPLORATION_HOME_ONBOARDING.md).
 
-**Aktualizacja 2026-10-19:** Zalew Muchawka jest osobnym pełnym hubem rekreacji i matematyki, z 6 podstrefami fantasy `MW-01…MW-06`, 12 pomysłami minigier `M24–M27` i `M33–M40` oraz 10 fotoreferencjami do pozyskania. Nie mylić z krytym Parkiem Wodnym Siedlce `S02`; [specyfikacja](world/atlas/MUCHAWKA_FEATURE.md) i [edukacja](education/CURRICULUM_2_4.md). Zalew musi pełnić funkcję głównej atrakcji i znaczącego obszaru rozgrywki, nie tylko dekoracji. Jest to wymóg koncepcyjny, a nie istniejąca scena.
+## 5. Współpraca
 
-**Aktualizacja Etapu A:** pełne źródła 41 miejsc, 41 kart, w tym stadion/basen/Sekuła/Grześ, i 40 przykładów minigier: [world/STAGE_A_README.md](world/STAGE_A_README.md). To materiały badawcze, **nie nowa wersja gry**.
+Cel16 prawdziwych graczy na serwer; przygody solo lub w ekipie1–4. Każdy ma znaczącą rolę i prywatnie dopasowaną matematykę. Szukanie ekipy dobrowolne, na bieżącym serwerze, bez wymaganego czatu i ujawniania wyników. Dołączenie między etapami, z podsumowaniem i własną rolą; nie daje wcześniejszych nagród. Odejście partnera nie kasuje potwierdzonej pracy ani nie blokuje solo. [Kontrakt drużyn](gameplay/specs/COOP_AND_WORLD_STATE.md).
 
-## 5. Mechaniki do walidacji
+## 6. Sport i gadżety
 
-- Ułatwiające eksplorację: pieszo, hulajnogi/rowery, pojazdy, publiczny transport fikcyjny.
-- Społeczne: bezpieczne wspólne wyzwania, wycieczki, spotkania i roleplay.
-- Odkrywanie: ukryte kolekcje, punkty widokowe, paszport odkrywcy.
-- Przygodowe: obby, parkour, interaktywne obiekty, logiczne łamigłówki.
-- Długoterminowe: kosmetyka postaci i pojazdów, nieszkodliwe towarzyszące stworki.
-- Minigry: co najmniej 8 kandydatów opisanych w [CORE_LOOP_AND_MINIGAMES.md](gameplay/CORE_LOOP_AND_MINIGAMES.md).
+Dobrowolne próby na czas; pewna mała nagroda za pierwsze ukończenie, brąz/srebro/złoto raz. Rekordy osobiste i opcjonalne porównanie znajomych, bez globalnej tabeli i bez zapłaty za pozycję w niej. Czyste czasy oddzielone od wyścigów z przedmiotami.
 
-Bez kopiowania rozpoznawalnych elementów cudzych gier i bez pay-to-win w edukacji.
+Kilka stylów prowadzenia dostępnych każdemu bez grindu; skórka i poziom nie zwiększają osiągów. Łagodne catch-up przez szanse przedmiotów zgodnie z realną stratą, nie tajne przyspieszanie. Oznaczone boty uzupełniają stawkę i nie udają ludzkiego co-op. Własne warianty banana/turbo/osłony są proponowaną pierwszą pulą, nie zatwierdzonym pełnym katalogiem. [RACING](gameplay/specs/RACING.md), [research Nintendo](gameplay/stage_c/MARIO_KART_RACING_RESEARCH.md).
 
-## 6. Edukacja
+## 7. Technologia i urządzenia
 
-Treści matematyczne mają etykiety: obszar umiejętności, przewidywana klasa, wersja podstawy, trudność, rodzaj pomocy. Z uwagi na reformę MEN 2026 zakres trzeba wersjonować i konsultować z nauczycielem. Patrz [education/CURRICULUM_2_4.md](education/CURRICULUM_2_4.md).
+Roblox jest runtime. UE/Blender/Material Forge z YACS wspierają produkcję, bez automatycznego przeniesienia logiki i shaderów UE. Najpierw mały test legalnego assetu i aktualizacji, następnie realistyczna makieta wszystkich stref. Mały pilot nie zastępuje wielkiego miasta.
 
-Zadania preferują manipulowanie obiektami 3D, pomiary, zakupy, planowanie i współpracę. Pisemny quiz jest opcją, nie jedyną formą nauki. Poprawność wyniku i sugestie potwierdza serwer.
+Obowiązkowe punkty odniesienia: iPad6, MotorolaG54, RedmiNote14 4G, PC RTX2070/i5 10.gen./32GBDDR4. iPad6 nie jest opcjonalny; cel30FPS na mobile i60FPS1080p na PC ma zostać zmierzony. Pełne UI dotykowe, funkcjonalne obiekty widoczne na niskiej grafice. [Urządzenia](tech/DEVICE_ACCEPTANCE.md), [serwer i zapis](tech/DATA_AND_SERVER_CONTRACT.md).
 
-## 7. Art direction
+## 8. Co nadal nie jest wykonane lub zatwierdzone
 
-Pastelowe kamienice, turkus, brzoskwinia, różowe zachody słońca, czytelne bryły i miękka stylizacja. Siedlce muszą pozostać czytelne; nie tworzymy kopii Miami ani gry Nintendo. Zob. [art/ART_BIBLE.md](art/ART_BIBLE.md).
+Stage A geografia/prawa częściowo otwarte. Stage B w [Draft PR#1](https://github.com/karnalooch/MathCity/pull/1), nie scalać bez decyzji, brak finalnych renderów3D. Stage C ma0/15 rzeczywistych sesji. Stage D nie ma recenzji nauczyciela. Brak nowych testów Studio i urządzeń. Zmienne zasady publikacji, praw do assetów i komunikacji wymagają osobnej bramki przed premierą.
 
-## 8. Zasada budowania wielkiego świata
+Nie wybrano finalnego rozmiaru mapy, stylu S1/S2/S3, pełnej fabuły, monetyzacji, dokładnych statystyk pojazdów, cen, progów EXP i czasów medali. Nie wolno wykonywać implementacji całej listy tylko dlatego, że zapisano plan.
 
-Roblox jest **platformą wykonawczą**. UE służy do wizualizacji i planowania, Blender do modelowania oraz optymalizacji, Material Forge do przygotowania kolorów/PBR. Świat importujemy modułowo, testujemy streaming, LOD, pamięć i wydajność mobilną. Zob. [tech/LARGE_WORLD.md](tech/LARGE_WORLD.md).
+## 9. Co wykonawca robi następne
 
-Nie wybieramy maksymalnego rozmiaru mapy na podstawie samej liczby studów. Kandydaci 8192 i 16384 studów na bok to **hipotezy do benchmarku**, nie obietnice.
-
-## 9. Ochrona dzieci i publikacja
-
-Przyjazna informacja zwrotna, dostępność UI, możliwość wyłączenia nadmiarowych efektów, ochrona danych, weryfikacja wieku i zasad współpracy/publikacji Roblox. Historia płatnego panelu administratora z v1 **nie oznacza, że tę monetyzację akceptujemy dla nowej gry**. Zob. [legal/RIGHTS_AND_COMPLIANCE.md](legal/RIGHTS_AND_COMPLIANCE.md).
-
-## 10. Definition of success na etap badań
-
-- Jest atlas najważniejszych miejsc i plan rozmieszczenia siedmiu **proponowanych** stref (wcześniej 6; teraz osobna Sekuła).
-- Są warianty stylu: dzień, zmierzch, noc; zatwierdzony styl czytelny dla dzieci.
-- Jest macierz mechanik z testów ręcznych minimum 12–15 gier Roblox.
-- Jest mapa treści klas 2–4 zweryfikowana dydaktycznie.
-- Jest lokalny test jednego assetu: Material Forge / Blender → Roblox, z pomiarami.
-- Jest benchmark skali dużego świata.
-- **Zero zmian gameplayu i mapy**, dopóki etap researchu nie przejdzie bramek w [planning/RESEARCH_ROADMAP.md](planning/RESEARCH_ROADMAP.md).
+[START HERE](planning/WEAK_LLM_START_HERE.md) → [pakiety D00–D06](planning/EXECUTION_PACKETS.md) → źródła/review i domknięcie kart. Późniejsze P00–P10 wymagają zlecenia kodowego. [Macierz odbioru](planning/ACCEPTANCE_MATRIX.md) rozdziela dowód dokumentacyjny, logiczny, Studio, sprzęt i pedagogikę. [33 decyzje](planning/OWNER_DECISIONS_20261019.md) są źródłem prawdy przy każdym konflikcie z wcześniejszym researchiem.

@@ -1,56 +1,47 @@
-# MathCity — plan badań, dowody i bramki decyzji
+# MathCity: roadmapa po33 decyzjach i plan następnych kroków
 
-**Stan na 2026-10-19.** To plan researchu, **nie** zgoda na wdrażanie świata do Roblox. Obecny MathCity.rbxl pozostaje bez zmian.
+2026-10-19. Obecny zakres: **dokumentacja**, bez przebudowy mapy/kodu i bez publicznej publikacji. Wykonawca czyta [START HERE](WEAK_LLM_START_HERE.md), [33 decyzje](OWNER_DECISIONS_20261019.md) i realizuje po jednym [pakiecie](EXECUTION_PACKETS.md). Istniejący MathCity.rbxl pozostaje bez zmian.
 
-## Aktualizacja stanu Etapu A — 2026-10-18
+## A: atlas Siedlec
 
-**Desk research zakończony, Stage A PARTIAL (NIE PASS).** Dokumentacja: [world/STAGE_A_README.md](../world/STAGE_A_README.md). Katalog liczy 41 punktów (10×A, 23×B, 8×C), 41 kart opisowych i 40 wstępnych minigier. Wśród priorytetów: Las Sekulski, biegówki na Sekule, Górka Grześ (wymaga potwierdzenia miejsca), stadion piłkarski oraz Park Wodny. Do bramki pozostają licencjonowane zdjęcia dla A, mapy tras i stref pamięci, potwierdzona lokalizacja Grześ oraz aprobata właściciela co do 7-strefowej koncepcji. Zatwierdzenie **NIE** następuje automatycznie po commicie dokumentacji.
+Desk research dostarczony:41 punktów,41 kart i40 propozycji M01–M40. [Etap A](../world/STAGE_A_README.md), [Muchawka](../world/atlas/MUCHAWKA_FEATURE.md). N01 jest flagowym zalewem, S02 odrębnym basenem. Sekuła z biegówkami, stadion, kultura, dworzec i parki mają własne identyfikatory.
 
-### Zalew Muchawka: specjalny pakiet researchowy (2026-10-19)
+**PARTIAL:** brak kompletu praw do zdjęć, potwierdzenia Grześ, dokładnych tras i akceptacji roboczego7-strefowego układu. Nie zaczynaj atlasu od zera ani nie redukuj go znowu do15 punktów; domykaj istniejące karty i brakujące dowody. Wyspy i podstrefy Muchawki pozostają fikcją gry, nie odkryciem geograficznym.
 
-**Dostarczono w docs**: [pełny brief N01](../world/atlas/MUCHAWKA_FEATURE.md), uzupełnienie [CURRICULUM_2_4](../education/CURRICULUM_2_4.md) oraz osiem nowych pomysłów `M33…M40`. Obecnie **40** kandydatów minigier łącznie. Muchawka pozostaje **priorytetem A**, a nie plażą dekoracyjną. Gate otwarte: 10 referencji z prawami, czytelny obrys miejsc, odpowiednio wersjonowana podstawa, odbiór przez mieszkańca, wybór rzeczywistych atrakcji do budowy. Nie uznawać Etapu A za PASS.
+## B: wygląd
 
-## Aktualizacja stanu Etapu C — 2026-10-19
+Stan odczytu [PR#1](https://github.com/karnalooch/MathCity/pull/1): Draft, niepołączony;17 autorskich SVG,23 karty ujęć. Finalne rendery3D i zatwierdzenie S1/S2/S3 oczekują. Nie merge automatycznie. Najbliższy eksperyment wizualny: ratusz i Muchawka w porównywalnych kadrach/stylach, potem dzień/zachód/noc. Wersja rzeczywista Roblox będzie oddzielnym dowodem, nie screenshotem z UE.
 
-**SOURCE_RESEARCH_COMPLETE / PLAYTEST_PENDING. Etap C PARTIAL, nie PASS.** [Punkt wejścia i dziewięć dokumentów pakietu](../gameplay/STAGE_C_README.md). Dostarczono 15 kart źródłowych gier, ranking 10 wzorców, pięć antywzorców, powiązanie z `M01–M40`, projekt pierwszych 20 minut, pięć propozycji eksperymentów i runbook dla słabszego LLM.
+## C: mechaniki
 
-**Niewykonane:** 0/15 rzeczywistych sesji; brak pomiarów mobile, współpracy, cen, FPS i czasu pierwszej nagrody. Próba gier jest celowa, nie potwierdzony ranking najpopularniejszych tytułów w październiku. [Protokół 1/5/10/20 minut i rejestr NOT_RUN](../gameplay/stage_c/PLAYTEST_PROTOCOL.md) określa bramkę dokończenia. Nie zmieniamy poniższego wymogu obserwacji w samą analizę opisów. Rekomendacje nie stają się decyzjami właściciela ani zleceniem wdrożenia.
+[SOURCE_RESEARCH_COMPLETE / PLAYTEST_PENDING](../gameplay/STAGE_C_README.md):15 analiz, wybór wzorców, pięć eksperymentów i [research Mario Kart](../gameplay/stage_c/MARIO_KART_RACING_RESEARCH.md). **Własne sesje0/15**, brak pomiarów mobile, ekonomii i first-fun. Pełny odbiór nadal wymaga12–15 rzeczywistych sesji według [protokołu](../gameplay/stage_c/PLAYTEST_PROTOCOL.md), nie zamieniamy go w samo czytanie opisów.
 
-## Etap A: Atlas Siedlec
+33 decyzje właściciela rozstrzygnęły część dawnych propozycji. Nie oznacza to wykonania badań skuteczności. Weryfikuj istotne wzorce: odkrywanie, budowanie, krótkie zadania, współpraca i sport, zachowując dobrowolność oraz brak grindu.
 
-**Zadania:** wybrać 15–20 reprezentacyjnych punktów ze źródeł oficjalnych, zebrać własne/licencjonowane zdjęcia, nadać priorytety A/B/C, opracować karty landmarków. **Deliverables:** atlas, mapa logiczna, 3 kompletne karty ratusz/pałac/zalew. **Gate:** zatwierdzone miejsca i brak niesprawdzonych praw do materiałów.
+## D: edukacja i wykonawczy opis zachowania
 
-## Etap B: Art bible i wizualizacje
+**SPEC_READY / TEACHER_REVIEW_PENDING.** [Punkt wejścia](../education/STAGE_D_README.md). Jest [audyt40 ID](../education/stage_d/M01_M40_AUDIT.md), [źródła z konkretnymi punktami](../education/stage_d/CURRICULUM_SOURCES.md), [osiem kart](../education/stage_d/PILOT_INDEX.md), [dane i kontrola810 konfiguracji](../education/stage_d/TEST_VECTORS.md), [silne UI](../ux/LEARNING_UI_CONTRACT.md). Kontrola810 dotyczy rachunkowej domeny, nie uruchomienia810 testów gry.
 
-**Zadania:** trzy warianty stylistyczne, te same kadry porównawcze, dzień/zachód/noc, model postaci i pojazdów, czytelność z poziomu dziecka. **Deliverables:** 10 ujęć z art briefs, porównanie, paleta i reguły modułowego modelowania. **Gate:** Siedlce są rozpoznawalne i wizualizacje wyglądają jak spójna gra, nie jak kopia GTA/Mario.
+Następne czynności D00–D06: spójność decyzji, aktualność i pełność mapowania programu, korekty wszystkich40 kart, dopracowanie8 pilotów, recenzja nauczyciela, odbiór zakresu. Nie nadawaj wszystkim tematom IV–VI etykiety „klasa4”. Nie dodawaj M41+. Właściciel nie musi ponownie odpowiadać na pytania Q01–Q33.
 
-## Etap C: Mechaniki Roblox
+## E: warsztat i transfer assetu
 
-**Zadania:** zagrać w 12–15 współcześnie popularnych gier; obserwować onboarding, pętlę w 1/5/10/20 minut, interakcje społeczne, mobile, nagrody i monetyzację. **Deliverables:** ranking wzorców + pięć antywzorców i propozycja core loop. **Gate:** rozwiązania oparte na obserwacji, nie samej liczbie graczy.
+Dopiero po osobnym zleceniu technicznym: audyt faktycznych ścieżek UE/Blender/Material Forge, licencji i jednego reprezentatywnego modelu. Osobne prywatne miejsce testowe, kopia mapy, niezależny namespace danych. Jeden asset ma dać powtarzalny import/aktualizację z poprawną skalą, PBR, UV i kolizją. Rzeczywisty dowód w Roblox, nie sam render z innego silnika. [Pipeline](../tech/CONTENT_PIPELINE.md), pakiety P00/P06.
 
-## Etap D: Dydaktyka klas 2–4
+## F: masterplan i wielka mapa
 
-**Zadania:** zebrać oficjalne teksty podstaw obowiązujących klasy II/III oraz nową IV, przypisać umiejętności do minigier, napisać podpowiedzi, alternatywne ścieżki i ocenę. **Deliverables:** macierz z odsyłaczami do punktów programu, co najmniej 8 kart minigier, przykładowy bank. **Gate:** pozytywna recenzja nauczyciela i brak kar za pomyłki.
+Całość planować dla proponowanych7 stref i badać warianty8192/16384 studów z realistyczną gęstością obiektów. Jedna mała próbka M34 sprawdza interakcję, NIE kończy docelowego świata. [Urządzenia](../tech/DEVICE_ACCEPTANCE.md): iPad6 obowiązkowy, G54, RedmiNote14 4G i RTX2070/i5gen10/32GB. Cel16 prawdziwych graczy, w tym skupienie przy jednym punkcie;1–4 na przygodę, liczba wyścigowa osobno.
 
-## Etap E: Proof-of-pipeline YACS → Roblox
+Bramka: wydajność i streaming na rzeczywistych urządzeniach. Nie zmniejszać zakresu świata ani nie wyrzucać iPada po cichu. Budżet szczegółu można ograniczać, nie zasady i widoczność przeszkód. Wybór jednego/wielu Places podlega benchmarkowi.
 
-**Zadania:** sprawdzić realne instalacje UE/Blender/Material Forge, prawa do przykładowego assetu, jeden stylizowany fragment Ratusza, eksport, import i porównanie. **Deliverables:** raport wersji i ścieżek, ustawienia skali, PBR, kolizje, pamięć, zrzuty i czas wykonania. **Gate:** w pełni odtwarzalny import w Roblox; mapy i skrypty gry pozostają nienaruszone na tym etapie.
+## G: prawa, bezpieczeństwo i publikacja
 
-## Etap F: Masterplan i skala mapy
+Prawa do materiałów i symboli, zasady współpracy/publikacji Roblox oraz prywatność sprawdzane ponownie przed premierą. [Dotychczasowy research](../legal/RIGHTS_AND_COMPLIANCE.md) nie jest niezmiennym regulaminem. Brak publicznego rankingu matematyki, zbierania danych szkoły i płatnej przewagi. Nie publikować surowych cudzych assetów z YACS bez praw.
 
-**Zadania:** trzy warianty układu dzielnic, testowe trasy, syntetyczna makieta proponowanych siedmiu stref zgodnie z aktualizacją Etapu A, benchmark 8192 vs 16384 studów, symulacja docelowej gęstości budynków, FPS i streaming. **Deliverables:** wybrany schemat, raport urządzeń PC/mobile oraz konsekwencje one Place vs multiple Places. **Gate:** rozmiar wynika z pomiarów, nie z maksimum edytora.
+## H: kontrolowana implementacja po upoważnieniu
 
-## Etap G: Zgody, bezpieczeństwo i publikacja
+P00 izolacja → P01 model zadania → P02 dotyk M34 → P03 serwer/zapis → P04 solo/paszport/pokój → P05co-op → P06 pipeline/masterplan → P07 czysty sport → P08 profile/boty/gadżety → P09 osiem kart i wydarzenie → P10 regresja i sprzęt. Szczegółowe wejścia i ograniczenia są w [EXECUTION_PACKETS](EXECUTION_PACKETS.md). Nie implementować całego łańcucha w jednym PR.
 
-**Zadania:** spis licencji YACS, zasady używania znaków Siedlec, wymagania Roblox Kids/Select, zgodność współpracy Team Create, dane dzieci, bezpieczna ekonomia. **Deliverables:** wykaz praw, plan publikacji, polityka bezpieczeństwa, testy odbiorców 16+. **Gate:** realistyczna i zgodna z platformą droga premiery.
+## Definition of Done
 
-## Etap H: Decyzja o produkcji (dopiero później)
-
-Zatwierdzić cel MVP, układ i skalę całego miasta, listę pierwszych minigier, sposób synchronizacji i pierwszy pionowy fragment. Produkcja sektorami jest możliwa, ale plan obejmuje **cały docelowy świat od początku**, nie mały wycinek podszywający się pod całość.
-
-## Reguły pracy
-
-- Po każdym etapie: zapis w docs, źródła, data i status PASS/FAIL.
-- Wnioski do decyzji: [DECISION_LOG.md](DECISION_LOG.md).
-- Otwarte problemy: [RISKS_AND_OPEN_QUESTIONS.md](../research/RISKS_AND_OPEN_QUESTIONS.md).
-- Nie edytujemy .rbxl, src i nie importujemy assetów podczas tej fazy dokumentacyjnej.
+Dokument: źródła, komplet ID, instrukcje, testy i granice. Kod: rzeczywisty wynik unit/Studio. Sprzęt: fizyczne urządzenia i odpowiedni skład. Dydaktyka: review konkretnej wersji. Wygląd: właściciel zatwierdza. Publikacja: osobna decyzja i aktualne polityki. [Macierz odbioru](ACCEPTANCE_MATRIX.md) rozdziela wszystkie te warstwy. PASS jednej nie oznacza pozostałych.

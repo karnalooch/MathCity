@@ -1,44 +1,48 @@
-# MathCity — rejestr decyzji i propozycji
+# MathCity: decyzje właściciela i status wcześniejszych propozycji
 
-**Data: 2026-10-18.** USTALONE oznacza dosłowny wymóg właściciela projektu. PROPOZYCJA pozostaje do zatwierdzenia.
+Aktualizacja2026-10-19. Zachowano identyfikatory D-001…D-013. Nowe szczegółowe decyzje znajdują się w [OWNER_DECISIONS_20261019.md](OWNER_DECISIONS_20261019.md): **Q01…Q33**. Nie zamieniaj ich z powrotem w pytania do głosowania. Zatwierdzony projekt nie oznacza wykonanej gry.
 
-## USTALONE (wytyczne właściciela)
+## Wcześniejsze wymagania, nadal obowiązujące
 
-| ID | Decyzja | Skutek |
-| --- | --- | --- |
-| D-001 | MathCity.rbxl jest właściwą mapą; Roblox.rbxl zbędny | Nie zmieniać istniejącej działającej mapy |
-| D-002 | Robimy maksymalnie duże miasto w Roblox | Potrzebny benchmark wielkiego świata |
-| D-003 | Gra promuje Siedlce, ale nie odwzorowuje ich 1:1 | Najważniejsze punkty wyeksponowane; autorska geografia |
-| D-004 | Matematyka w klasach 2–4 (na teraz) | Mapa programowa i minigry odpowiednie do wieku |
-| D-005 | Research modnych Roblox mechanik, bez kopiowania 1:1 | Badanie rynku i autorskie warianty |
-| D-006 | UE, Blender, Material Forge z warsztatu YACS mają pomagać, lecz gra musi łatwo testować się w Roblox | Pipeline do Roblox, nie Unreal runtime |
-| D-007 | Inspiracja atmosferą Vice City oraz kolorową przygodowością Odyssey | Autorski, stylizowany kierunek wizualny |
-| D-008 | Na razie research, wizualizacje i planowanie; można założyć katalogi, bez produkcyjnych assetów | Tylko dokumentacja, nie przebudowa gry |
-| D-009 | Wszystko trafia do odpowiednich dokumentów w docs | Nawigowalna struktura i źródła na GitHub |
-| D-010 | Las Sekuła oraz lokalna „Górka Grześ” to obowiązkowe punkty badawcze Etapu A, z mechanicznym potencjałem | Dodać do atlasu, nie zgadywać położenia Grześ |
-| D-011 | Na Sekule są trasy narciarskie, mają wejść do researchu i mechanik | Traktować jako **narciarstwo biegowe** zgodnie z oficjalnym źródłem, nie zjazdowe |
-| D-012 | Stadion i basen są równie ważnymi ośrodkami aktywności dla MathCity | Osobne szczegółowe karty sportu, matematyka powiązana z parametrami obiektów |
-| D-013 | **Zalew Muchawka ma być wyraźnie dodany i traktowany jako atrakcyjna pełna dzielnica/hub MathCity**, z matematyką klas 2–4 | W dokumentacji `N01` otrzymuje [pełną kartę](../world/atlas/MUCHAWKA_FEATURE.md), 6 fikcyjnych podstref i zestaw 12 propozycji minigier. Sam zakres mechanik wymaga osobnego zatwierdzenia; nie zmieniać `MathCity.rbxl` |
+| ID | Decyzja | Konsekwencja |
+|---|---|---|
+| D-001 | MathCity.rbxl właściwą mapą; Roblox.rbxl zbędny | nie nadpisywać sprawdzonej mapy w etapie dokumentacji |
+| D-002 | Maksymalnie duże miasto w Roblox | benchmark pełnej skali, nie sama pusta plansza |
+| D-003 | Promocja Siedlec, nie replika1:1 | rozpoznawalne miejsca i autorski układ |
+| D-004 | Matematyka klas2–4 na obecnym etapie | właściwe roczniki i review dydaktyczne |
+| D-005 | Research modnych mechanik bez kopii1:1 | własne adaptacje, nie cudze assety |
+| D-006 | UE, Blender, Material Forge z YACS jako zaplecze, łatwy test w Roblox | Roblox jedynym runtime |
+| D-007 | Inspiracja Vice City i Odyssey | własna stylizacja bez kopiowania znaków i postaci |
+| D-008 | Teraz research i dokumentacja, nie przebudowa gry | `.rbxl`, kod i assety poza zakresem |
+| D-009 | Wyniki w odpowiednich docs | indeks, źródła, konkretne kontrakty |
+| D-010 | Sekuła i Górka Grześ w badaniu miejsc i mechanik | nie zgadywać położenia Grześ |
+| D-011 | Trasy narciarskie Sekuły w researchu | biegówki według źródeł, nie stok zjazdowy |
+| D-012 | Stadion i basen istotnymi ośrodkami | osobne karty i funkcje, nie dekoracyjne bryły |
+| D-013 | Zalew Muchawka pełnym istotnym hubem | N01 osobno od S02; fantasy podstrefy/mechaniki nadal do odbioru |
 
-## PROPOZYCJE (nie zatwierdzono)
+## Nowy zapis decyzji
 
-| ID | Wariant / pomysł | Czym go zatwierdzić |
-| --- | --- | --- |
-| P-001 | Historyczna propozycja (zastąpiona w researchu 7-strefowym, nie zatwierdzona): 6 dzielnic: Jackowo, Ogrody Aleksandrii, Kolejowo, Muchawkowe Wyspy, Neonowe Błonia, Aleja Kultury | 3 makro-layouty i feedback |
-| P-002 | Wątek „tajemnicy kuli Jacka” | Konspekt historii i odbiór dzieci |
-| P-003 | 8 wybranych minigier miejskich | Dydaktyka, ocena nauczyciela i zabawa |
-| P-004 | Wolna eksploracja → zadania → odkrycia/kosmetyka → eksploracja | Playtest |
-| P-005 | 1 połączony Place + ewentualne odrębne areny | Streaming i benchmark |
-| P-006 | Próby 8192 i 16384 studów, odpowiednio ok. 2,29 i 4,59 km na bok | Wyniki wydajności |
-| P-007 | Cele 60 FPS na PC i 30 FPS na telefonach | Pomiar prawdziwych urządzeń |
-| P-008 | W matematyce błędy nie powodują śmierci postaci | Konsultacja pedagogiczna |
-| P-009 | Monetyzacja panelu admina z prototypu nie jest strategią v2 | Przegląd prawny/UX |
-| P-010 | Adaptacyjne podpowiedzi i paszport odkrywcy | Projekt i badania z dziećmi |
-| P-011 | Zmiana roboczego masterplanu z 6 na **7** stref: osobny obszar **Sekuła: Leśna Ekspedycja** | Zatwierdzenie właściciela po zdjęciach i walidacji mapy |
-| P-012 | Muchawka jako sześć **fikcyjnych** podstref `MW-01…MW-06`, z minigrami `M33…M40` i programem G2–G4 | Weryfikacja referencji, licencji, dydaktyki i testy; **propozycja**, nie zatwierdzony feature set |
+Q01–Q07: wspólne miasto, adaptacja, rola matematyki, nagrody, solo/co-op, EXP catch-up, guided. Q08–Q14: osobiste historie i wspólny świat, misje poboczne, pokój, sklepy, powtórki, paszport, podróż. Q15–Q20: sport/stoper/medale, profile, przedmioty, boty, tablice znajomych. Q21–Q26: odkrycia zamiast level gates, UI zamiast głosu teraz, tutorial, generator, otwarte rozwiązania i prywatne umiejętności. Q27–Q33: urządzenia, obowiązkowy iPad6,16graczy,1–4co-op, szukanie grup i wejście między etapami.
 
-## Protokół
+Pełny tekst i ograniczenia każdego wyboru są w rejestrze Q, nie w tym skrócie. Szczególnie Q17 to odpowiedź po Mario Kart, a Q22 odkłada głos na później. Literalne wartości TEST_DEFAULTS nie są zatwierdzeniami właściciela.
 
-Przed przejściem z P do D: jawna akceptacja właściciela, data, dowód i link. Żaden render, makieta, publikacja bloga ani opinia AI nie zmienia statusu propozycji samoczynnie.
+## Rozstrzygnięcie dawnych propozycji P
 
-[Nowy GDD](../GDD.md) | [plan badań](RESEARCH_ROADMAP.md).
+| ID | Dawna propozycja | Status po rozmowie |
+|---|---|---|
+| P-001 |6 dzielnic | historyczna; research rozszerzony do7, sam układ nadal otwarty |
+| P-002 | Tajemnica kuli Jacka | odłożona główna fabuła, Q09; nie narzucać |
+| P-003 |8 konkretnych minigier startowych | aktualna rekomendacja ośmiu pilotów w etapieD, nie pełne zatwierdzenie treści |
+| P-004 | Pętla eksploracja/zadania/kosmetyka | zasady rozstrzygnięte Q03/Q04/Q09/Q11, detale treści do testów |
+| P-005 | Jeden Place i ewentualne osobne areny | technicznie otwarte; bez automatycznej rezygnacji z dużej mapy |
+| P-006 |8192/16384 studów | nadal zakres eksperymentu, nie ostateczny rozmiar |
+| P-007 |60PC/30mobile | cele testowe uściślone urządzeniami Q27–Q30, nie wyniki |
+| P-008 | Brak śmierci za matematyczny błąd | rozstrzygnięte Q07; pomoc i zachowanie podstawowej nagrody |
+| P-009 | Stary płatny admin nie strategiąv2 | nie wracać do niego jako domyślnej monetyzacji; nowa monetyzacja nadal nieustalona |
+| P-010 | Adaptacja i paszport | rozstrzygnięte Q02/Q13/Q26; prywatność i ręczny wybór |
+| P-011 |7 stref z osobną Sekułą | propozycja mapy pozostaje do zatwierdzenia |
+| P-012 |6 podstref Muchawki i szczegółowe mechaniki | istotność miejsca zatwierdzona D-013; dokładny layout/treść wciąż do review |
+
+## Reguła przyszłych zmian
+
+Każdy PR podaje Qxx i test, który realizuje. Jeśli zmienia regułę właściciela, potrzebuje nowej jawnej decyzji. Jeżeli tylko stroi TEST_DEFAULT, ma podać pomiar i wersję parametru. Nie ogłaszać A/B/C/D PASS przez sam commit. [GDD](../GDD.md), [pakiety](EXECUTION_PACKETS.md), [roadmapa](RESEARCH_ROADMAP.md).
