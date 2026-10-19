@@ -1,6 +1,6 @@
 # MathCity — plan badań, dowody i bramki decyzji
 
-**Stan na 2026-10-18.** To plan researchu, **nie** zgoda na wdrażanie świata do Roblox. Obecny MathCity.rbxl pozostaje bez zmian.
+**Stan na 2026-10-19.** To plan researchu, **nie** zgoda na wdrażanie świata do Roblox. Obecny MathCity.rbxl pozostaje bez zmian.
 
 ## Aktualizacja stanu Etapu A — 2026-10-18
 
@@ -9,6 +9,12 @@
 ### Zalew Muchawka: specjalny pakiet researchowy (2026-10-19)
 
 **Dostarczono w docs**: [pełny brief N01](../world/atlas/MUCHAWKA_FEATURE.md), uzupełnienie [CURRICULUM_2_4](../education/CURRICULUM_2_4.md) oraz osiem nowych pomysłów `M33…M40`. Obecnie **40** kandydatów minigier łącznie. Muchawka pozostaje **priorytetem A**, a nie plażą dekoracyjną. Gate otwarte: 10 referencji z prawami, czytelny obrys miejsc, odpowiednio wersjonowana podstawa, odbiór przez mieszkańca, wybór rzeczywistych atrakcji do budowy. Nie uznawać Etapu A za PASS.
+
+## Aktualizacja stanu Etapu C — 2026-10-19
+
+**SOURCE_RESEARCH_COMPLETE / PLAYTEST_PENDING. Etap C PARTIAL, nie PASS.** [Punkt wejścia i dziewięć dokumentów pakietu](../gameplay/STAGE_C_README.md). Dostarczono 15 kart źródłowych gier, ranking 10 wzorców, pięć antywzorców, powiązanie z `M01–M40`, projekt pierwszych 20 minut, pięć propozycji eksperymentów i runbook dla słabszego LLM.
+
+**Niewykonane:** 0/15 rzeczywistych sesji; brak pomiarów mobile, współpracy, cen, FPS i czasu pierwszej nagrody. Próba gier jest celowa, nie potwierdzony ranking najpopularniejszych tytułów w październiku. [Protokół 1/5/10/20 minut i rejestr NOT_RUN](../gameplay/stage_c/PLAYTEST_PROTOCOL.md) określa bramkę dokończenia. Nie zmieniamy poniższego wymogu obserwacji w samą analizę opisów. Rekomendacje nie stają się decyzjami właściciela ani zleceniem wdrożenia.
 
 ## Etap A: Atlas Siedlec
 
@@ -32,7 +38,7 @@
 
 ## Etap F: Masterplan i skala mapy
 
-**Zadania:** trzy warianty układu dzielnic, testowe trasy, syntetyczna makieta sześciu dzielnic, benchmark 8192 vs 16384 studów, symulacja docelowej gęstości budynków, FPS i streaming. **Deliverables:** wybrany schemat, raport urządzeń PC/mobile oraz konsekwencje one Place vs multiple Places. **Gate:** rozmiar wynika z pomiarów, nie z maksimum edytora.
+**Zadania:** trzy warianty układu dzielnic, testowe trasy, syntetyczna makieta proponowanych siedmiu stref zgodnie z aktualizacją Etapu A, benchmark 8192 vs 16384 studów, symulacja docelowej gęstości budynków, FPS i streaming. **Deliverables:** wybrany schemat, raport urządzeń PC/mobile oraz konsekwencje one Place vs multiple Places. **Gate:** rozmiar wynika z pomiarów, nie z maksimum edytora.
 
 ## Etap G: Zgody, bezpieczeństwo i publikacja
 

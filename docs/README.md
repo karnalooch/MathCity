@@ -1,6 +1,6 @@
 # MathCity — dokumentacja projektu
 
-**Stan: 2026-10-18. Etap: research, koncepcja, wizualizacje i planowanie.**
+**Stan: 2026-10-19. Etap: research, koncepcja, wizualizacje i planowanie.**
 
 ## Zasada nadrzędna
 
@@ -12,9 +12,15 @@ Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity
 
 **WYKONANO RESEARCH DESK, ETAP A NIE JEST JESZCZE PASS.** Zebrano **41 kandydatów miejsc**, 41 kart wykonawczych, 40 propozycji minigier i linki do fotoreferencji. Do zatwierdzenia pozostają zdjęcia/licencje, dokładny pin Górki Grześ, przebieg tras Sekuły i masterplan. Wszystko ma stabilne identyfikatory, a w dokumentach fakty są oddzielone od fikcyjnych mechanik.
 
-**Nowe rozszerzenie 2026-10-19:** szczegółowe wymagania dla Zalewu Muchawka oraz matematyki klas 2–4 dodano w [katalogu Muchawki](world/atlas/MUCHAWKA_FEATURE.md) i [CURRICULUM_2_4.md](education/CURRICULUM_2_4.md). `N01` to Zalew Muchawka; `S02` to zupełnie odrębny Park Wodny. Repozytorium gry pozostaje nietknięte.
+**Nowe rozszerzenie 2026-10-19:** szczegółowe wymagania dla Zalewu Muchawka oraz matematyki klas 2–4 dodano w [katalogu Muchawki](world/atlas/MUCHAWKA_FEATURE.md) i [CURRICULUM_2_4.md](education/CURRICULUM_2_4.md). `N01` to Zalew Muchawka; `S02` to zupełnie odrębny Park Wodny. Pliki gry pozostają nietknięte.
 
 **Główne wejście:** [world/STAGE_A_README.md](world/STAGE_A_README.md). Szczegółowe instrukcje dla słabszego LLM: [world/atlas/WEAK_LLM_RUNBOOK.md](world/atlas/WEAK_LLM_RUNBOOK.md). Proponowany masterplan został rozszerzony z 6 do **7 stref** (osobno Sekuła), ale **nie** jest zatwierdzony.
+
+## Etap C: mechaniki Roblox (research 19.10.2026)
+
+**Research źródłowy dostarczony, Etap C PARTIAL.** Pakiet obejmuje 15 kart konkretnych gier, ranking 10 wzorców, pięć antywzorców, powiązanie z istniejącymi `M01–M40`, scenariusz pierwszych 20 minut MathCity oraz pięć propozycji małych eksperymentów. Nie jest to lista 15 liderów aktualnego rankingu. Fakty z opisów twórców są oddzielone od naszych interpretacji i propozycji.
+
+**Wejście:** [gameplay/STAGE_C_README.md](gameplay/STAGE_C_README.md). Szczegółowy [runbook dla słabszego LLM](gameplay/stage_c/WEAK_LLM_RUNBOOK.md) oraz [protokół testów](gameplay/stage_c/PLAYTEST_PROTOCOL.md). **Własne sesje Roblox: 0/15; testy mobilne i kooperacyjne niewykonane.** Czas pierwszej nagrody, FPS i ceny nie zostały zmierzone. Pełny PASS wymaga rzeczywistych rozgrywek i oceny wniosków; samo zapisanie dokumentów tego nie zastępuje.
 
 ## Nawigacja
 
@@ -29,7 +35,10 @@ Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity
 | Minigry powiązane z realnymi miejscami | [world/atlas/MECHANICS_MATRIX.md](world/atlas/MECHANICS_MATRIX.md) |
 | Punkty charakterystyczne Siedlec | [world/SIEDLCE_LANDMARK_ATLAS.md](world/SIEDLCE_LANDMARK_ATLAS.md) |
 | Dzielnice i masterplan | [world/DISTRICTS_MASTERPLAN.md](world/DISTRICTS_MASTERPLAN.md) |
-| Popularne mechaniki Roblox (research) | [gameplay/ROBLOX_MARKET_RESEARCH_2026.md](gameplay/ROBLOX_MARKET_RESEARCH_2026.md) |
+| **Etap C: benchmark źródłowy 15 gier** | [gameplay/STAGE_C_README.md](gameplay/STAGE_C_README.md) |
+| Etap C: wzorce powiązane z M01–M40 | [gameplay/stage_c/TRANSFER_MATRIX.md](gameplay/stage_c/TRANSFER_MATRIX.md) |
+| Etap C: instrukcja dla słabszego LLM | [gameplay/stage_c/WEAK_LLM_RUNBOOK.md](gameplay/stage_c/WEAK_LLM_RUNBOOK.md) |
+| Wstępny research mechanik z 18.10.2026 | [gameplay/ROBLOX_MARKET_RESEARCH_2026.md](gameplay/ROBLOX_MARKET_RESEARCH_2026.md) |
 | Główna pętla i minigry | [gameplay/CORE_LOOP_AND_MINIGAMES.md](gameplay/CORE_LOOP_AND_MINIGAMES.md) |
 | Matematyka klas 2–4 | [education/CURRICULUM_2_4.md](education/CURRICULUM_2_4.md) |
 | Art bible i paleta | [art/ART_BIBLE.md](art/ART_BIBLE.md) |
