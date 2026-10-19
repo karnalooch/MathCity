@@ -1,5 +1,13 @@
 # B1 — Style S1/S2/S3 i uczciwy test porównawczy
 
+## Obrazkowe porównania S1/S2/S3
+
+![Trzy style sylwetki C01, ta sama bryła](concepts/REF03_C01_STYLE_TRIPTYCH.svg)
+
+![Trzy style N01, ta sama linia brzegu](concepts/REF04_N01_STYLE_TRIPTYCH.svg)
+
+**Status:** 2 oryginalne porównania SVG istnieją, ale sześć docelowych renderów porównawczych jeszcze NIE powstało. Porównuj te referencje z [prawdziwymi cechami L01/L06](SOURCE_REGISTER.md); schemat nie potwierdza geometrii 1:1.
+
 **Status: DOCUMENTED, NOT_RENDERED, NOT_APPROVED.** Siedem stref jest kandydatem (nie zatwierdzonym masterplanem). Trzy style są autorskie, a nie kopiami GTA czy Mario.
 
 ## Dwa widoki testowe — ZABLOKUJ geometrię i kadr

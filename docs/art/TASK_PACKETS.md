@@ -2,6 +2,24 @@
 
 **Warunek:** Najpierw przeczytać [STAGE_B_WEAK_LLM_RUNBOOK](STAGE_B_WEAK_LLM_RUNBOOK.md) i [SOURCE_REGISTER](SOURCE_REGISTER.md). Te pakiety nie są poleceniem budowy gry ani uruchamiania Unreal/Roblox. Nie potrzebują tysięcy tokenów kontekstu jednocześnie.
 
+## REFERENCJE, KTÓRYCH NIE MOŻNA POMINĄĆ (17 SVG)
+
+**[Atlas 17 obrazów](VISUAL_REFERENCE_ATLAS.md)** zawiera mapę V01–V23, dokładny opis, zdjęcia jako linki i informację o błędach. **Nie realizuj żadnego packetu wyłącznie z tekstu, jeżeli posiada pasujący SVG.** Otwórz go rzeczywiście; jeżeli nie można obejrzeć, wpisz `REFERENCE_IMAGE_NOT_INSPECTED`.
+
+| Packet | Najpierw obejrzyj obrazy |
+|---|---|
+| P0 | [REF00 7 stref](concepts/REF00_WORLD_7_ZONES.svg) |
+| P1/P2 | [REF03 style Jacka](concepts/REF03_C01_STYLE_TRIPTYCH.svg), [REF04 style Muchawki](concepts/REF04_N01_STYLE_TRIPTYCH.svg) |
+| P3 | [REF01 Jacek](concepts/REF01_C01_JACEK_SILHOUETTE.svg), [REF06 pałac](concepts/REF06_C02_C03_ALEKSANDRIA.svg), [REF14 Kolejowo](concepts/REF14_T01_KOLEJOWO_REFERENCE_OPEN.svg), [REF02 Muchawka](concepts/REF02_N01_MUCHAWKA_HUB.svg) |
+| P4 | [REF08 Sport](concepts/REF08_S01_S02_S03_SPORT.svg), [REF15 Kultura](concepts/REF15_D6_CULTURE_RESPECT.svg), [REF07 Sekuła](concepts/REF07_N04_N05_SEKULA_SEASONS.svg) |
+| P5 | [REF11 NPC i pojazdy](concepts/REF11_NPCS_VEHICLES.svg) |
+| P6 | [REF05 dzień/zachód/noc](concepts/REF05_C01_LIGHTING_L1_L2_L3.svg) |
+| P7 | [REF16 panorama](concepts/REF16_V01_PANORAMA_ART_DIRECTION.svg), [REF09 Wyspy Ułamków](concepts/REF09_MW04_FRACTION_ISLANDS.svg), [REF13 matematyka](concepts/REF13_MATH_MINIGAME_VISUALS.svg) i właściwa galeria per V-ID |
+| P8 | [REF10 moduły](concepts/REF10_MODULAR_ASSET_KIT.svg), [REF12 UI](concepts/REF12_UI_PC_MOBILE_SAFEAREA.svg) |
+| P9 | [manifest obrazów](concepts/README.md), [VISUAL_REVIEW](VISUAL_REVIEW.md) |
+
+**Stan:** 17 SVG rzeczywiście w repo; **0 docelowych obrazów wygenerowanych jako osobne 3D/raster render**. Nie ustawiaj statusu Stage B PASS.
+
 ## P0: Inwentaryzacja i blokady (B0)
 **CZYTAJ:** docs/README.md, docs/art/STAGE_B_README.md, docs/world/STAGE_A_README.md.  
 **ZRÓB:** wypisz listę plików, stan A/PARTIAL, listę pustych lub niedostępnych referencji; nie twórz kopii GDD.  

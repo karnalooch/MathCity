@@ -1,28 +1,30 @@
 # B8 — protokół QA i bramki wizualne MathCity
 
-**Stan: 2026-10-19.** QA dokumentacji możliwe; bez obrazów/Studio nie wolno zaliczać QA obrazów, FPS ani rozpoznawalności. Używaj PASS / FAIL / BLOCKED / NOT_TESTED, nigdy „wydaje się OK” jako PASS.
+**Stan: 2026-10-19.** W repo istnieje **17 autorskich SVG jako szkice referencyjne**, ale nie ma zatwierdzonych renderów ani ujęć ze Studio. QA dokumentacji możliwe; bez finalnych renderów/Studio nie wolno zaliczać jakości FPS ani rzeczywistej rozpoznawalności. Używaj PASS / FAIL / BLOCKED / NOT_TESTED, nigdy „wydaje się OK” jako PASS.
 
 ## Gate Etapu B
 
 | ID | Wymaganie do PASS | Status na dziś | Dowód albo blokada |
 |---|---|---|---|
 | BG-01 | Wszystkie dokumenty B0–B8 z linkami | DOCUMENTED | [STAGE_B_README](STAGE_B_README.md), reszta docs/art |
-| BG-02 | S1/S2/S3 porównane przy stałym C01 i N01 | NOT_TESTED | tylko [prompty](CONCEPT_PROMPT_LIBRARY.md), 0 obrazów |
+| BG-02 | S1/S2/S3 porównane przy stałym C01 i N01 | NOT_TESTED | [dwa porównania SVG](VISUAL_REFERENCE_ATLAS.md), 0 finalnych renderów |
 | BG-03 | Czytelna sylwetka C01 i N01 | NOT_TESTED | karty z cechami, brak renderów |
-| BG-04 | Siedem kandydackich stref opisanych i porównanych | DOCUMENTED / NOT_TESTED | [DISTRICT_LOOKDEV](DISTRICT_LOOKDEV.md), brak obrazów |
+| BG-04 | Siedem kandydackich stref opisanych i porównanych | DOCUMENTED / NOT_TESTED | [DISTRICT_LOOKDEV](DISTRICT_LOOKDEV.md), 17 szkiców SVG, brak renderów |
 | BG-05 | S01 piłka ≠ S03 lekkoatletyka ≠ S02 hala | DOCUMENTED | [źródła L09–L11](SOURCE_REGISTER.md) |
 | BG-06 | N05 biegówki ≠ N06 nauka, N07 OPEN, miejsca pamięci chronione | DOCUMENTED | [zasady ochrony](../world/atlas/CONSERVATION_AND_RESPECT.md) |
-| BG-07 | L1/L2/L3 to ten sam widok i geometria | NOT_TESTED | [lighting](LIGHTING_LOOKDEV.md), brak renderów |
-| BG-08 | 23 karty V01–V23 kompletne | DOCUMENTED | [SHOT_CARDS](SHOT_CARDS_V01_V23.md); same obrazy = 0 |
+| BG-07 | L1/L2/L3 to ten sam widok i geometria | NOT_TESTED | [światło SVG](concepts/REF05_C01_LIGHTING_L1_L2_L3.svg), 0 renderów z Roblox |
+| BG-08 | 23 karty V01–V23 kompletne | DOCUMENTED | [SHOT_CARDS](SHOT_CARDS_V01_V23.md); 17 referencji SVG, 0 finalnych V-ID renderowanych |
 | BG-09 | NPC / pojazdy rozpoznawalne wizualnie | NOT_TESTED | [specyfikacja](CHARACTER_AND_VEHICLES.md), bez modeli |
 | BG-10 | Kit powtarzalnych assetów opisany | DOCUMENTED | [modular](MODULAR_ASSET_GUIDE.md), bez importu |
 | BG-11 | UI czytelne na telefonie i bezpiecznym obszarze | NOT_TESTED | [specyfikacja UI](UI_VISUAL_GUIDE.md), brak urządzeniowego testu |
-| BG-12 | Co najmniej 10 obrazów głównych, jakość i prawa | BLOCKED | 0 nowych obrazów, generator nieużyty |
+| BG-12 | Co najmniej 10 obrazów głównych, jakość i prawa | BLOCKED | 17 własnych SVG w [galerii](VISUAL_REFERENCE_ATLAS.md); 0 zatwierdzonych renderów 3D |
 | BG-13 | Prawa do realnych zdjęć / assetów sprawdzone | BLOCKED | referencje LINK_ONLY / RIGHTS_UNKNOWN |
 | BG-14 | `MathCity.rbxl`, `src` i `assets` nienaruszone | PASS dla bieżącej gałęzi | porównanie base `ac942dd85f599b095af7d0922e88288175402a08` do HEAD Stage B: zmiany tylko `docs/`; sprawdzić ponownie przed merge |
 | BG-15 | Akceptacja właściciela | BLOCKED | właściciel nie zaakceptował S1–S3 i 7 stref |
 
-**Główne kryterium decyzji:** sam komplet dokumentacji to `DOCUMENTED`, nie `STAGE_B_PASS`.
+**Główne kryterium decyzji:** komplet dokumentacji wraz z 17 schematami SVG to `SVG_CONCEPT_GUIDE`, nie `STAGE_B_PASS`. 
+
+**Kontrola SVG:** każdy plik musi być otwieralny, bez kopiowanych bitmap z portali, z jednoznacznym oznaczeniem REAL/FANTASY oraz statusem licencji. Pierwsze sześć końcowych renderów S1–S3 ratusza i Muchawki pozostaje do wykonania i obejrzenia przez właściciela.
 
 ## Tabela oceny sześciu pierwszych obrazów
 

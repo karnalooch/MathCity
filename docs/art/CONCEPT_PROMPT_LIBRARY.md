@@ -2,6 +2,10 @@
 
 **Status:** sześć promptów do porównania + warianty światła, UI i blokery. Prompty NIE są obrazami. Bez generatora zapis `PROMPT_READY_IMAGE_NOT_GENERATED`. Nie dodawaj pustych plików PNG. Właściwości realnych miejsc pochodzą z [SOURCE_REGISTER](SOURCE_REGISTER.md).
 
+## Referencje, na których opierają się te prompty
+
+W repo jest [17 własnych obrazów SVG](VISUAL_REFERENCE_ATLAS.md) o statusie `SVG_CONCEPT_GUIDE`. Przed wysłaniem promptu do generatora obejrzyj właściwy obraz. Dla porównań Jacka [REF03](concepts/REF03_C01_STYLE_TRIPTYCH.svg) i Muchawki [REF04](concepts/REF04_N01_STYLE_TRIPTYCH.svg) pokazują niezmienną kompozycję; dla lokalnych cech sprawdzaj [SOURCE_REGISTER](SOURCE_REGISTER.md). **Zero finalnych renderów** nadal oznacza `PROMPT_READY_IMAGE_NOT_GENERATED`.
+
 ## REGUŁA KOMPARATYWNOŚCI
 
 W każdym z dwóch zestawów zmieniasz **wyłącznie** styl S1/S2/S3. Nie zmieniaj perspektywy, kompozycji, geometrii bazowego landmarku, liczby osób, słońca czy layoutu. LLM obrazowy bez zablokowanego seed/reference geometry **może mimo instrukcji zmienić kadr**: oznacz wówczas `COMPARABILITY_LIMITED`, poproś o korektę zamiast uznać wynik za pomiar jakości.

@@ -4,6 +4,12 @@
 
 **Wspólne wymagania:** proporcje 16:9 dla panoram, 4:3 dla kart miejsc oraz osobny telefon dla V09 (wartości projektowe, nie wymóg techniczny); postacie stylizowane, własne UI bez cudzych znaków; prawdziwe sylwetki mają co najmniej 3 rozpoznawalne cechy. Wszystkie propozycje realnej geografii oznaczać do weryfikacji; zero nieautoryzowanych zdjęć w repo.
 
+## Referencje wzrokowe do wszystkich V-ID (nie tylko prompty)
+
+**[OBOWIĄZKOWE: VISUAL_REFERENCE_ATLAS.md](VISUAL_REFERENCE_ATLAS.md)** zawiera obrazy SVG oraz mapę **V-01→REF00/REF16, V-02→REF01/REF03, ... V-23→REF02/REF05**. Otwórz odpowiednie referencje przed pisaniem każdej karty. W tym pliku pozostają **23 karty**, a SVG pokazują kierunek artystyczny, nie zastępują finalnych renderów. V-13 nadal `BLOCKED_GEOLOCATION`, choć możliwy jest wyłącznie abstrakcyjny fantastyczny moodboard.
+
+![Przykładowy kierunek V-01, siedem proponowanych stref](concepts/REF16_V01_PANORAMA_ART_DIRECTION.svg)
+
 ## Instrukcja jednej karty
 
 Dla wybranego Vxx skopiuj niższą kartę do promptu. Przeczytaj linki do prawdziwych miejsc Lxx i opis pozostałych elementów z dzielnic. Zachowaj `CAMERA_LOCK`, jeśli porównujesz warianty. Nie dopisuj istniejących obiektów, których źródła nie potwierdzają. Każda wizualizacja wymaga ręcznej kontroli: postaci, kształt, 3 cechy landmarku, źródła i status.

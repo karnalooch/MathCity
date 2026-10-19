@@ -1,5 +1,11 @@
 # B3 — postacie, NPC, pojazdy i rekwizyty (tylko koncepcja)
 
+## Wizualny wzorzec sylwetek, NPC i transportu
+
+![Rodzina oryginalnych NPC i pojazdów MathCity](concepts/REF11_NPCS_VEHICLES.svg)
+
+Obraz przedstawia pomysły na stylizację. Nie istnieją jeszcze eksporty FBX, rig ani animacje. Prawdziwy wygląd pojazdów miejskich nie jest kopiowany 1:1.
+
 **Status:** PROPOSED / NOT_MODELED. Zasada: oryginalna estetyka zgodna z czytelnością Roblox, bez kopiowania postaci lub pojazdów z Vice City / Mario.
 
 ## Postacie

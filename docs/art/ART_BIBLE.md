@@ -1,5 +1,13 @@
 # MathCity — Art Bible v0.1 (kierunek wizualny)
 
+## Galeria referencji, obowiązkowa przed modelowaniem
+
+**[ZOBACZ 17 plansz SVG](VISUAL_REFERENCE_ATLAS.md)** | [źródła rzeczywistych miejsc](SOURCE_REGISTER.md). To oryginalne **schematy artystyczne**, nie zdjęcia ani rendery gotowej gry.
+
+![Trzy style ratusza Jacek](concepts/REF03_C01_STYLE_TRIPTYCH.svg)
+
+![Trzy style Zalewu Muchawka](concepts/REF04_N01_STYLE_TRIPTYCH.svg)
+
 **Status:** PROPOZYCJA, 2026-10-18. Właściciel wskazał dwie inspiracje: klimat **GTA: Vice City** i przygodową, kolorową czytelność **Super Mario Odyssey**. Powstaje **odrębna autorska estetyka MathCity**, bez przenoszenia czyichkolwiek postaci, map, assetów, logo ani muzyki.
 
 ## Krótkie hasło

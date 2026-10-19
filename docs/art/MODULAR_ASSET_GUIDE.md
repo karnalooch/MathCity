@@ -1,5 +1,11 @@
 # B6 — modularny kit do przyszłej produkcji Roblox
 
+## Obrazkowy katalog dwunastu rodzin brył
+
+![12 modułowych rodzin assetów MathCity](concepts/REF10_MODULAR_ASSET_KIT.svg)
+
+Wzorzec pokazuje kolor, sylwetkę i ponowne wykorzystanie elementów. Nie stanowi dowodu, że przygotowano model 3D, atlas UV lub zaimportowano asset do Roblox.
+
 **Status:** projekt reguł modelowania. Nie wykonano assetów ani benchmarków. Narzędzia YACS (UE/Blender/Material Forge) są tylko środowiskiem produkcji treści. Roblox to runtime.
 
 ## Źródła technologiczne

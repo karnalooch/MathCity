@@ -1,5 +1,9 @@
 # Etap B — źródła i fakty do lookdev (aktualizacja 2026-10-19)
 
+## Oznaczenie referencji artystycznych
+
+**[17 własnych ilustracji SVG w Galerii B](VISUAL_REFERENCE_ATLAS.md)** przedstawia propozycje kolorów i kadrów, **nie** nowe fakty o realnych Siedlcach. Dane miejsc potwierdzają wyłącznie źródła Lxx, z fotografiami LINK_ONLY / RIGHTS_UNKNOWN.
+
 **Status:** zweryfikowano strony; zdjęcia na stronach = LINK_ONLY / RIGHTS_UNKNOWN. Nie wolno ich kopiować do repo bez zgody lub licencji. Etap A: [źródła](../world/atlas/SOURCE_EVIDENCE.md), [41 ID](../world/atlas/LANDMARK_CATALOG.md).
 
 ## Reguła prawdy dla lekkiego LLM

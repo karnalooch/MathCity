@@ -8,6 +8,10 @@ Nowa wizja: duży, otwarty świat **Siedlec inspirowanych miastem rzeczywistym, 
 
 Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity.rbxl** pozostaje źródłem istniejącej mapy. Planowanie nowego świata **nie oznacza, że opisane funkcje są już zaimplementowane**.
 
+## Etap B — OBRAZY i aktualna dokumentacja
+
+**Dodano 17 autorskich graficznych referencji SVG**, które słabszy LLM ma obowiązek obejrzeć przed wykonywaniem zadań. **[Galeria obrazów, przypisanie do V01–V23](art/VISUAL_REFERENCE_ATLAS.md)**; [indeks Etapu B](art/STAGE_B_README.md), [instrukcje lekkich agentów](art/STAGE_B_WEAK_LLM_RUNBOOK.md). Obrazy SVG to wskazówki stylistyczne, nie geografia 1:1, nie fotografie i nie finalne screenshoty Roblox. **Etap B nadal nie ma PASS** (brak zatwierdzonych renderów i decyzji stylu).
+
 ## Etap A: atlas Siedlec, Sekuły i sportu (research 18.10.2026)
 
 **WYKONANO RESEARCH DESK, ETAP A NIE JEST JESZCZE PASS.** Zebrano **41 kandydatów miejsc**, 41 kart wykonawczych, 40 propozycji minigier i linki do fotoreferencji. Do zatwierdzenia pozostają zdjęcia/licencje, dokładny pin Górki Grześ, przebieg tras Sekuły i masterplan. Wszystko ma stabilne identyfikatory, a w dokumentach fakty są oddzielone od fikcyjnych mechanik.
@@ -36,6 +40,7 @@ Repozytorium zawiera działający prototyp wieży matematycznej. Plik **MathCity
 | Popularne mechaniki Roblox (research) | [gameplay/ROBLOX_MARKET_RESEARCH_2026.md](gameplay/ROBLOX_MARKET_RESEARCH_2026.md) |
 | Główna pętla i minigry | [gameplay/CORE_LOOP_AND_MINIGAMES.md](gameplay/CORE_LOOP_AND_MINIGAMES.md) |
 | Matematyka klas 2–4 | [education/CURRICULUM_2_4.md](education/CURRICULUM_2_4.md) |
+| **Etap B / galeria 17 referencji SVG** | **[art/VISUAL_REFERENCE_ATLAS.md](art/VISUAL_REFERENCE_ATLAS.md)** |
 | **Etap B / status i wejście** | **[art/STAGE_B_README.md](art/STAGE_B_README.md)** |
 | **Etap B / runbook dla słabszych LLM** | **[art/STAGE_B_WEAK_LLM_RUNBOOK.md](art/STAGE_B_WEAK_LLM_RUNBOOK.md)** |
 | Etap B / prompty i 23 karty | [art/CONCEPT_PROMPT_LIBRARY.md](art/CONCEPT_PROMPT_LIBRARY.md), [art/SHOT_CARDS_V01_V23.md](art/SHOT_CARDS_V01_V23.md) |

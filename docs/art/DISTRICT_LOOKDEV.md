@@ -1,5 +1,11 @@
 # B2 — lookdev siedmiu proponowanych stref MathCity
 
+## Wizualne karty siedmiu stref
+
+Otwórz **[galerię 17 obrazów](VISUAL_REFERENCE_ATLAS.md)** przed redagowaniem każdej strefy. Dokładne dopasowanie: D1 [Jacek](concepts/REF01_C01_JACEK_SILHOUETTE.svg), D2 [Aleksandria](concepts/REF06_C02_C03_ALEKSANDRIA.svg), D3 [Kolejowo](concepts/REF14_T01_KOLEJOWO_REFERENCE_OPEN.svg), D4 [Muchawka](concepts/REF02_N01_MUCHAWKA_HUB.svg), D5 [Sport](concepts/REF08_S01_S02_S03_SPORT.svg), D6 [Kultura](concepts/REF15_D6_CULTURE_RESPECT.svg), D7 [Sekuła](concepts/REF07_N04_N05_SEKULA_SEASONS.svg).
+
+![Siedem proponowanych stref, mapa logiczna a nie geograficzna](concepts/REF00_WORLD_7_ZONES.svg)
+
 **Status:** opis koncepcyjny / niezatwierdzony masterplan. **Źródło prawdy o lokalizacjach:** [katalog 41 ID](../world/atlas/LANDMARK_CATALOG.md); o ochronie: [CONSERVATION_AND_RESPECT](../world/atlas/CONSERVATION_AND_RESPECT.md). **Nie tworzyć 7 osobnych map Roblox** na podstawie samego tego pliku.
 
 ## Wspólny język świata

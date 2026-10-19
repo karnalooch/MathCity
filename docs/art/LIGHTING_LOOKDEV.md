@@ -1,5 +1,11 @@
 # B4 — dzień / golden hour / noc: lookdev i testy
 
+## Konkretny wzorzec oświetlenia L1–L3
+
+![L1 dzień / L2 golden hour / L3 noc na identycznym schemacie Jacka](concepts/REF05_C01_LIGHTING_L1_L2_L3.svg)
+
+To ilustracja kierunku, **nie** zapis konfiguracji LightingStyle ani screenshot Roblox. Nie dopisuj wyników FPS bez Studio.
+
 **Status:** DOCUMENTED / NOT_TESTED_IN_ROBLOX. Ujęcie referencyjne LOCK-C01-A z [B1](STYLE_VARIANTS.md); powtórz dla Muchawki LOCK-N01-A, z wariantami zima/lato dla Sekuły.
 
 | ID | Światło i klimat | Cel | Fail |

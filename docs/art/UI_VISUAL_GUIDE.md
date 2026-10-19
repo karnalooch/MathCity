@@ -1,5 +1,13 @@
 # B7 — MathCity UI: dzieci 2–4, PC i mobile
 
+## Zobacz UI, zanim narysujesz własne
+
+![PC i telefon: ekran wyzwania i obszary sterowania](concepts/REF12_UI_PC_MOBILE_SAFEAREA.svg)
+
+![Matematyka na obiektach, nie tylko na formularzu](concepts/REF13_MATH_MINIGAME_VISUALS.svg)
+
+**To makiety.** Safe area i przyciski dotykowe wymagają sprawdzenia na prawdziwym kliencie Roblox; treści matematyczne konsultacji pedagogicznej.
+
 **Status:** UI DESIGN, nie zrealizowany HUD i nie testowane UI Roblox. Dzieci mogą odczytywać liczby i symbole, ale nie projektuj „dorosłego” ekranu wypchanego informacjami. Źródła: [R13,R14,R15,R16,R17](SOURCE_REGISTER.md).
 
 ## Priorytet wyświetlania

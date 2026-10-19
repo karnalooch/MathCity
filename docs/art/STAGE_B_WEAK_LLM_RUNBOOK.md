@@ -4,6 +4,19 @@
 
 > **Ważne:** zacznij od TEGO pliku. Wybierz potem tylko jedno [mikro-zadanie](TASK_PACKETS.md), a nie całą listę. Zapisuj wyniki na gałęzi dokumentacyjnej. Model bez generatora obrazów tworzy rzeczywiście **prompty**, nie obrazy.
 
+## PIERWSZY OBOWIĄZKOWY KROK: ZOBACZ OBRAZY REFERENCYJNE
+
+W repo jest już **17 oryginalnych plansz SVG**, patrz **[VISUAL_REFERENCE_ATLAS.md](VISUAL_REFERENCE_ATLAS.md)**. Nie są one zdjęciami prawdziwych miejsc ani finalnymi renderami. Zanim napiszesz prompt, kartę kadru czy opis bryły:
+
+1. Otwórz **właściwy SVG** i odczytaj jego kształty, paletę i adnotacje.
+2. Zmapuj V-ID do pliku w galerii. Dla C01 otwórz [REF01](concepts/REF01_C01_JACEK_SILHOUETTE.svg), dla N01 [REF02](concepts/REF02_N01_MUCHAWKA_HUB.svg), dla siedmiu stref [REF00](concepts/REF00_WORLD_7_ZONES.svg), a do stylów S1–S3 [REF03](concepts/REF03_C01_STYLE_TRIPTYCH.svg) i [REF04](concepts/REF04_N01_STYLE_TRIPTYCH.svg).
+3. Porównaj REAL z instytucjonalnymi źródłami Lxx. SVG może być artystycznie nieprecyzyjny, nigdy nie poprawia źródła.
+4. Jeśli nie możesz wizualnie obejrzeć SVG, wpisz `REFERENCE_IMAGE_NOT_INSPECTED`. **Nie udawaj, że obejrzałeś obraz.**
+5. Dla Kolejowa [REF14](concepts/REF14_T01_KOLEJOWO_REFERENCE_OPEN.svg) jest kompozycją, nie fotoreferencją dworca. Dla N07 Górka Grześ nadal `BLOCKED_GEOLOCATION`; nie ma wiernego renderu.
+6. Jeżeli wykonujesz docelowy render PNG, ma on własny plik i manifest, a **SVG_CONCEPT_GUIDE ≠ RENDERED_CONCEPT**.
+
+Podręczna mapa dla agenta: **B1:** REF03+REF04; **B2:** REF00,REF01,REF02,REF06,REF07,REF08,REF14,REF15; **B3:** REF11; **B4:** REF05; **B5:** REF09,REF13,REF16 i [karty](SHOT_CARDS_V01_V23.md); **B6:** REF10; **B7:** REF12; **B8:** [manifest](concepts/README.md) + [QA](VISUAL_REVIEW.md).
+
 ## 1. Kontrakt celu
 
 Gra ma być wielką, przyjazną, rozpoznawalną, ale **fikcyjnie przekomponowaną** wersją Siedlec z matematyką klas 2–4, przeznaczoną do działania w Roblox. Inspirowana letnim retro-miastem Vice City i energią kolorowej platformówki 3D, **bez kopii GTA/Mario**. Narzędzia UE, Blender i Material Forge z YACS mogą pomagać w przyszłej produkcji, ale nie stanowią silnika gry.

@@ -4,6 +4,14 @@
 
 W rozmowie koncepcyjnej powstał panoramiczny **render poglądowy** przedstawiający bajkowe, nadwodne miasto o zachodzie słońca: wieżę zegarową, park, stadion, dworzec, estakady, mosty, fontanny, portale liczbowe i postaci w ruchu. Jest to **moodboard fantasy**, nie wierne zdjęcie Siedlec, nie gotowy układ miasta i nie import UE/Roblox. Plik binarny renderu z rozmowy nie został dołączony do tego commita; w dokumentacji repo pozostają jego opis, paleta oraz własny schemat SVG. Obecne ilustracje: [assets/math_city_concept.jpg](../../assets/math_city_concept.jpg) oraz [assets/math_city_doors.jpg](../../assets/math_city_doors.jpg) (wcześniejsze zasoby, do osobnego przeglądu).
 
+## Referencje graficzne do V01–V23, dostępne na remote
+
+**[OTWÓRZ GALERIĘ 17 OBRAZÓW](VISUAL_REFERENCE_ATLAS.md)**. To **rzeczywiste pliki SVG** w `docs/art/concepts/` pokazujące m.in. siedem stref, C01, N01, pałac, sport, Sekułę, UI, pojazdy, grę matematyczną i 3 style. Każde V-ID jest przypisane w galerii do obrazka. Są to schematy, a **nie finalne promocyjne rendery**.
+
+![Dwa style porównywane w jednym kadrze: w istocie S1/S2/S3](concepts/REF03_C01_STYLE_TRIPTYCH.svg)
+
+![Jeden duży Zalew, a wyspy tylko fantasy](concepts/REF02_N01_MUCHAWKA_HUB.svg)
+
 ## Kadry docelowe do wykonania i zatwierdzenia
 
 | ID | Kadr | Wymagane elementy | Test rozpoznawalności / odrzucenia |
@@ -74,4 +82,4 @@ Celem konceptu nie jest zmyślanie ani uznawanie grafiki AI za fotografię Siedl
 
 **Kolejność:** (1) sześć porównawczych obrazów V02/V05 × S1/S2/S3 lub samych promptów, gdy brak generatora, (2) podstawowy V01–V10, (3) ujęcia Sekuły i sportu V11,V12,V14,V15 oraz Muchawki V18,V19,V23, (4) pozostałe V17,V20–V22, (5) V13 pozostaje BLOCKED_GEOLOCATION do potwierdzenia Górki Grześ. Identyczne porównanie = ta sama kamera i pora, nie tylko podobny pomysł.
 
-**Stan 2026-10-19:** 23 karty opisowe, 6 gotowych promptów porównawczych, **0 nowych plików obrazów**, **0 screenshotów Roblox**, status `PROMPT_READY_IMAGE_NOT_GENERATED` dla wizualizacji. Nie oznaczać renderów jako ukończonych na podstawie samej dokumentacji. [Manifest planowanych konceptów](concepts/README.md) i [B8 Review](VISUAL_REVIEW.md).
+**Stan 2026-10-19:** 23 karty opisowe, 6 gotowych promptów porównawczych, **17 oryginalnych obrazów pomocniczych SVG**, **0 finalnych renderów, 0 screenshotów Roblox**, status `PROMPT_READY_IMAGE_NOT_GENERATED` dla wizualizacji. Nie oznaczać renderów jako ukończonych na podstawie samej dokumentacji. [Manifest planowanych konceptów](concepts/README.md) i [B8 Review](VISUAL_REVIEW.md).
