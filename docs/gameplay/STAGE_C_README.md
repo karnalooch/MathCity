@@ -8,6 +8,10 @@ Rekomendowana formuła to **przygodowe Siedlce z odkrywaniem miejsc, krótkimi z
 
 Przeanalizowano publiczne materiały **15 konkretnych gier**. Potwierdzono adresy, identyfikatory miejsc i autorów, porównano opisane przez nich czynności, progresję i nagrody. Użyto dokumentacji Roblox oraz komunikatów twórców. **Nie wykonano własnych rozgrywek, oglądania nagrań ani pomiarów na telefonie. Liczba sesji manualnych: 0/15.** Czas pierwszej nagrody, FPS, rzeczywisty onboarding i ceny pozostają niezmierzone.
 
+## Rozszerzenie: Mario Kart i wyścigi MathCity
+
+Na zlecenie właściciela dodano [research przedmiotów, prowadzenia i trybów Mario Kart](stage_c/MARIO_KART_RACING_RESEARCH.md). To osobny wzorzec spoza platformy Roblox, nie szesnasta wykonana sesja benchmarku. Dokument obejmuje materiały Nintendo dla MK8 Deluxe i Mario Kart World, proponowane oddzielenie prób rekordowych od wyścigów z gadżetami, pięć kandydatów przedmiotów i zabezpieczenia przed nadużyciami. **Zestaw przedmiotów, podział trybów i parametry pojazdów pozostają propozycjami. Pytanie 17 o osiągi sprzętu nadal jest otwarte.** Matematyka bez stopera i wcześniej wybrane jednorazowe nagrody sportowe pozostają granicami projektu; nie zmieniono plików gry.
+
 ## Pakiet dokumentów
 
 | Plik | Zawartość |
@@ -20,6 +24,7 @@ Przeanalizowano publiczne materiały **15 konkretnych gier**. Potwierdzono adres
 | [ECONOMY_SAFETY_AND_SOCIAL.md](stage_c/ECONOMY_SAFETY_AND_SOCIAL.md) | Pięć antywzorców, uczciwe nagrody, komunikacja i bezpieczeństwo |
 | [PLAYTEST_PROTOCOL.md](stage_c/PLAYTEST_PROTOCOL.md) | Protokół 1/5/10/20 minut, rejestr 15 × NOT_RUN, testy mobilne i kooperacyjne |
 | [WEAK_LLM_RUNBOOK.md](stage_c/WEAK_LLM_RUNBOOK.md) | Instrukcja używania ustaleń bez dopowiadania wyników i rozbudowy zakresu |
+| [MARIO_KART_RACING_RESEARCH.md](stage_c/MARIO_KART_RACING_RESEARCH.md) | Przedmioty, prowadzenie, szansa dogonienia rywali i proponowane tryby sportowe |
 
 ## Pięć najważniejszych rekomendacji
 
