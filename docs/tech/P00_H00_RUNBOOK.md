@@ -16,6 +16,14 @@ Z katalogu głównego tego checkout, w PowerShell na Windows:
 
 Ta jedna komenda wykonuje P00, cook H00, kontrolę w świeżym procesie hython i kontrolę wszystkich wyeksportowanych próbek. Domyślny katalog wyników: nowy, unikalny `D:\MathCity\work\H00_<czas>_<id>`. Nie jest częścią YACS ani repozytorium. Niczego nie instaluje; nie uruchamia UE, Blendera, Material Forge ani Roblox.
 
+Istniejący checkout właściciela znajduje się w `D:\gem\Matma roblox`. Można uruchomić go z dowolnego katalogu PowerShella, przekazując jawne ścieżki:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File 'D:\gem\Matma roblox\tools\worldgen\Invoke-MathCityH00.ps1' -RepoRoot 'D:\gem\Matma roblox' -WorkRoot 'D:\MathCity\work' -Cook
+```
+
+Zgłoszony 2026-10-20 błąd `Split-Path` z pustym `$PSScriptRoot` dotyczył wyliczania domyślnego `RepoRoot` w bloku `param`, jeszcze przed P00. Zachowanie opisuje [PowerShell #4688](https://github.com/PowerShell/PowerShell/issues/4688). Poprawka przenosi wyliczanie ścieżek do ciała skryptu po związaniu parametrów; jawny `-RepoRoot` pozostaje obsługiwany. Samo usunięcie tej przyczyny błędu startowego nie stanowi dowodu cook ani importu.
+
 Samo rozpoznanie warsztatu:
 
 ```powershell

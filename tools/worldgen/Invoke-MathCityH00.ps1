@@ -6,7 +6,7 @@ Example: .\tools\worldgen\Invoke-MathCityH00.ps1 -Cook
 #>
 [CmdletBinding(DefaultParameterSetName = 'Audit')]
 param(
-    [string]$RepoRoot = (Split-Path -Parent (Split-Path -Parent $PSScriptRoot)),
+    [string]$RepoRoot,
     [string]$WorkRoot = 'D:\MathCity\work',
     [string]$HythonPath,
     [string]$BlenderPath,
@@ -21,6 +21,19 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 if ($env:OS -ne 'Windows_NT') { throw 'BLOCKED_PLATFORM: run this entrypoint on the existing Windows workstation.' }
+
+# Resolve script-relative paths after parameter binding, when the script context exists.
+$WorldgenScriptDirectory = $PSScriptRoot
+if ([string]::IsNullOrWhiteSpace($WorldgenScriptDirectory)) {
+    $WorldgenScriptPath = $PSCommandPath
+    if ([string]::IsNullOrWhiteSpace($WorldgenScriptPath)) {
+        throw 'BLOCKED_SCRIPT_PATH: invoke the saved Invoke-MathCityH00.ps1 file with -File or the call operator.'
+    }
+    $WorldgenScriptDirectory = Split-Path -Parent $WorldgenScriptPath
+}
+if ([string]::IsNullOrWhiteSpace($RepoRoot)) {
+    $RepoRoot = Split-Path -Parent (Split-Path -Parent $WorldgenScriptDirectory)
+}
 
 function Write-Json([string]$Path, $Value) {
     $json = $Value | ConvertTo-Json -Depth 30
@@ -167,7 +180,7 @@ try {
     $mcpPath = if ($env:LOCALAPPDATA) { Join-Path $env:LOCALAPPDATA 'Roblox\mcp.bat' } else { $null }
     $Report.tools.roblox_mcp = if ($mcpPath -and (Test-Path -LiteralPath $mcpPath -PathType Leaf)) { Describe-File $mcpPath } else { @{ status = 'NOT_DETECTED' } }
     if (-not $HythonPath) { throw 'BLOCKED_HOUDINI_NOT_FOUND: supply the verified existing -HythonPath; do not install another copy.' }
-    $inspect = Join-Path $PSScriptRoot 'inspect_houdini.py'
+    $inspect = Join-Path $WorldgenScriptDirectory 'inspect_houdini.py'
     $inventoryPath = Join-Path $RunDir 'houdini_environment.json'
     Invoke-HythonStage 'inspect' @($inspect, '--output', $inventoryPath) $InspectionTimeoutSeconds
     if (-not (Test-Path -LiteralPath $inventoryPath -PathType Leaf)) { throw 'BLOCKED_INVENTORY: hython produced no environment report.' }
@@ -179,8 +192,8 @@ try {
     $Report.status = 'PREFLIGHT_INSPECTED'
     if ($Cook) {
         $config = Join-Path $RepoRoot 'worldgen\h00\recipe.json'
-        $builder = Join-Path $PSScriptRoot 'build_h00.py'
-        $validator = Join-Path $PSScriptRoot 'validate_h00.py'
+        $builder = Join-Path $WorldgenScriptDirectory 'build_h00.py'
+        $validator = Join-Path $WorldgenScriptDirectory 'validate_h00.py'
         foreach ($requiredFile in @($config, $builder, $validator)) {
             if (-not (Test-Path -LiteralPath $requiredFile -PathType Leaf)) { throw "BLOCKED_ENTRYPOINT_MISSING: $requiredFile" }
         }
