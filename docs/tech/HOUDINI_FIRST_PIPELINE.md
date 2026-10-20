@@ -5,6 +5,8 @@
 
 Ta hierarchia jest obowiązująca dla kolejnych pakietów świata. Nie tworzymy czterech konkurencyjnych wersji tej samej mapy.
 
+**Uruchomione P00 + H00:** [skrypty, komenda i odbiór](P00_H00_RUNBOOK.md). Dostarczenie kodu nie jest dowodem cooka ani importu. Implementacja zapisuje PNG przez adapter odczytujący natywnie ugotowane HeightFields; osobny preset natywnego HeightField Output pozostaje `NOT_RUN`, co opisuje runbook.
+
 ## 1. Hierarchia narzędzi
 
 | Priorytet | Narzędzie | Odpowiedzialność |
@@ -160,7 +162,7 @@ Biblioteka materiałów, stylizowane PBR, warianty i paleta. Nie tworzy rozwiąz
 
 ## 15. Stop rules dla słabszego LLM
 
-STOP i BLOCKED, gdy nie znaleziono istniejącej instalacji Houdiniego YACS; SideFX Labs/node nie istnieje; licencja assetu jest nieznana; skala eksportu niepotwierdzona; importer Roblox odrzuca plik; normal map jest odwrócona; terrain import ma zły zakres; albo rozwiązanie wymaga ręcznego poprawiania setek elementów po każdym cooku.
+STOP i BLOCKED, gdy nie znaleziono istniejącej instalacji Houdiniego YACS; nie istnieje wymagany przez dany graf operator (także Labs, jeżeli graf go używa); licencja assetu jest nieznana; skala eksportu niepotwierdzona; importer Roblox odrzuca plik; normal map jest odwrócona; terrain import ma zły zakres; albo rozwiązanie wymaga ręcznego poprawiania setek elementów po każdym cooku. H00 używa natywnych SOP: brak Labs zapisuje jako wynik inwentaryzacji, bez instalowania pakietu niepotrzebnego temu grafowi.
 
 LLM nie omija Houdiniego i nie przechodzi na ręczne budowanie świata w Roblox tylko dlatego, że pipeline wymaga naprawy.
 

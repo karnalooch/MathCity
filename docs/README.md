@@ -22,6 +22,8 @@ Nowa wizja: ogromne, autorskie Siedlce w Roblox, nie replika1:1. Wspólna mapa, 
 
 **Houdini jest primary world/content tool.** Unreal Engine, Blender i Material Forge z YACS są wsparciem; Roblox jest runtime. Pełny kontrakt: **[HOUDINI_FIRST_PIPELINE.md](tech/HOUDINI_FIRST_PIPELINE.md)**.
 
+**P00 + H00 uruchomione do wykonania:** [komenda Windows, generator Houdini i test importu](tech/P00_H00_RUNBOOK.md). [Raport dostarczenia kodu](reports/P00_H00_DELIVERY_20261020.md) rozdziela testy plików od niewykonanego jeszcze cooka/Studio. Recepta: [`worldgen/h00/recipe.json`](../worldgen/h00/recipe.json). Wytworzone HIP/PNG/cache pozostają w osobnym katalogu roboczym na D:.
+
 Pierwsze trzy dowody techniczne to **H00 Terrain**, **H01 procedural mesh** i **H02 materials**. Nie budujemy miasta ręcznie w Roblox Studio jako obejścia niedziałającego generatora.
 
 ## Aktualny stan etapów
