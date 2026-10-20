@@ -1,6 +1,6 @@
 # MathCity: decyzje właściciela i status wcześniejszych propozycji
 
-Aktualizacja2026-10-19. Zachowano identyfikatory D-001…D-013. Nowe szczegółowe decyzje znajdują się w [OWNER_DECISIONS_20261019.md](OWNER_DECISIONS_20261019.md): **Q01…Q33**. Nie zamieniaj ich z powrotem w pytania do głosowania. Zatwierdzony projekt nie oznacza wykonanej gry.
+Aktualizacja 2026-10-20. Zachowano identyfikatory D-001…D-014. Nowe szczegółowe decyzje znajdują się w [OWNER_DECISIONS_20261019.md](OWNER_DECISIONS_20261019.md): **Q01…Q33**. Nie zamieniaj ich z powrotem w pytania do głosowania. Zatwierdzony projekt nie oznacza wykonanej gry.
 
 ## Wcześniejsze wymagania, nadal obowiązujące
 
@@ -19,6 +19,7 @@ Aktualizacja2026-10-19. Zachowano identyfikatory D-001…D-013. Nowe szczegóło
 | D-011 | Trasy narciarskie Sekuły w researchu | biegówki według źródeł, nie stok zjazdowy |
 | D-012 | Stadion i basen istotnymi ośrodkami | osobne karty i funkcje, nie dekoracyjne bryły |
 | D-013 | Zalew Muchawka pełnym istotnym hubem | N01 osobno od S02; fantasy podstrefy/mechaniki nadal do odbioru |
+| **D-014** | **Houdini jest głównym wykonawcą świata/contentu; UE, Blender i Material Forge z YACS są wsparciem** | Houdini jest source-of-truth proceduralnego terenu, masek, dróg/korytarzy, generatorów, scatter i eksportów; UE=lookdev, Blender=cleanup/hero, Material Forge=PBR; Roblox jedynym runtime |
 
 ## Nowy zapis decyzji
 

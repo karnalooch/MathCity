@@ -58,9 +58,21 @@ Zaimplementuj jedną krótką serię używając M34/M33; nie zamieniaj jej w ca�
 
 Dodaj role per-stage, części własne per-player, kolejkę wolnych miejsc na bieżącym serwerze. Człowiek dołącza tylko w bezpiecznej granicy etapów. Rozłączanie i odłączanie od grupy pozostawia osobisty postęp. Dodaj nagrody co-op i catch-up tylko po prawdziwym wkładzie. **Testy:** 1/2/3/4 graczy; wejście 5.; zmiana lidera; odejście przed nagrodą; uzupełnienie składu; brak czatu; ponowne dołączenie. **Odbiór:** żadnych ghost rewards i obowiązkowych czterech stanowisk.
 
-## P06: test importu i masterplan całego świata
+## P06: **HOUDINI FIRST** — H00/H01/H02 i masterplan całego świata
 
-Jedna legalna próbka assetu z UE/Blender/Material Forge → Roblox. Następnie makieta WSZYSTKICH roboczych stref, nie tylko promenady. Warianty 8192/16384 studów pozostają eksperymentami; dobierz realistyczną gęstość instancji, granice streamingu i widoczne ikony Siedlec. Zachowaj otwarte pytania z A/B. **Odbiór:** pomiary ruchu i streamingu, aktualizacji assetu, kolizji; najpierw iPad. Zmniejszenie skali lub usunięcie iPada wymaga decyzji właściciela, nie cichego kompromisu.
+**Wejście:** [HOUDINI_FIRST_PIPELINE](../tech/HOUDINI_FIRST_PIPELINE.md), pipeline, Art Bible, atlas i audyt licencji. Najpierw wykryj istniejący Houdini/SideFX Labs z YACS; nie instaluj nowego DCC.
+
+**H00 Terrain:** mały HeightField z pagórkiem/doliną/brzegiem/building pad → erosion/constraints → heightmap + colormap → Roblox Terrain.
+
+**H01 Mesh:** proceduralny pomost/murek/moduł ulicy → UV/pivot → FBX/glTF → Roblox, z kontrolą ponownego cooku po zmianie parametru.
+
+**H02 Material:** trzy materiały z Material Forge/Houdini → PBR → SurfaceAppearance/MaterialVariant; normal map OpenGL.
+
+UE wolno użyć do lookdev/review, Blender do hero-detail/retopo/UV/cleanup, Material Forge do PBR. **Nie wolno przenieść source-of-truth świata z Houdiniego do UE/Blendera.**
+
+Po H00/H01/H02: makieta WSZYSTKICH roboczych stref. Warianty 8192/16384 studów pozostają eksperymentami. Dla Terrain odpowiadają im odpowiednio heightmapy 2048 i 4096 px przy 4 studach/piksel. Dobierz realistyczną gęstość instancji, granice streamingu i widoczne ikony Siedlec.
+
+**Odbiór:** regenerowalność, porównanie przed/po recook, aktualizacja bez ręcznej rekonstrukcji, skala, materiały, kolizja, ruch i streaming; potem obowiązkowy iPad gate. Zmniejszenie skali, obejście Houdiniego przez ręczne budowanie albo usunięcie iPada wymaga decyzji właściciela.
 
 ## P07: czysta jazda i porównywalne rekordy
 

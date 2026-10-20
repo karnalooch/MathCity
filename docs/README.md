@@ -18,6 +18,12 @@ Status: **OFFICIAL_MCP_CONFIRMED / CONFIG_DOCUMENTED / LOCAL_CONNECTION_NOT_RUN*
 
 Nowa wizja: ogromne, autorskie Siedlce w Roblox, nie replika1:1. Wspólna mapa, indywidualna matematyka klas2–4, lokalne przygody, progres bez grindu, własny pokój, dobrowolne wyścigi i współpraca. UE, Blender i Material Forge z YACS są zapleczem produkcyjnym; docelową grę testuje się w Roblox.
 
+## Houdini FIRST — decyzja produkcyjna
+
+**Houdini jest primary world/content tool.** Unreal Engine, Blender i Material Forge z YACS są wsparciem; Roblox jest runtime. Pełny kontrakt: **[HOUDINI_FIRST_PIPELINE.md](tech/HOUDINI_FIRST_PIPELINE.md)**.
+
+Pierwsze trzy dowody techniczne to **H00 Terrain**, **H01 procedural mesh** i **H02 materials**. Nie budujemy miasta ręcznie w Roblox Studio jako obejścia niedziałającego generatora.
+
 ## Aktualny stan etapów
 
 | Obszar | Co jest dostarczone | Co pozostaje otwarte |
@@ -63,7 +69,7 @@ Zapis specyfikacji nie kończy badań A/B/C, nie scala PR#1 ani nie dopuszcza gr
 
 [Etap C](gameplay/STAGE_C_README.md), [15 gier](gameplay/stage_c/BENCHMARK_15_GAMES.md), [protokół prawdziwych testów](gameplay/stage_c/PLAYTEST_PROTOCOL.md), [research Mario Kart](gameplay/stage_c/MARIO_KART_RACING_RESEARCH.md), [wstępna analiza rynku](gameplay/ROBLOX_MARKET_RESEARCH_2026.md). Nieaktualne statusy „propozycja” w historycznym researchu rozstrzygają obecne Qxx; nie przypisujemy jednak nowych decyzji właścicielowi bez jego odpowiedzi.
 
-[Wstępna mapa edukacyjna](education/CURRICULUM_2_4.md) zachowana jako tło Muchawki i projektu. Źródłem bieżących kontraktów jest etap D, nie pierwsza ogólna tabela klas. [Pipeline YACS](tech/CONTENT_PIPELINE.md), [duży świat](tech/LARGE_WORLD.md), [testowanie v1](tech/PLAYTESTING.md), [prawa i publikacja](legal/RIGHTS_AND_COMPLIANCE.md), [bibliografia researchu](research/SOURCES.md), [ryzyka](research/RISKS_AND_OPEN_QUESTIONS.md), [karta wizji](vision/PROJECT_CHARTER.md).
+[Wstępna mapa edukacyjna](education/CURRICULUM_2_4.md) zachowana jako tło Muchawki i projektu. Źródłem bieżących kontraktów jest etap D, nie pierwsza ogólna tabela klas. [Houdini-first pipeline](tech/HOUDINI_FIRST_PIPELINE.md), [skrót pipeline'u](tech/CONTENT_PIPELINE.md), [duży świat](tech/LARGE_WORLD.md), [testowanie v1](tech/PLAYTESTING.md), [prawa i publikacja](legal/RIGHTS_AND_COMPLIANCE.md), [bibliografia researchu](research/SOURCES.md), [ryzyka](research/RISKS_AND_OPEN_QUESTIONS.md), [karta wizji](vision/PROJECT_CHARTER.md).
 
 ## Prototyp v1, nie wymagania nowej gry
 

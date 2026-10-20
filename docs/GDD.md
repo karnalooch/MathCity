@@ -40,7 +40,7 @@ Kilka stylów prowadzenia dostępnych każdemu bez grindu; skórka i poziom nie 
 
 ## 7. Technologia i urządzenia
 
-Roblox jest runtime. UE/Blender/Material Forge z YACS wspierają produkcję, bez automatycznego przeniesienia logiki i shaderów UE. Najpierw mały test legalnego assetu i aktualizacji, następnie realistyczna makieta wszystkich stref. Mały pilot nie zastępuje wielkiego miasta.
+Roblox jest runtime. **Houdini z warsztatu YACS jest głównym wykonawcą proceduralnego świata i contentu:** HeightFields, erozja, maski, drogi/korytarze, building pads, proceduralne meshe, scatter i eksport. UE, Blender i Material Forge pomagają: UE = lookdev/review, Blender = hero-detail/retopo/UV/cleanup, Material Forge = PBR. Nie tworzymy równoległego mastera świata w UE lub Blenderze. [Houdini-first pipeline](tech/HOUDINI_FIRST_PIPELINE.md). Najpierw H00 terrain, H01 mesh i H02 material, następnie realistyczna makieta wszystkich stref. Mały pilot nie zastępuje wielkiego miasta.
 
 Obowiązkowe punkty odniesienia: iPad6, MotorolaG54, RedmiNote14 4G, PC RTX2070/i5 10.gen./32GBDDR4. iPad6 nie jest opcjonalny; cel30FPS na mobile i60FPS1080p na PC ma zostać zmierzony. Pełne UI dotykowe, funkcjonalne obiekty widoczne na niskiej grafice. [Urządzenia](tech/DEVICE_ACCEPTANCE.md), [serwer i zapis](tech/DATA_AND_SERVER_CONTRACT.md).
 

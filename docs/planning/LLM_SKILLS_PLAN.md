@@ -60,7 +60,7 @@ Jedna pozycja jest kandydatem zewnętrznym, osiem to nasze skille do przygotowan
 | SK04 `mathcity-ui-mobile` | Ekran zadania, gesty, podpowiedzi, paszport | Stany UI, tekst PL, silne prowadzenie wizualne, alternatywa dla przeciągania, rozdzielenie pomocy obsługowej i matematycznej | Pierwsze UI |
 | SK05 `mathcity-progression-coop` | EXP, nagrody, zapis przygody, drużyny i wspólny świat | Oddziel EXP od matematyki; nagroda raz, 1–4 osoby, wejście między etapami, rozłączenie bez utraty potwierdzonej pracy | Pierwszy progres |
 | SK06 `mathcity-racing` | Profile, stoper, boty, gadżety, wyniki znajomych | Równa dostępność profili, rozdzielone rekordy, ograniczone doganianie przez przedmioty, brak botowego bonusu co-op | Później |
-| SK07 `mathcity-asset-pipeline` | UE/Blender/Material Forge → obiekt Roblox | Zweryfikowana referencja i prawo do użycia, wersje narzędzi, skala, pivot, UV, materiały, kolizje, powtarzalny import i podgląd Roblox | Etap E |
+| SK07 `mathcity-asset-pipeline` | **Houdini-first** terrain/mesh/material → Roblox | Houdini PRIMARY: HeightField, maski, procedural geometry, scatter i export; UE/Blender/Material Forge SUPPORT; skala, pivot, UV, PBR, kolizje, powtarzalny cook/import i podgląd Roblox | Etap E |
 | SK08 `mathcity-performance` | Pomiar i poprawa kosztu świata/wyścigu | Scenariusz i urządzenie, baseline, profiler, jedna zmiana, pomiar po niej; test 16 realnych klientów jest osobnym dowodem | Pierwsza scena i każda ciężka zmiana |
 | SK09 `mathcity-verification` | Testy, diagnoza, review, koniec pakietu | Dobór dowodu do tezy; testy Luau/Studio/urządzenia rozdzielone; wynik z SHA i jawnym NOT_RUN, bez automatycznego merge | Teraz |
 
@@ -75,7 +75,7 @@ Dokumenty produktu pozostają jednym źródłem ustaleń. Nie kopiować całych 
 - SK04: [kontrakt UI](../ux/LEARNING_UI_CONTRACT.md), [urządzenia](../tech/DEVICE_ACCEPTANCE.md).
 - SK05: [nagrody](../gameplay/specs/PROGRESSION_AND_REWARDS.md), [co-op](../gameplay/specs/COOP_AND_WORLD_STATE.md), [serwer i zapis](../tech/DATA_AND_SERVER_CONTRACT.md).
 - SK06: [wyścigi](../gameplay/specs/RACING.md), [badania Nintendo](../gameplay/stage_c/MARIO_KART_RACING_RESEARCH.md).
-- SK07: [pipeline](../tech/CONTENT_PIPELINE.md), [Art Bible](../art/ART_BIBLE.md), [atlas miejsc](../world/atlas/LANDMARK_CATALOG.md). Dokumentów z osobnej gałęzi PR nie traktować jako plików obecnych na main.
+- SK07: **[Houdini-first](../tech/HOUDINI_FIRST_PIPELINE.md)**, [skrót pipeline](../tech/CONTENT_PIPELINE.md), [Art Bible](../art/ART_BIBLE.md), [atlas miejsc](../world/atlas/LANDMARK_CATALOG.md). Houdini jest PRIMARY; UE/Blender/Material Forge tylko SUPPORT. Dokumentów z osobnej gałęzi PR nie traktować jako plików obecnych na main.
 - SK08: [urządzenia](../tech/DEVICE_ACCEPTANCE.md), [duży świat](../tech/LARGE_WORLD.md), dokumentacja MicroProfilera [S09].
 - SK09: [macierz odbioru](ACCEPTANCE_MATRIX.md) oraz aktualny kontrakt i przypadki danego pakietu.
 
@@ -185,3 +185,9 @@ Pierwsze dwa testy narzędziowe:
 - `MCP01_EDIT_SMOKE`: dopiero po uruchomieniu P00, minimalny probe w kopii testowej, playtest, log, usunięcie probe, bez publikacji.
 
 Status po tym commicie: **OFFICIAL_MCP_CONFIRMED / CONFIG_DOCUMENTED / LOCAL_CONNECTION_NOT_RUN**.
+
+### 11A. Houdini-first — routing contentu
+
+Decyzja D-014: SK07 nie może dowolnie wybierać DCC. **Houdini jest domyślnym source-of-truth dla świata i proceduralnych assetów.** Blender, UE i Material Forge są wywoływane tylko dla jasno określonej roli pomocniczej. Jeżeli słabszy LLM zaczyna ręcznie rzeźbić pełny teren w Roblox albo budować drugi master w UE, ma zatrzymać pracę i wrócić do [HOUDINI_FIRST_PIPELINE](../tech/HOUDINI_FIRST_PIPELINE.md).
+
+W pierwszym technicznym pakiecie wykryć faktyczną wersję Houdiniego i SideFX Labs z YACS; nie instalować nowej kopii. Pierwsze dowody: H00/H01/H02.
