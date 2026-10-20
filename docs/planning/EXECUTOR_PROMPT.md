@@ -9,6 +9,15 @@ Pracujesz w karnalooch/MathCity. Najpierw przeczytaj:
 3. docs/planning/EXECUTION_PACKETS.md
 4. Dokumenty wejściowe wyłącznie dla aktualnego pakietu.
 
+Dla pakietu wymagającego Roblox Studio przeczytaj dodatkowo:
+- docs/tech/ROBLOX_STUDIO_MCP.md
+- docs/planning/MCP_REMOTE_WORKFLOW.md
+Najpierw wykryj listę otwartych instancji i wybierz jawny studio_id. W trybie
+docs-only nie łącz się do Studio tylko po to, żeby „coś sprawdzić”. W pakiecie
+kodowym używaj kopii testowej. Nie publikuj i nie dotykaj produkcyjnego DataStore.
+MCP_CONNECTED/STUDIO_PASS/DEVICE_PASS/16_CLIENT_PASS raportuj osobno.
+
+
 Aktualny zakres: sprawdź D00, następnie wykonaj D01. Jeżeli D00 jest już
 udokumentowany, nie przepisuj całego repo; przejdź do brakujących dowodów D01.
 Nie uruchamiaj kolejnego pakietu Pxx bez osobnego zlecenia.

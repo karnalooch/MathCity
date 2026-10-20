@@ -6,6 +6,12 @@
 
 [LLM_SKILLS_PLAN.md](planning/LLM_SKILLS_PLAN.md) opisuje rekomendowaną bibliotekę: jeden zewnętrzny kandydat Roblox/Luau, osiem własnych skilli projektowych, selektywne procedury testów i diagnostyki, routing do istniejących kontraktów, integracje oraz 12 prób odbioru samych skilli. **PROPOSED_STACK / NOT_INSTALLED / SKILL_EVALUATIONS_NOT_RUN.** Nie zainstalowano pakietów, nie połączono Studio ani nie nadano uprawnień do implementacji gry.
 
+## Roblox Studio MCP: oficjalna ścieżka do Studio
+
+Roblox Studio ma wbudowany serwer MCP. Konfiguracja Windows, Quick Connect, lista narzędzi, `studio_id`, smoke test i zasady bezpieczeństwa są w **[ROBLOX_STUDIO_MCP.md](tech/ROBLOX_STUDIO_MCP.md)**. Słabszy wykonawca ma używać procedury **[MCP_REMOTE_WORKFLOW.md](planning/MCP_REMOTE_WORKFLOW.md)**.
+
+Status: **OFFICIAL_MCP_CONFIRMED / CONFIG_DOCUMENTED / LOCAL_CONNECTION_NOT_RUN**. MCP nie został jeszcze połączony z komputerem w ramach tego commita i nie daje automatycznie pozwolenia na modyfikowanie `MathCity.rbxl`.
+
 ## Wykonawca zaczyna tutaj
 
 **[WEAK_LLM_START_HERE.md](planning/WEAK_LLM_START_HERE.md)** wyznacza kolejność czytania i pracy. **[Gotowy prompt](planning/EXECUTOR_PROMPT.md)** uruchamia jeden mały pakiet, nie cały projekt naraz. **[33 decyzje Q01–Q33](planning/OWNER_DECISIONS_20261019.md)** są nadrzędne wobec wcześniejszych propozycji A/B/C. **[Pakiety D00–D06 i P00–P10](planning/EXECUTION_PACKETS.md)** określają wejścia, czynności, wyjścia i warunki odbioru.

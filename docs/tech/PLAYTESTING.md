@@ -32,3 +32,9 @@ Oficjalne informacje: [Studio testing modes](https://create.roblox.com/docs/stud
 ## Artefakty późniejszego testu
 
 W przyszłym etapie każde potwierdzenie techniczne powinno mieć: numer zadania, commit, wariant grafiki, urządzenie, datę, logi, pomiary i screenshot. Teraz tylko ustalamy definicję dowodu.
+
+## Roblox Studio MCP
+
+Preferowana integracja lokalnego wykonawcy to **wbudowany serwer MCP Roblox Studio**. Instrukcja: [ROBLOX_STUDIO_MCP.md](ROBLOX_STUDIO_MCP.md). GitHub + Studio workflow: [MCP_REMOTE_WORKFLOW.md](../planning/MCP_REMOTE_WORKFLOW.md).
+
+Pierwsza próba musi być read-only: lista Studio, jawny `studio_id`, odczyt skryptu i dokumentacji, zero zmian. Edycja dopiero po uruchomieniu konkretnego pakietu Pxx, zawsze w kopii testowej. MCP playtest nie zastępuje testów na iPadzie 6, Motoroli G54, Redmi Note 14 4G ani próby 16 klientów.

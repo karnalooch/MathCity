@@ -48,6 +48,15 @@ Przeczytaj ten plik, właściwe wiersze Qxx, jeden kontrakt i kartę minigry. Ni
 | Sieć, zapis, bezpieczeństwo | [DATA_AND_SERVER_CONTRACT](../tech/DATA_AND_SERVER_CONTRACT.md) |
 | iPad, Android, PC i 16 graczy | [DEVICE_ACCEPTANCE](../tech/DEVICE_ACCEPTANCE.md) |
 
+
+## 4A. Roblox Studio MCP
+
+Przed każdym pakietem wymagającym Studio przeczytaj [ROBLOX_STUDIO_MCP.md](../tech/ROBLOX_STUDIO_MCP.md) i [MCP_REMOTE_WORKFLOW.md](MCP_REMOTE_WORKFLOW.md). Studio ma wbudowany serwer MCP. Nie instaluj przypadkowego zewnętrznego serwera, jeśli oficjalny wystarcza.
+
+Najpierw `list_roblox_studios` lub odpowiednik wykryty w aktualnym Studio; wybierz jawny `studio_id`. Nigdy nie polegaj na „aktywnym oknie”. Przy pracy dokumentacyjnej nie łącz się do Studio bez potrzeby. Przy kodowym Pxx używaj wyłącznie kopii testowej i jednej instancji autora zmian.
+
+MCP nie zmienia granic pakietu. Symulacja urządzenia nie daje `DEVICE_PASS`, a playtest Studio nie daje `16_CLIENT_PASS`.
+
 ## 5. Preflight przed każdym pakietem
 
 Ustal HEAD i gałąź; przeczytaj diff od poprzedniego zadania. Sprawdź, czy ktoś zmienił wymagane pliki. Jeśli stan lokalny brudny, nie resetuj ani nie stashuj cudzych zmian bez decyzji. Zapisz blob SHA mapy i drzew kodu przed pracą. Potwierdź zakres upoważnienia oraz istnienie narzędzi; ścieżki instalacji na D: trzeba wykryć, nie skopiować z YACS na ślepo. Nie instaluj na C: na podstawie domyślnych ustawień.

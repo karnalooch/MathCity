@@ -171,3 +171,17 @@ S10. Gemini CLI, [Agent Skills](https://geminicli.com/docs/cli/skills/) i [zarz�
 S11. Blender, [Python API: automatyzacja i konwersje plików](https://docs.blender.org/api/main/info_advanced_blender_as_bpy.html). Nie polecamy instalacji odrębnego modułu pip ani nowej kopii Blendera; używamy istniejącego programu po sprawdzeniu wersji.
 
 S12. Alternatywne biblioteki, przegląd opisów: [luumenlabs/luau-skills](https://github.com/luumenlabs/luau-skills), [afrxo/roblox-agent-skills](https://github.com/afrxo/roblox-agent-skills), [flatbedj/roblox-skills](https://github.com/flatbedj/roblox-skills), [EL4CTEO/roblox-skills](https://github.com/EL4CTEO/roblox-skills). Nie zaudytowano całości i nie wybrano do równoległej instalacji.
+
+## 11. Oficjalny Roblox Studio MCP — decyzja integracyjna 2026-10-20
+
+Wbudowany serwer Roblox Studio MCP został potwierdzony w oficjalnej dokumentacji Roblox. Szczegółowa konfiguracja, Windows JSON, narzędzia, studio_id i bezpieczne smoke testy: [ROBLOX_STUDIO_MCP.md](../tech/ROBLOX_STUDIO_MCP.md). Procedura remote + Studio: [MCP_REMOTE_WORKFLOW.md](MCP_REMOTE_WORKFLOW.md).
+
+**Zmiana względem wcześniejszego planu:** nie szukamy zewnętrznego serwera sterującego Roblox Studio jako domyślnej drogi. Preferujemy wbudowany serwer Studio. Zewnętrzne integracje mogą być rozważane wyłącznie, jeśli konkretna funkcja jest nieobecna i istnieje osobny audyt bezpieczeństwa.
+
+Przed kodem SK02/SK09 mają wykryć realne narzędzia z aktualnej sesji. Nazwy dostępnych skills/narzędzi z MCP są danymi runtime, nie stałą wpisaną na ślepo do promptu. Quick Connect jest preferowany, gdy lokalny klient jest wspierany.
+
+Pierwsze dwa testy narzędziowe:
+- `MCP00_READONLY_SMOKE`: listowanie Studio + odczyt skryptu + dokumentacji, bez modyfikacji;
+- `MCP01_EDIT_SMOKE`: dopiero po uruchomieniu P00, minimalny probe w kopii testowej, playtest, log, usunięcie probe, bez publikacji.
+
+Status po tym commicie: **OFFICIAL_MCP_CONFIRMED / CONFIG_DOCUMENTED / LOCAL_CONNECTION_NOT_RUN**.
