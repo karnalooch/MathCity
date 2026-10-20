@@ -56,14 +56,79 @@ def validate_features(recipe):
     numbers(features)
 
 
-def scalar(node, label, value):
-    """Resolve an exact documented label, rejecting absent/ambiguous APIs."""
-    matches = [p for p in node.parms() if p.parmTemplate().label() == label]
-    if len(matches) != 1:
-        raise RuntimeError(f"BLOCKED_NODE_SCHEMA: {node.type().name()} {label!r} matches={len(matches)}")
-    matches[0].deleteAllKeyframes()
-    matches[0].set(value)
-    return matches[0].name()
+# Native inventory: Houdini 22.0.466, run H00_20261020T220649684Z_82216fe0.
+# Semantic role labels preserve the manifest contract; UI labels are not an API.
+ERODE_NODE_TYPE = "heightfield_erode::3.0"
+ERODE_CONTROLS = (
+    ("Freeze", "dofreeze", "parmTemplateType.Toggle"),
+    ("Freeze at Frame", "freezeframe", "parmTemplateType.Int"),
+    ("Start Frame", "startframe", "parmTemplateType.Int"),
+    ("Random Seed", "seed", "parmTemplateType.Float"),
+    ("Erosion Feature Size", "erosionscale", "parmTemplateType.Float"),
+)
+
+
+def resolve_erode_contract(node):
+    """Validate all five native controls before changing any parameter."""
+    errors, resolved = [], {}
+    if node.type().name() != ERODE_NODE_TYPE:
+        errors.append(f"node type {node.type().name()!r}; expected {ERODE_NODE_TYPE!r}")
+    for role, name, expected_type in ERODE_CONTROLS:
+        parm_tuple = node.parmTuple(name)
+        if parm_tuple is None:
+            errors.append(f"{role}: missing {name}")
+            continue
+        template = parm_tuple.parmTemplate()
+        if template.numComponents() != 1 or len(parm_tuple) != 1:
+            errors.append(f"{role}: {name} must be scalar; template={template.numComponents()}, tuple={len(parm_tuple)}")
+        actual_type = str(template.type())
+        if actual_type != expected_type:
+            errors.append(f"{role}: {name} type {actual_type}; expected {expected_type}")
+        if node.parm(name) is None:
+            errors.append(f"{role}: missing scalar parameter {name}")
+        resolved[role] = name
+    if errors:
+        raise RuntimeError("BLOCKED_NODE_SCHEMA: " + "; ".join(errors))
+    return resolved
+
+
+def configure_erode(node, recipe):
+    """Apply the observed native contract and verify every effective value."""
+    resolved = resolve_erode_contract(node)
+    expected = {
+        "Freeze": 1,
+        "Freeze at Frame": recipe["erosion"]["freeze_frame"],
+        "Start Frame": recipe["erosion"]["start_frame"],
+        "Random Seed": recipe["seed"],
+        "Erosion Feature Size": recipe["erosion"]["feature_size_m"],
+    }
+    for role, value in expected.items():
+        parm = node.parm(resolved[role])
+        parm.deleteAllKeyframes()
+        parm.set(value)
+    for role, expression in {
+        "Freeze at Frame": "RECIPE['erosion']['freeze_frame']",
+        "Start Frame": "RECIPE['erosion']['start_frame']",
+        "Random Seed": "RECIPE['seed']",
+        "Erosion Feature Size": "RECIPE['erosion']['feature_size_m']",
+    }.items():
+        bind_recipe(node.parm(resolved[role]), expression)
+    errors, readback = [], {}
+    for role, value in expected.items():
+        actual = node.parm(resolved[role]).eval()
+        readback[role] = actual
+        valid = isinstance(actual, (int, float)) and math.isfinite(actual)
+        if valid and role == "Erosion Feature Size":
+            valid = math.isclose(actual, value, rel_tol=0.0, abs_tol=1e-6)
+        elif valid:
+            # Seed is a native Float, but represents an integer: ±1 is a different
+            # simulation. Never use relative tolerance for seed or frame controls.
+            valid = actual == value
+        if not valid:
+            errors.append(f"{resolved[role]} expected {value!r}, read {actual!r}")
+    if errors:
+        raise RuntimeError("BLOCKED_EROSION_READBACK: " + "; ".join(errors))
+    return resolved, readback
 
 
 def set_known(node, name, value):
@@ -203,9 +268,14 @@ def build(config_path, output):
         raise RuntimeError("BLOCKED_NODE_UNAVAILABLE: " + repr([name for name in required if name not in types]))
     output.mkdir(parents=True, exist_ok=True)
     parent = hou.node("/obj").createNode("geo", "MathCity_H00_Terrain", run_init_scripts=False)
+    erode = parent.createNode(erosion["node_type"], "HF_EROSION", exact_type_name=True)
+    # Discover the whole native contract before setting scene controls or cooking
+    # the source/macro terrain. An API mismatch produces one complete diagnostic.
+    resolve_erode_contract(erode)
     parent.addSpareParmTuple(hou.StringParmTemplate("recipe_json", "H00 Recipe JSON", 1,
                                                   default_value=(json.dumps(recipe, sort_keys=True),)))
     parent.setComment("Synthetic H00; Houdini master; no production MathCity map or Siedlce geography.")
+    resolved, erode_readback = configure_erode(erode, recipe)
     source = parent.createNode("heightfield", "HF_BASE", exact_type_name=True)
     span = recipe["resolution"][0] * spacing
     center_x, center_z = [v * recipe["meters_per_stud"] for v in recipe["region_center_xz_studs"]]
@@ -224,20 +294,7 @@ def build(config_path, output):
     macro.setInput(0, source)
     set_known(macro, "python", code + "\ncook('macro')\n")
     before = sop.named_volume(check_cook(macro), "height").allVoxels()
-    erode = parent.createNode(erosion["node_type"], "HF_EROSION", exact_type_name=True)
     erode.setInput(0, macro)
-    resolved = {}
-    for label, value in (("Freeze", 1), ("Freeze at Frame", erosion["freeze_frame"]),
-                         ("Start Frame", erosion["start_frame"]), ("Random Seed", recipe["seed"]),
-                         ("Erosion Feature Size", erosion["feature_size_m"])):
-        resolved[label] = scalar(erode, label, value)
-    for label, expression in {
-        "Freeze at Frame": "RECIPE['erosion']['freeze_frame']",
-        "Start Frame": "RECIPE['erosion']['start_frame']",
-        "Random Seed": "RECIPE['seed']",
-        "Erosion Feature Size": "RECIPE['erosion']['feature_size_m']",
-    }.items():
-        bind_recipe(erode.parm(resolved[label]), expression)
     hou.setFrame(erosion["freeze_frame"])
     after = sop.named_volume(check_cook(erode), "height").allVoxels()
     if len(after) != len(before):
@@ -272,7 +329,8 @@ def build(config_path, output):
                    "output_node": out.path(), "embedded_recipe_parameter": parent.path() + "/recipe_json",
                    "node_types": {n.name(): n.type().name() for n in parent.children()},
                    "source_parameters": parameter_snapshot(source), "erosion_parameters": parameter_snapshot(erode),
-                   "erosion_resolved_names": resolved, "erosion_changed_sample_count": sum(x > 1e-6 for x in delta),
+                   "erosion_resolved_names": resolved, "erosion_control_readback": erode_readback,
+                   "erosion_changed_sample_count": sum(x > 1e-6 for x in delta),
                    "erosion_delta_max_m": max(delta), "native_output_reference": native_output,
                    "labs_used": False, "warnings": {n.name(): list(n.warnings()) for n in parent.children() if n.warnings()}},
         "exports": exports,

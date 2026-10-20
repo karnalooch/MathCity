@@ -74,6 +74,21 @@ function Quote-Argument([string]$Value) {
     $quoted = [regex]::Replace($quoted, '(\\+)$', '$1$1')
     return '"' + $quoted + '"'
 }
+function Show-StageLogTail([string]$Label, [string]$Path) {
+    # Diagnostics must never replace the stage failure or change the full logs.
+    try {
+        $tailText = @(Get-Content -LiteralPath $Path -Tail 40 -ErrorAction Stop) -join [Environment]::NewLine
+        $maxCharacters = 6000
+        $truncated = $tailText.Length -gt $maxCharacters
+        if ($truncated) { $tailText = $tailText.Substring($tailText.Length - $maxCharacters) }
+        Write-Host "H00 $Label tail (up to 40 lines / 6000 characters): $Path"
+        if ($truncated) { Write-Host '[Earlier tail content omitted; full log remains on disk.]' }
+        if ([string]::IsNullOrEmpty($tailText)) { Write-Host '(empty)' } else { Write-Host $tailText }
+    } catch {
+        # Even a missing/locked log or unavailable output host preserves the original error.
+        try { Write-Host "H00 $Label tail unavailable; inspect the full log at: $Path" } catch { }
+    }
+}
 function Invoke-HythonStage([string]$Name, [string[]]$StageArguments, [int]$TimeoutSeconds) {
     $stdout = Join-Path $script:RunDir ($Name + '.stdout.log')
     $stderr = Join-Path $script:RunDir ($Name + '.stderr.log')
@@ -101,8 +116,15 @@ function Invoke-HythonStage([string]$Name, [string[]]$StageArguments, [int]$Time
     }
     $script:Report.stages += $stage
     Write-Json (Join-Path $script:RunDir 'run_report.json') $script:Report
-    if ($timedOut) { throw "BLOCKED_TIMEOUT: $Name exceeded $TimeoutSeconds seconds. See $stderr" }
-    if ($exitCode -ne 0) { throw "BLOCKED_STAGE: $Name exited $exitCode. See $stderr" }
+    $stageFailure = $null
+    if ($timedOut) { $stageFailure = "BLOCKED_TIMEOUT: $Name exceeded $TimeoutSeconds seconds. See $stderr" }
+    elseif ($exitCode -ne 0) { $stageFailure = "BLOCKED_STAGE: $Name exited $exitCode. See $stderr" }
+    if ($stageFailure) {
+        try { Write-Host $stageFailure } catch { }
+        Show-StageLogTail ($Name + ' stderr') $stderr
+        Show-StageLogTail ($Name + ' stdout') $stdout
+        throw $stageFailure
+    }
 }
 
 $RepoRoot = (Resolve-Path -LiteralPath $RepoRoot).Path

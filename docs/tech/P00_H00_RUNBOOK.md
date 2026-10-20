@@ -118,6 +118,24 @@ Po H00 podejmujemy H01/H02, następnie sektor Muchawki wraz z masterplanem całe
 
 Brak hython/licencji/operatora, zmieniony schemat parametrów, niepoprawny raster, pusta klasa materiału, brak działania erozji, inna geometria po reopen lub błędny import kończą właściwy etap jako `BLOCKED`/`FAIL`. Zachowaj log i napraw wskazany etap. Nie instaluj drugiego Houdiniego, nie ruszaj projektu YACS i nie zastępuj krajobrazu baseplate'em.
 
+Po nieudanym podprocesie lub przekroczeniu limitu czasu konsola pokazuje końcówki stderr i stdout: maksymalnie 40 linii i 6000 znaków z każdego pliku. Pełne logi pozostają w katalogu przebiegu; błąd odczytu końcówki nie zastępuje pierwotnego błędu etapu.
+
+### 7.1. Schemat HeightField Erode 3.0 w Houdini 22.0.466
+
+Właściciel przekazał rzeczywisty wpis `heightfield_erode::3.0` z `houdini_environment.json` przebiegu `H00_20261020T220649684Z_82216fe0`. Generowanie zatrzymało się na szukaniu etykiety `Freeze`: natywny przełącznik ma etykietę `Do Freeze`. Z raportu potwierdzono cały zestaw sterowania:
+
+| Rola | Nazwa parametru API | Typ; liczba składowych | Wartość domyślnej recepty H00 |
+|---|---|---|---|
+| Zamrożenie wyniku | `dofreeze` | Toggle; 1 | 1 |
+| Klatka końcowa | `freezeframe` | Int; 1 | 12 |
+| Klatka początkowa | `startframe` | Int; 1 | 1 |
+| Seed | `seed` | Float; 1 | 20261020 |
+| Rozmiar erozji | `erosionscale` | Float; 1 | 6,72 m |
+
+Builder używa tych nazw API i sprawdza wszystkie pięć typów oraz liczb składowych przed ustawianiem parametrów i cook terenu. Etykiety z dokumentacji nie służą do identyfikowania parametrów. Po powiązaniu z receptą kontrolowane są odczytane wartości: przełącznik, klatki i seed muszą być dokładnie zgodne; tolerancja numeryczna dotyczy wyłącznie rozmiaru erozji. Rozbieżności są zbierane w jeden komunikat. Klatka 12 oznacza końcową klatkę symulacji, nie liczbę iteracji solvera.
+
+Regresję doboru parametrów opisuje [`tests/worldgen/test_erode_contract.py`](../../tests/worldgen/test_erode_contract.py), z małym wyciągiem rzeczywistego schematu. Testy tej warstwy nie uruchamiają Houdiniego. Potwierdzenie poprawki w środowisku właściciela nadal wymaga nowego przebiegu `-Cook`, rzeczywistej zmiany próbek po erozji oraz zgodnego wyniku po ponownym otwarciu HIP w osobnym procesie.
+
 ## Źródła
 
 - [Roblox: terrain, import i paleta RGB](https://github.com/Roblox/creator-docs/blob/main/content/en-us/parts/terrain.md)
