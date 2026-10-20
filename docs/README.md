@@ -2,6 +2,10 @@
 
 **Stan: 2026-10-19. Dokumentacja po 33 decyzjach właściciela. Nowa gra NIE została zaimplementowana.** Repo zawiera działający prototyp `MathCity.rbxl`, którego ten pakiet nie zmienia.
 
+## Skille wykonawcy: plan 2026-10-20
+
+[LLM_SKILLS_PLAN.md](planning/LLM_SKILLS_PLAN.md) opisuje rekomendowaną bibliotekę: jeden zewnętrzny kandydat Roblox/Luau, osiem własnych skilli projektowych, selektywne procedury testów i diagnostyki, routing do istniejących kontraktów, integracje oraz 12 prób odbioru samych skilli. **PROPOSED_STACK / NOT_INSTALLED / SKILL_EVALUATIONS_NOT_RUN.** Nie zainstalowano pakietów, nie połączono Studio ani nie nadano uprawnień do implementacji gry.
+
 ## Wykonawca zaczyna tutaj
 
 **[WEAK_LLM_START_HERE.md](planning/WEAK_LLM_START_HERE.md)** wyznacza kolejność czytania i pracy. **[Gotowy prompt](planning/EXECUTOR_PROMPT.md)** uruchamia jeden mały pakiet, nie cały projekt naraz. **[33 decyzje Q01–Q33](planning/OWNER_DECISIONS_20261019.md)** są nadrzędne wobec wcześniejszych propozycji A/B/C. **[Pakiety D00–D06 i P00–P10](planning/EXECUTION_PACKETS.md)** określają wejścia, czynności, wyjścia i warunki odbioru.
