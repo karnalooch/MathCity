@@ -6,6 +6,8 @@ Wersja 1, 2026-10-19. **Plan przyszłej pracy.** Dokumenty w repo nie oznaczają
 
 `D00 → D01 → D02 → D03 → D04 → D05 → D06` to domknięcie edukacyjnej dokumentacji. `P00 → P01 → P02 → P03 → P04 → P05 → P06 → P07 → P08 → P09 → P10` to przyszłe eksperymenty po osobnym upoważnieniu. Część badań A/B/C/G może przebiegać równolegle, ale nie należy ogłaszać ich PASS. Wybór dokładnych 8 pilotów jest rekomendacją techniczną, nie nowym zakresem zatwierdzonym przez właściciela.
 
+**Aktualizacja 2026-10-20:** właściciel uruchomił teraz **P00 + sam H00 z P06**, przed implementacją gameplayu. Wykonywalne wejście, izolacja i dowody: [P00_H00_RUNBOOK](../tech/P00_H00_RUNBOOK.md). H01/H02 oraz pozostałe pakiety nie są automatycznie uruchomione. Dostarczony kod nie oznacza wykonanego testu Windows/Houdini/Studio.
+
 ## D00: synchronizacja źródła prawdy
 
 **Wejście:** OWNER_DECISIONS, aktualny GDD, decyzje historyczne. **Zakres:** tylko docs. **Czynności:** sprawdź komplet Q01–Q33; wykryj sprzeczności: płatny admin, śmierć za błędne drzwi, dzielnica=klasa, min poziomu do misji, głos wymagany na starcie, nieskończone pieniądze z rekordów. Oznacz starsze opisy jako historyczne, nie usuwaj ich bez potrzeby. **Wyjście:** lista rozstrzygnięć i linki w głównych indeksach. **Odbiór:** zero aktywnych wymagań przeciwnych Qxx; pliki gry niezmienione. **STOP:** niejednoznaczna nowa wypowiedź właściciela; nie dotyczy znanych i rozstrzygniętych 33 odpowiedzi.
@@ -36,7 +38,7 @@ Wersja 1, 2026-10-19. **Plan przyszłej pracy.** Dokumenty w repo nie oznaczają
 
 ## P00: bezpieczny warsztat i izolacja
 
-Wymaga osobnego zlecenia kodowego. Sprawdź istniejące skrypty i mapę, źródło prawdy `.rbxl` vs Luau, backup i rollback. Wykryj UE/Blender/Material Forge, nie instaluj ponownie całego YACS. Utwórz prywatne miejsce testowe z osobnym magazynem danych; nie publikuj publicznie. Zdecyduj świadomie o ograniczonym mapowaniu Rojo, nie zastępuj całego Workspace. **Dowód:** otwarcie kopii, Play, stop, ponowne otwarcie, zgodność mapy bazowej; wersje narzędzi. **Bramka:** oryginał i produkcyjne dane nietknięte.
+Zlecenie P00/H00 zostało uruchomione 2026-10-20. Sprawdź istniejące skrypty i mapę, źródło prawdy `.rbxl` vs Luau, backup i rollback. Wykryj Houdini/SideFX Labs oraz pomocnicze UE/Blender/Material Forge; nie instaluj ponownie warsztatu YACS. Dla H00 użyj nowego, nieopublikowanego lokalnego miejsca bez skryptów gry i bez DataStore. Przyszłe testy gameplayu mogą wymagać odrębnego testowego magazynu danych; H00 go nie tworzy. Nie zastępuj całego Workspace istniejącej gry. **Dowód:** otwarcie sceny testowej, Play, stop, ponowne otwarcie, zgodność mapy bazowej; rzeczywiste wersje narzędzi. **Bramka:** oryginał i produkcyjne dane nietknięte. [Komenda i kontrola](../tech/P00_H00_RUNBOOK.md).
 
 ## P01: czysty model zadania i generator M34
 

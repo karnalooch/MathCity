@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "recipe_id": "mathcity-h00-terrain-v1",
+  "description": "Synthetic pipeline test; not Siedlce geography or the final world size.",
+  "resolution": [256, 256],
+  "studs_per_pixel": 4,
+  "meters_per_stud": 0.28,
+  "height_range_studs": [-64, 256],
+  "region_center_xz_studs": [0, 0],
+  "seed": 20261020,
+  "erosion": {
+    "node_type": "heightfield_erode::3.0",
+    "start_frame": 1,
+    "freeze_frame": 12,
+    "feature_size_m": 6.72
+  },
+  "features": {
+    "base_height_m": 10,
+    "hill": {"center_xz_m": [-68, -44], "radius_xz_m": [37, 45], "height_m": 34},
+    "valley": {"center_xz_m": [45, 4], "radius_xz_m": [27, 100], "depth_m": 13},
+    "basin": {"center_xz_m": [61, 72], "radius_xz_m": [53, 44], "bed_height_m": 1, "shore_height_m": 5},
+    "road": {"center_z_m": -72, "half_width_m": 4.48, "blend_m": 11.2, "height_at_x0_m": 9, "grade": 0.015},
+    "pad": {"center_xz_m": [-63, 67], "half_size_xz_m": [17.92, 15.68], "blend_m": 8.96, "height_m": 11.2}
+  }
+}

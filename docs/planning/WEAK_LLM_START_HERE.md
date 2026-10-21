@@ -10,7 +10,7 @@ Kolejność: decyzje Q01–Q33 > kontrakty tego pakietu > zaakceptowane wyniki t
 
 ## 1. Granica upoważnienia
 
-Obecne zlecenie: plan i dokumentacja. Wolno zmieniać `docs/**`; nie ruszać `MathCity.rbxl`, `src/**`, `tests/**`, `tools/**`, `assets/**`, konfiguracji, publikacji Roblox ani lokalnego YACS. W kodowych pakietach Pxx wejściem jest osobne zlecenie właściciela uruchamiające ten pakiet. Po takim zleceniu pracuj w osobnej gałęzi i testowej kopii miejsca, nigdy przez nadpisanie sprawdzonej mapy. Dopuszczenie kodu nie oznacza zgody na publikację dla dzieci.
+Aktualizacja 2026-10-20: właściciel uruchomił **P00 + H00** — audyt warsztatu i syntetyczny test terenu Houdini → Roblox. Kod tego pakietu obejmuje `tools/worldgen/**`, `worldgen/h00/**`, `tests/worldgen/**` oraz powiązane docs; procedura: [P00_H00_RUNBOOK](../tech/P00_H00_RUNBOOK.md). Wcześniejsze zlecenie wyłącznie dokumentacyjne nadal opisuje historyczne etapy A–D. Pozostałe pakiety wymagają ich uruchomienia przez właściciela. Pracuj w osobnej gałęzi i osobnym lokalnym miejscu testowym, bez nadpisania `MathCity.rbxl`, zmiany `src/**`, projektu YACS i publicznej publikacji. Dopuszczenie kodu nie oznacza zgody na publikację dla dzieci.
 
 Stan PR #1 przy odczycie: Draft, niepołączony, zgoda stylistyczna oczekiwana. Nie merge ani rebase tego PR w ramach tej pracy. Dokumentacja artystyczna na jego gałęzi może nie istnieć na main; używaj adresu PR, nie zmyślonego lokalnego linku.
 
@@ -35,6 +35,7 @@ Przeczytaj ten plik, właściwe wiersze Qxx, jeden kontrakt i kartę minigry. Ni
 | Co zostało wybrane? | [33 decyzje](OWNER_DECISIONS_20261019.md) |
 | Co zrobić po kolei? | [Pakiety D/P](EXECUTION_PACKETS.md) |
 | Co i jak sprawdzić? | [Testy](ACCEPTANCE_MATRIX.md) |
+| Uruchomione P00 + H00 | [Wykonywalny test terenu](../tech/P00_H00_RUNBOOK.md) |
 | Etap D i status programu | [STAGE_D_README](../education/STAGE_D_README.md) |
 | Źródła i konkretne punkty programu | [CURRICULUM_SOURCES](../education/stage_d/CURRICULUM_SOURCES.md) |
 | Audyt wszystkich 40 propozycji | [M01_M40_AUDIT](../education/stage_d/M01_M40_AUDIT.md) |
@@ -73,4 +74,4 @@ Nie blokuj całego planu tylko dlatego, że progi EXP nie są finalne: stosuj ja
 
 Podaj: packet_id; baza i końcowy SHA; zmienione ścieżki; Qxx; wykonane komendy; liczbę uruchomionych i nieuruchomionych przypadków; dowody i urządzenia; ograniczenia; następny dozwolony pakiet. Rozdziel `DOC_CHECKED`, `UNIT_PASS`, `STUDIO_PASS`, `DEVICE_PASS`, `TEACHER_APPROVED`, `OWNER_APPROVED`. Nie istnieje ogólny PASS wynikający tylko z commita.
 
-Najbliższa praca: D00, potem D01–D06. Pierwszy późniejszy eksperyment kodowy: P00/P01 i M34, NIE jednocześnie całe miasto, mieszkania i Mario Kart.
+Aktualne zadanie wykonawcze: **P00 + H00**, według nowego runbooka. Status przygotowania kodu nie jest wynikiem cooka ani importu Studio. D00–D06 i pozostałe Pxx zachowują własne warunki odbioru; ten wyjątek kolejności nie przyznaje im PASS.
